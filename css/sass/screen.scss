@@ -4,6 +4,48 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+/*World Map*/
+.country:hover{
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.text{
+  font-size:10px;
+  text-transform:capitalize;
+}
+#container {
+  margin:45px 10%;
+/*  border:2px solid #000;*/
+  border-radius: 5px;
+  height:100%;
+  overflow:hidden;
+/*  background: #F0F8FF;*/
+}
+.hidden {
+  display: none;
+}
+div.tooltip {
+  color: #222;
+  background: #fff;
+  padding: .5em;
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px 0px #a6a6a6;
+  opacity: 0.9;
+  position: absolute;
+}
+.graticule {
+  fill: none;
+/*  stroke: #bbb;*/
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+/*.equator {
+  stroke: #ccc;
+  stroke-width: 1px;
+}*/
+
 body {
   background-color: black;
 }
@@ -86,6 +128,9 @@ body {
   .vw-638__year {
     width: 32%;
   }
+  .um-638__year {
+    width: 30%;
+  }
   .vw-638__month {
     width: 32%;
     margin: 0 5px;
@@ -94,6 +139,9 @@ body {
     width: 32%;
   }
   .vw-registration-container {
+    .form-control {
+      padding: 6px 5px;
+    }
     .vw-576 {
       margin: 40px 0 10px 0;
     }
@@ -121,12 +169,17 @@ body {
     margin: 0 auto;
     float: none;
     padding-top: 30px;
-    .uv_footer_social {
-      margin-top: 30px;
-      width: 625px;
+    .um_footer_social,.uv_footer_social {
       img {
         padding:5px;
       }
+    }
+    .uv_footer_social {
+      margin-top: 30px;
+      width: 625px;
+    }
+    .um_footer_social {
+      width: 300px;
     }
     .uv_footer_456 {
       width: 625px;
@@ -155,6 +208,11 @@ body {
       float: none;
       width: 600px;
     }
+    .um_sub_345 {
+      margin: 0 auto;
+      float: none;
+      width: 300px;
+    }
     .uv_sub_copyright {
       font-size: 12px;
       color: #f2f2f2;
@@ -177,3 +235,11 @@ body {
     }
   }
 }
+.um_container_203 {
+  padding-top: 180px;
+  width: 90%;
+}
+._um_log_768 {
+  margin: 0 0 15px 5px;
+}
+
