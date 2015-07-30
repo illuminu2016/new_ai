@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/stylesheets/screen.css">
+        <link rel="stylesheet" href="css/stylesheets/ux_login.css">
 
         <title>AI Personality</title>
     </head>
@@ -14,8 +14,8 @@
     <body>
         <div class="header">
             <div class="header_uv420 clearfix col-lg-8 col-md-10 col-xs-12">
-                <div class="uv_427-logo pull-left">Ai personality</div>
-
+                 <!-- <div class="uv_427-logo pull-left"><img src="css/images/logo.png"></div> -->
+                <div class="pull-left _vw-logo">Online Personality</div> 
                 <form class="form-inline pull-right hidden-xs">
                     <div class="form-group">
                         <label class="sr-only" for="exampleInputEmail3">Email address</label>
@@ -29,14 +29,32 @@
                 </form>
             </div>
         </div>
-        <div class="vw_container">
+        <div class="vw_container" style="position: relative">
             <div class="vw-container__inner col-lg-8 col-md-10 hidden-xs">
-                <div class="vw-635-logo container pull-left">
-                    <div id="container"></div>
+                <div class="vw-635-logo container" style="width: 100%">
+                    <div id="container" align="center"></div>
                     <img src="css/images/ai-logo.jpg" class="hidden"/>
                 </div>
-                <div class="vw-636-registration pull-right">
-                    <div class="vw-637-info h3">
+                <div class="vw-636-registration clearfix" align="center">
+                    <div class="pull-left _uv-terminal" style="width:40%; height: 300px;background-color: rgba(0, 0, 0, 0.6);color:#2ca02c;margin-left: 14%;">
+                            #include &lt;signal.h&gt;<br>
+                            #include &lt;stdio.h &gt;<br>
+                            #include &lt;string.h &gt;<br>
+                            #include &lt;unistd.h &gt;<br><br>                         
+                            static int got_signal = 0;<br><br>          
+                            static void hdl (int sig)<br>
+                            {   <br>
+                                &nbsp;&nbsp;got_signal = 1;<br>
+                            }<br>
+                             <br>
+                            int main (int argc, char *argv[])<br>
+                            {   <br>
+                                &nbsp;&nbsp;sigset_t mask;<br>
+                                &nbsp;&nbsp;sigset_t orig_mask;<br>
+                                &nbsp;&nbsp;struct sigaction act;<br>
+                    </div>
+                    <div class="pull-left" style="width:385px;margin:10px 0 0 50px;background-color: rgba(204, 204, 204, 0.9);padding: 10px 30px 30px 30px;">
+                     <div class="vw-637-info h4">
                         Register new account
                     </div>
                     <div class="form-group">
@@ -49,7 +67,7 @@
                         <input type="password" class="form-control" placeholder="Password">
                     </div>
                     <div class="vw-registration-container">
-                        <div class="vw-576">Birthday</div>
+                        <div class="vw-576" align="left">Birthday</div>
                         <select class="form-control pull-left vw-638__year">
                             <option value="0" selected="1">Year</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1914">1914</option><option value="1913">1913</option><option value="1912">1912</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option>
                         </select>
@@ -77,6 +95,7 @@
                         <div class="vw-701-btn">
                             <button type="button" class="btn btn-primary">Sign Up</button>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -181,191 +200,19 @@
                 </div>
             </div>
         </div>
+
+        <svg id="mySvg" width="80" style="display: none" height="80">
+            <defs id="mdef">
+                <pattern id="image" x="0" y="0" height="40" width="40">
+                    <image x="0" y="0" width="40" height="40" xlink:href="help/worldmap/js/pointer.png"></image>
+                </pattern>
+            </defs>
+        </svg>
     </body>
 
 </html>
 
 <script src="help/worldmap/js/d3.min.js"></script>
 <script src="help/worldmap/js/topojson.v1.min.js"></script>
-<script>
-    d3.select(window).on("resize", throttle);
+<script src="help/worldmap/js/main.js"></script>
 
-    var zoom = d3.behavior.zoom()
-        .scaleExtent([0, 9])
-        .on("zoom", move);
-
-
-    var width = document.getElementById('container').offsetWidth;
-/*    var height = width / 2 + width / 4;*/
-    var height = 400;
-
-    var topo,projection,path,svg,g;
-
-    var graticule = d3.geo.graticule();
-
-    var tooltip = d3.select("#container").append("div").attr("class", "tooltip hidden");
-
-    setup(width,height);
-
-    function setup(width,height){
-        projection = d3.geo.mercator()
-            .translate([(width/2), (height/2)])
-            .scale( width / 2 / Math.PI);
-
-        path = d3.geo.path().projection(projection);
-
-        svg = d3.select("#container").append("svg")
-            .attr("width", width)
-            .attr("height", height)
-            .attr("style","padding-top: 90px")
-            .call(zoom)
-            .on("click", click)
-            .append("g");
-
-        g = svg.append("g");
-
-    }
-
-    d3.json("help/worldmap/data/world-topo-min.json", function(error, world) {
-
-        var countries = topojson.feature(world, world.objects.countries).features;
-
-        topo = countries;
-        draw(topo);
-
-    });
-
-    function draw(topo) {
-
-        svg.append("path")
-            .datum(graticule)
-            .attr("class", "graticule")
-            .attr("d", path);
-
-
-        g.append("path")
-            .datum({type: "LineString", coordinates: [[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]]})
-            .attr("class", "equator")
-            .attr("d", path);
-
-
-        var country = g.selectAll(".country").data(topo);
-
-        country.enter().insert("path")
-            .attr("class", "country")
-            .attr("d", path)
-            .attr("id", function(d,i) { return d.id; })
-            .attr("title", function(d,i) { return d.properties.name; })
-            .style("fill", function(d, i) { return d.properties.color; });
-
-        //offsets for tooltips
-        var offsetL = document.getElementById('container').offsetLeft+20;
-        var offsetT = document.getElementById('container').offsetTop+10;
-
-        //tooltips
-        country
-            .on("mousemove", function(d,i) {
-
-                var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
-
-                tooltip.classed("hidden", false)
-                    .attr("style", "left:"+(mouse[0]+offsetL)+"px;top:"+(mouse[1]+offsetT)+"px")
-                    .html(d.properties.name);
-
-            })
-            .on("mouseout",  function(d,i) {
-                tooltip.classed("hidden", true);
-            });
-
-
-        //EXAMPLE: adding some capitals from external CSV file
-        /*                            d3.csv("help/worldmap/data/country-capitals.csv", function(err, capitals) {
-
-         capitals.forEach(function(i){
-         addpoint(i.CapitalLongitude, i.CapitalLatitude, i.CapitalName );
-         });
-
-         });*/
-
-    }
-
-
-    function redraw() {
-        width = document.getElementById('container').offsetWidth;
-        height = width / 2;
-        d3.select('svg').remove();
-        setup(width,height);
-        draw(topo);
-    }
-
-
-    function move() {
-
-        var t = d3.event.translate;
-        var s = d3.event.scale;
-        zscale = s;
-        var h = height/4;
-
-
-        t[0] = Math.min(
-            (width/height)  * (s - 1),
-            Math.max( width * (1 - s), t[0] )
-        );
-
-        t[1] = Math.min(
-            h * (s - 1) + h * s,
-            Math.max(height  * (1 - s) - h * s, t[1])
-        );
-
-        zoom.translate(t);
-        g.attr("transform", "translate(" + t + ")scale(" + s + ")");
-
-        //adjust the country hover stroke width based on zoom level
-        d3.selectAll(".country").style("stroke-width", 1.5 / s);
-
-    }
-
-
-
-    var throttleTimer;
-    function throttle() {
-        window.clearTimeout(throttleTimer);
-        throttleTimer = window.setTimeout(function() {
-            redraw();
-        }, 200);
-    }
-
-
-    //geo translation on mouse click in map
-    function click() {
-        var latlon = projection.invert(d3.mouse(this));
-        console.log(latlon);
-    }
-
-
-    //function to add points and text to the map (used in plotting capitals)
-    function addpoint(lat,lon,text) {
-
-        var gpoint = g.append("g").attr("class", "gpoint");
-        var x = projection([lat,lon])[0];
-        var y = projection([lat,lon])[1];
-
-        gpoint.append("svg:circle")
-            .attr("cx", x)
-            .attr("cy", y)
-            .attr("class","point")
-            .attr("r", 1.5);
-
-        //conditional in case a point has no associated text
-        if(text.length>0){
-
-            gpoint.append("text")
-                .attr("x", x+2)
-                .attr("y", y+2)
-                .attr("class","text")
-                .text(text);
-        }
-
-    }
-
-</script>
