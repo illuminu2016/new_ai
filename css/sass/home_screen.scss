@@ -1,0 +1,92 @@
+._hm-header {
+  height: 55px;
+  width: 100%;
+  background: linear-gradient(#8B0000, #292121);
+  .header_hm-780 {
+    margin: 0 auto;
+    height: 50px;
+    float: none;
+    ._hm-user-plus-btn {
+      color: #d6dce3;
+      font-size: 24px;
+      margin: 18px 0 0 0;
+    }
+    ._hm-user-dim {
+      color: #d6dce3;
+      font-size: 20px;
+      position: relative;
+    }
+    ._hm-user-email-btn {
+      margin: 18px 0 0 15px;
+    }
+    ._hm-user-flag {
+      margin: 18px 10px 0 30px;
+      img {
+          border: 1px solid #d6dce3;
+      }
+    }
+    ._hm-user-question {
+      margin: 19px 35px 0 10px;
+    }
+    ._hm-user-settings {
+      margin: 20px 0 0 0;
+    }
+    ._hm-user-avatar {
+      margin: 20px 10px 0 0;
+    }
+    ._hm-user-typeahead {
+      width: 60%;
+      ._hm-typeahead-856 {
+        width: 100%;
+        height: 27px;
+        margin: 13px 0 0 25%;
+      }
+    }
+    ._vw-hm-logo {
+      margin-top: 20px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+._hm-nav {
+  height: 30px;
+  width: 100%;
+  background: black;
+  ._hm-navbar-list {
+    margin: 0 auto;
+    color: white;
+    float: none;
+    padding: 8px 15px;
+    font-size: 13px;
+    .list-inline > li {
+      margin-right: 30px;
+    }
+  }
+}
+._hm-add-user-overflow {
+  position: absolute;
+  top: 27px;
+  width: 370px;
+  height: 300px;
+  background-color: #292121;
+  right: -174px;
+  z-index: 1000;
+  padding: 3px;
+  ._hm-add-inner-overflow {
+    background-color: white;
+    height: 98%;
+    width: 364px;
+    position: absolute;
+  }
+}
+._hm-arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+  position: absolute;
+  top: -5px;
+  left: 44%;
+}

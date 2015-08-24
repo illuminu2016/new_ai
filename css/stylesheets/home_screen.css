@@ -1,0 +1,114 @@
+/* line 1, ../sass/home_screen.scss */
+._hm-header {
+  height: 55px;
+  width: 100%;
+  background: linear-gradient(#8B0000, #292121);
+}
+/* line 5, ../sass/home_screen.scss */
+._hm-header .header_hm-780 {
+  margin: 0 auto;
+  height: 50px;
+  float: none;
+}
+/* line 9, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-plus-btn {
+  color: #d6dce3;
+  font-size: 24px;
+  margin: 18px 0 0 0;
+}
+/* line 14, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-dim {
+  color: #d6dce3;
+  font-size: 20px;
+  position: relative;
+}
+/* line 19, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-email-btn {
+  margin: 18px 0 0 15px;
+}
+/* line 22, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-flag {
+  margin: 18px 10px 0 30px;
+}
+/* line 24, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-flag img {
+  border: 1px solid #d6dce3;
+}
+/* line 28, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-question {
+  margin: 19px 35px 0 10px;
+}
+/* line 31, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-settings {
+  margin: 20px 0 0 0;
+}
+/* line 34, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-avatar {
+  margin: 20px 10px 0 0;
+}
+/* line 37, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-typeahead {
+  width: 60%;
+}
+/* line 39, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._hm-user-typeahead ._hm-typeahead-856 {
+  width: 100%;
+  height: 27px;
+  margin: 13px 0 0 25%;
+}
+/* line 45, ../sass/home_screen.scss */
+._hm-header .header_hm-780 ._vw-hm-logo {
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 52, ../sass/home_screen.scss */
+._hm-nav {
+  height: 30px;
+  width: 100%;
+  background: black;
+}
+/* line 56, ../sass/home_screen.scss */
+._hm-nav ._hm-navbar-list {
+  margin: 0 auto;
+  color: white;
+  float: none;
+  padding: 8px 15px;
+  font-size: 13px;
+}
+/* line 62, ../sass/home_screen.scss */
+._hm-nav ._hm-navbar-list .list-inline > li {
+  margin-right: 30px;
+}
+
+/* line 67, ../sass/home_screen.scss */
+._hm-add-user-overflow {
+  position: absolute;
+  top: 27px;
+  width: 370px;
+  height: 300px;
+  background-color: #292121;
+  right: -174px;
+  z-index: 1000;
+  padding: 3px;
+}
+/* line 76, ../sass/home_screen.scss */
+._hm-add-user-overflow ._hm-add-inner-overflow {
+  background-color: white;
+  height: 98%;
+  width: 364px;
+  position: absolute;
+}
+
+/* line 83, ../sass/home_screen.scss */
+._hm-arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+  position: absolute;
+  top: -5px;
+  left: 44%;
+}

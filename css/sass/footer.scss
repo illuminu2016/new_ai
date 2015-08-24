@@ -72,3 +72,11 @@
     }
   }
 }
+.at_sub_page_container {
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    .at_sub-legal {
+      width: 600px;
+    }
+}

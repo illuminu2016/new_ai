@@ -206,6 +206,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: red;
 }
 
+/* line 75, ../sass/footer.scss */
+.at_sub_page_container {
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+}
+/* line 79, ../sass/footer.scss */
+.at_sub_page_container .at_sub-legal {
+  width: 600px;
+}
+
 /* line 1, ../sass/mobile.scss */
 .um_container_203 {
   padding-top: 180px;

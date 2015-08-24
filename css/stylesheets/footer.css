@@ -86,3 +86,14 @@
 .uv_sub_page_container .uv_sub_legal .list-inline ._ufx878:hover {
   color: red;
 }
+
+/* line 75, ../sass/footer.scss */
+.at_sub_page_container {
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+}
+/* line 79, ../sass/footer.scss */
+.at_sub_page_container .at_sub-legal {
+  width: 600px;
+}
