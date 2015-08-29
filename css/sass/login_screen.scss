@@ -1,0 +1,176 @@
+.vw_container {
+  width: 100%;
+  background-color: white;
+  ._uv-terminal {
+    color:#2ca02c;
+    width: 39%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 65px;
+    text-align: left;
+    padding: 20px;
+    font-size: 13px;
+  }
+  .vw-container__inner {
+    margin: 0 auto;
+    height:600px;
+    float: none;
+    position: static;
+    .vw-635-logo {
+      width: 100%;
+      img {
+        width: 96%;
+        margin-top: 70px;
+        box-shadow: 0 10px 25px black;
+      }
+    }
+  }
+  .vw-636-registration {
+    width: 100%;
+    height: 100%;
+    padding: 50px 1% 0 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(204, 204, 204, 0.5);
+    .uv_789-inner-container {
+      width:385px;
+      margin:10px 0 0 50px;
+      background-color: rgba(204, 204, 204, 0.7);
+      padding: 10px 30px 30px 30px;
+    }
+    .form-group {
+      input {
+        font-weight: bold;
+        font-size: 13px;
+      }
+    }
+    ::-webkit-input-placeholder {
+      color: #5e5e5e;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #5e5e5e;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+      color: #5e5e5e;
+    }
+    :-ms-input-placeholder {
+      color: #5e5e5e;
+    }
+    .vw-637-info {
+      margin-bottom: 25px;
+    }
+  }
+  ._um-636-registration {
+    width: 90%;
+  }
+  .vw-638__year {
+    width: 32%;
+  }
+  .um-638__year {
+    width: 30%;
+  }
+  .vw-638__month {
+    width: 32%;
+    margin: 0 5px;
+  }
+  .vw-638__day {
+    width: 32%;
+  }
+  .vw-registration-container {
+    select {
+      font-size: 13px;
+    }
+    .form-control {
+      padding: 6px 5px;
+    }
+    .vw-576 {
+      margin: 20px 0 10px 0;
+      font-size: 14px;
+    }
+    .vw_terms_info {
+      padding-top: 50px;
+      color: #71767d;
+      font-size: 11px;
+      line-height: 14px;
+    }
+    .vw-701-btn {
+      width: 100%;
+      a {
+        color:white;
+        text-decoration: none;
+      }
+      .btn {
+        width: 100%;
+        margin-top: 25px;
+        background: black;
+        box-shadow: 0 2px 2px black;
+        border: none;
+      }
+    }
+  }
+}
+._uv_login-attempt {
+    position: absolute; 
+    height: 90%;
+    .uv_809-label {
+      color: #8B0000;
+      font-size: 14px;
+      padding: 2px;
+    }
+    ._at-798-container {
+      width: 455px;
+      background-color: rgba(204, 204, 204, 0.7);
+      padding: 40px;
+      margin-top: 120px;
+      .-at_not-member893 {
+        margin-top: 17px;
+        color: #5e5e5e;
+      }
+    }
+    .vw-709-btn {
+      .btn {
+        width: 100%;
+        margin-top: 25px;
+        background: black;
+        box-shadow: 0 2px 2px black;
+        border: none;
+      }
+    }
+    .form-group {
+      ::-webkit-input-placeholder {
+        color: #5e5e5e;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: #5e5e5e;
+      }
+      ::-moz-placeholder {  /* Firefox 19+ */
+        color: #5e5e5e;
+      }
+      :-ms-input-placeholder {
+        color: #5e5e5e;
+      }
+    }
+}
+.uw_attempt-99 {
+  position: absolute; 
+  width: 100%;
+  z-index: 5;
+  .uw_attempt-100 {
+    width: 700px;
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 25px;
+    margin: 50px auto;
+    color: white;
+    ._uw-attempt-89 {
+      margin-top: 3px;
+    }
+    .uw_attempt-756 {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+  }
+}
+.margintop45 {
+  margin-top: 45px;
+}

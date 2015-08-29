@@ -1,0 +1,44 @@
+.header {
+  height: 70px;
+  width: 100%;
+  background: black;
+  /*  background: #3F7691;*/
+  box-shadow: 0 1px 4px #ccc;
+  .header_uv420 {
+    margin: 0 auto;
+    height: 70px;
+    float: none;
+    ._vw-logo {
+      color: white;
+    font-size: 20px;
+    margin: 20px 0 0 40px;
+    font-weight: bold;
+    }
+  }
+  .uv_427-logo {
+    margin-top: 20px;
+    font-size: 20px;
+    img {
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      top: 0;
+    }
+  }
+  .form-inline {
+    margin-top: 18px;
+    .uv_30 {
+      height: 30px;
+    }
+    .btn-sign {
+      background: rgb(44, 160, 44);
+      border: none;
+      color: white;
+      box-shadow: 0 1px 1px black;
+      padding: 4px 12px;
+    }
+    .btn:hover {
+      color: white;
+    }
+  }
+}
