@@ -5,38 +5,493 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/stylesheets/ux_home.css">
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="scripts/menu_functions.js"></script>
         <title>Home</title>
 	</head>
 	<body>
 		<div class="_hm-header">
 			<div class="header_hm-780 clearfix col-lg-8 col-md-10 col-xs-12">
-				<div class="clearfix pull-left hidden-xs col-lg-8 col-md-8 col-sm-6">
+				<div class="clearfix pull-left hidden-xs col-lg-8 col-md-8 col-sm-8">
 					<div class="pull-left _vw-hm-logo">Online Personality</div>
 					<div class="form-group pull-left _hm-user-typeahead">
-	                    <input type="text" class="form-control _hm-typeahead-856" placeholder="Search AI">
+	                    <input type="text" class="form-control _hm-typeahead-856" placeholder="Search ArtificialSpace">
+	                    <div class="_hm-search-user-overflow">
+							<div class="_hm-search-inner-overflow">
+								<div class="_hm-recent-search-890 clearfix">
+									<span class="pull-left">Recent AI search</span>
+									<span class="pull-right _hm-ftsize11 pointer">Clear<i class="fa fa-times _hm-search-clear-435"></i></span>
+								</div>
+								<div class="_hm-search-list">
+									<ul class="_ul-search-976">
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/img_f1.png" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Sleapca Dan 
+											   		</div>
+											   		<div class="_hm-search-676">Iasi, Romania 21 years old 
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/online.png" height="8"> Online
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/ramona.jpg" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Costia Ramona Irina
+											   		</div>
+											   		<div class="_hm-search-676">Botosani, Romania 23 years old
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/online.png" height="8"> Online
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/costea.jpg" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Costea Mihai
+											   		</div>
+											   		<div class="_hm-search-676">Motca, Romania 27 years old
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/offline.gif" height="8"> Offline
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/avatar.jpg" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Crismaru Constantin
+											   		</div>
+											   		<div class="_hm-search-676">Iasi, Romania 32 years old
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/offline.gif" height="8"> Offline
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/madalina.jpg" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Cretu Madalina
+											   		</div>
+											   		<div class="_hm-search-676">Iasi, Romania 23 years old
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/offline.gif" height="8"> Offline
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/img_f4.png" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Balciuc Elena
+											   		</div>
+											   		<div class="_hm-search-676">Galati, Romania 27 years old
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/offline.gif" height="8"> Offline
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/img_f5.png" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Spitelnicu Adrian
+											   		</div>
+											   		<div class="_hm-search-676">Iasi, Romania 34 years old
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/online.png" height="8"> Online
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/img_f6.png" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Emil Martinas
+											   		</div>
+											   		<div class="_hm-search-676">Dublin, Irland 21 years old
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/offline.gif" height="8"> Offline
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/img_f1.png" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Bucurenciu Sorin
+											   		</div>
+											   		<div class="_hm-search-676">New York, America 44 years old
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/offline.gif" height="8"> Offline
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									   <li>
+									   	   <div class="_hm-search-container clearfix">
+										   	   <div class="pull-left pointer">
+											   		<img src="css/images/img_f2.png" height="36" class="_img-search-654">
+											   </div>
+											   <div class="pull-left _hm-search-652 pointer">
+											   		<div class="_hm-search-860">
+											   			Trkdid Mihn
+											   		</div>
+											   		<div class="_hm-search-676">Lao, Vietnam 20 years old
+												   		<i class="fa fa-ellipsis-h _hm-search-560"></i> 
+												   		<img src="css/images/online.png" height="8"> Online
+											   		</div>
+											   </div>
+										   </div>
+									   </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	                    <i class="fa fa-search _hm-search-978 pointer"></i>
 	                </div>
                 </div>
-                <div class="clearfix pull-left col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="pull-right _hm-user-settings _hm-user-dim ">
+                <div class="clearfix pull-left col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="pull-right _hm-user-settings _hm-user-dim pointer">
+						<div class="_hm-bars-user-overflow">
+							<div class="_hm-bars_arrow-up"></div>
+							<div class="_hm-bars-inner-overflow">
+								<ul class="_hm-bars-301">
+									<li><i class="fa fa-lock"></i>Privacy</li>
+									<li><i class="fa fa-flag"></i>Notifications</li>
+									<li class="_hm-bars-li-1304"><i class="fa fa-envelope"></i>Message Settings</li>
+									<li><i class="fa fa-key"></i>Change Password</li>
+									<li class="_hm-bars-li-1304"><i class="fa fa-stack-exchange"></i>Change Email</li>
+									<li class="_hm-bars-li-1304"><i class="fa fa-trash-o"></i>Delete Account</li>
+									<li><i class="fa fa-sign-out"></i>Logout</li>
+								</ul>
+							</div>
+						</div>
 						<i class="fa fa-bars"></i>
 					</div>
 					<div class="pull-right _hm-user-avatar _hm-user-dim">
-						<img src="css/images/avatar.jpg" height="20">
+						<img src="css/images/avatar.jpg" height="20" class="fa-bars pointer">
 					</div>
-					<div class="pull-right _hm-user-question _hm-user-dim">
+					<div class="pull-right _hm-user-question _hm-user-dim pointer">
+						<div class="_hm-question-user-overflow">
+							<div class="_hm-question_arrow-up"></div>
+							<div class="_hm-question-inner-overflow"></div>
+						</div>
 						<i class="fa fa-question-circle"></i>
 					</div>
-					<div class="pull-right _hm-user-flag _hm-user-dim">
-						<img src="css/images/flags/romania.png" height="20">
+					<div class="pull-right _hm-user-flag _hm-user-dim pointer">
+						<div class="_hm-lang-user-overflow">
+							<div class="_hm-lang_arrow-up"></div>
+							<div class="_hm-lang-inner-overflow">
+								<div class="_hm-lang-selector-944">Select language</div>
+								<div class="clearfix">
+									<ul class="_hm-lang-container-ul pull-left">
+										<li>
+											<div class="clearfix">
+												<div class="pull-left _hm-lang-flag-828">
+													<img src="css/images/flags/us-t.gif" height="16" class="pointer">
+												</div>
+												<div class="pull-left">
+													English
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="clearfix">
+												<div class="pull-left _hm-lang-flag-828">
+													<img src="css/images/flags/de_lang.gif" height="16" class="pointer">
+												</div>
+												<div class="pull-left">
+													German
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="clearfix">
+												<div class="pull-left _hm-lang-flag-828">
+													<img src="css/images/flags/fr_lang.gif" height="16" class="pointer">
+												</div>
+												<div class="pull-left">
+													French
+												</div>
+											</div>	
+										</li>
+									</ul>
+									<ul class="_hm-lang-container-ul pull-left">
+										<li>
+											<div class="clearfix">
+												<div class="pull-left _hm-lang-flag-828">
+													<img src="css/images/flags/romania-t.gif" height="16" class="pointer">
+												</div>
+												<div class="pull-left">
+													Romanian
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="clearfix">
+												<div class="pull-left _hm-lang-flag-828">
+													<img src="css/images/flags/norway-t.gif" height="16" class="pointer">
+												</div>
+												<div class="pull-left">
+													Norsk
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="clearfix">
+												<div class="pull-left _hm-lang-flag-828">
+													<img src="css/images/flags/rs-t.gif" height="16" class="pointer">
+												</div>
+												<div class="pull-left">
+													Русский
+												</div>
+											</div>	
+										</li>
+									</ul>
+									<ul class="_hm-lang-container-ul pull-left">
+										<li>
+											<div class="clearfix">
+												<div class="pull-left _hm-lang-flag-828">
+													<img src="css/images/flags/arabl.gif" height="16" class="pointer">
+												</div>
+												<div class="pull-left">
+													العربية
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="clearfix">
+												<div class="pull-left _hm-lang-flag-828">
+													<img src="css/images/flags/ch-t.gif" height="16" class="pointer">
+												</div>
+												<div class="pull-left">
+													正體中文
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="clearfix">
+												<div class="pull-left _hm-lang-flag-828">
+													<img src="css/images/flags/south_korea-t.gif" height="16" class="pointer">
+												</div>
+												<div class="pull-left">
+													한국어
+												</div>
+											</div>	
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<img src="css/images/flags/romania.png" height="18" class="_hm-lang-icon">
 					</div>
-					<div class="pull-right _hm-user-email-btn _hm-user-dim">
+					<div class="pull-right _hm-user-email-btn _hm-user-dim pointer">
+						<div class="_hm-email-user-overflow">
+							<div class="_hm-email_arrow-up"></div>
+							<div class="_hm-email-inner-overflow">
+								<div class="_hm-email-count-296">5 people visited your profile recently</div>
+								<div class="_hm-email-ppl-496">
+									<ul class="_hm-email-ul-941">
+										<li>
+											<div class="_hm-email-container-402">
+												<img src="css/images/img_f2.png" height="50">
+											</div>
+										</li>
+										<li>
+											<div class="_hm-email-container-402">
+												<img src="css/images/img_f3.png" height="50">
+											</div>
+										</li>
+										<li>
+											<div class="_hm-email-container-402">
+												<img src="css/images/ramona.jpg" height="50">
+											</div>
+										</li>
+										<li>
+											<div class="_hm-email-container-402">
+												<img src="css/images/img_f5.png" height="50">
+											</div>
+										</li>
+										<li>
+											<div class="_hm-email-container-402">
+												<img src="css/images/img_f6.png" height="50">
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="_hm-email-header-745"><i class="fa fa-envelope-o _margin-right5"></i>Messages (3)</div>
+								<div class="_hm-email-body-729">
+									<ul>
+										<li>
+											<div class="_hm-email-cpd-810 clearfix">
+											   <div class="pull-left pointer">
+											   		<img src="css/images/ramona.jpg" height="36" class="_hm-email-tnt-811">
+											   </div>
+										   		<div class="pull-left _hm-email-tnt-810">
+										   			<div>Costia Ramona Irina, Botosani Romania</div>
+										   			<div class="_hm-email-945">58 min ago</div>
+										   		</div>
+											</div>
+											<div class="_hm-email-cpd-811">
+												Ce fel de site este acesta? Nu imi aduc aminte sa fi dat accept.<br>
+												Hey de ce m-ai inscris pe acest site pentru ...
+											</div>
+										</li>
+										<li>
+											<div class="_hm-email-cpd-810 clearfix">
+											   <div class="pull-left pointer">
+											   		<img src="css/images/img_f4.png" height="36" class="_hm-email-tnt-811">
+											   </div>
+										   		<div class="pull-left _hm-email-tnt-810">
+										   			<div>Balciuc Elena, Berlin Germany</div>
+										   			<div class="_hm-email-945">6 hours ago</div>
+										   		</div>
+											</div>
+											<div class="_hm-email-cpd-811">
+How's it going? Are you considering any new opportunities based in Berlin?<br>
+I am currently working with a good digital agency, and they are looking for a number of senior angular front-end developers to come into their ...
+											</div>
+										</li>
+										<li>
+											<div class="_hm-email-cpd-810 clearfix">
+											   <div class="pull-left pointer">
+											   		<img src="css/images/img_f5.png" height="36" class="_hm-email-tnt-811">
+											   </div>
+										   		<div class="pull-left _hm-email-tnt-810">
+										   			<div>Spitelnicu Adrian, London Great Britain</div>
+										   			<div class="_hm-email-945">28 aug</div>
+										   		</div>
+											</div>
+											<div class="_hm-email-cpd-811">
+Hi Constantin <br><br>
+I hope you're well.<br>
+I'm currently recruiting for a senior AngularJS role with a leading company in ... 
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 						<i class="fa fa-envelope"></i>
 					</div>
-					<div class="pull-right _hm-user-plus-btn _hm-user-dim">
+					<div class="pull-right _hm-user-plus-btn _hm-user-dim pointer">
 						<div class="_hm-add-user-overflow">
 							<div class="_hm-arrow-up"></div>
-							<div class="_hm-add-inner-overflow"></div>
+							<div class="_hm-add-inner-overflow">
+								<div class="_hm-add-req-947">New requests</div>
+								<div class="_hm-add-new-973">
+									<ul>
+										<li>
+											<div class="_hm-add-cpd-810 clearfix">
+											   <div class="pull-left pointer">
+											   		<img src="css/images/img_f4.png" height="36" class="_hm-add-tnt-811">
+											   </div>
+										   		<div class="pull-left _hm-add-tnt-810">
+										   			<div>Balciuc Elena, Berlin Germany</div>
+										   			<div class="_hm-add-945">Request sent 6 hours ago</div>
+										   		</div>
+											</div>
+										</li>
+										<li>
+											<div class="_hm-add-cpd-810 clearfix">
+											   <div class="pull-left pointer">
+											   		<img src="css/images/img_f5.png" height="36" class="_hm-add-tnt-811">
+											   </div>
+										   		<div class="pull-left _hm-add-tnt-810">
+										   			<div>Spitelnicu Adrian, London Great Britain</div>
+										   			<div class="_hm-add-945">Request sent 2 days ago</div>
+										   		</div>
+											</div>
+										</li>
+										<li>
+											<div class="_hm-add-cpd-810 clearfix">
+											   <div class="pull-left pointer">
+											   		<img src="css/images/ramona.jpg" height="36" class="_hm-add-tnt-811">
+											   </div>
+										   		<div class="pull-left _hm-add-tnt-810">
+										   			<div>Costia Ramona Irina, Botosani Romania</div>
+										   			<div class="_hm-add-945">Request sent 2 days ago</div>
+										   		</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="_hm-add-948"><i class="fa fa-user _margin-right5"></i>People you may know</div>
+								<div>
+									<ul>
+										<li>
+											<div class="_hm-add-cpd-810 clearfix">
+											   <div class="pull-left pointer">
+											   		<img src="css/images/img_f4.png" height="36" class="_hm-add-tnt-811">
+											   </div>
+										   		<div class="pull-left _hm-add-tnt-810">
+										   			<div>Balciuc Elena, Berlin Germany</div>
+										   			<div class="_hm-add-945">Request sent 6 hours ago</div>
+										   		</div>
+										   		<div class="pull-right">
+													<i class="fa fa-plus-square _hm-add-contact-802"></i>
+										   		</div>
+											</div>
+										</li>
+										<li>
+											<div class="_hm-add-cpd-810 clearfix">
+											   <div class="pull-left pointer">
+											   		<img src="css/images/img_f5.png" height="36" class="_hm-add-tnt-811">
+											   </div>
+										   		<div class="pull-left _hm-add-tnt-810">
+										   			<div>Spitelnicu Adrian, London Great Britain</div>
+										   			<div class="_hm-add-945">Request sent 2 days ago</div>
+										   		</div>
+										   		<div class="pull-right">
+													<i class="fa fa-plus-square _hm-add-contact-802"></i>
+										   		</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="_hm-add-req-940">Advanced search</div>
+							</div>
 						</div>
 						<i class="fa fa-user-plus"></i>
 					</div>
