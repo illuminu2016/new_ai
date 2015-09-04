@@ -166,7 +166,7 @@
   border-bottom: 10px solid white;
   position: absolute;
   top: -5px;
-  left: 71%;
+  left: 46%;
   z-index: 3;
 }
 ._hm-bars_arrow-up {
@@ -283,19 +283,33 @@
   position: absolute;
   display: none;
   top: 27px;
-  width: 370px;
-  height: 300px;
+  width: 200px;
+  height: 63px;
   right: -89px;
   z-index: 1000;
   padding: 3px;
   ._hm-question-inner-overflow {
     background-color: white;
     height: 98%;
-    width: 364px;
+    width: 194px;
     position: absolute;
     border: 1px solid #3f3f3f;
     box-shadow: #292121 0px 0px 5px;
     z-index: 2;
+    ._hm-bars-301 {
+      font-size: 13px;
+      color: #333;
+    }
+    ._hm-bars-301 li i {
+      margin-right: 10px;
+    }
+    ._hm-bars-301 li:hover {
+        background-color: #f2f2f2;
+    }
+    ._hm-bars-301 li {
+      line-height: 30px;
+      padding-left: 10px;
+    }
   }
 }
 ._hm-bars-user-overflow {
@@ -395,7 +409,213 @@
     }
   }
 }
+._hm-container {
+  background: #e0e0e0;
+  ._hm-container-780 {
+    margin: 0 auto;
+    float: none;
+    ._hm-profile-interest-845 {
+      padding: 20px 0 25px 20px;
+      width: 90%;
+      ._hm-profile-txt-419 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+    }
+    ._hm-profile-interest-849 {
+      padding: 20px 0 25px 20px;
+      width: 100%;
+      ._hm-profile-contacts-901 {
+        ._hm-profile-contacts-98 {
+          width: 100%;
+        }
+        ._hm-profile-contacts-108 {
+          width: 100%;
+          margin: 10px;
+        }
+        ._hm-profile-contacts-101 {
+          width: 110px;
+          height: 110px;
+          border: 1px solid #d6dce3;
+          padding: 4px 4px;
+        }
+        ._hm-profile-contacts-102 {
+          width: 86%;
+          height: 110px;
+          border-right: 1px solid #d6dce3;
+          border-top: 1px solid #d6dce3;
+          border-bottom: 1px solid #d6dce3;
+          padding-left: 10px;
+          ._hm-profile-contacts-204 {
+            margin-top: 20px;
+            font-size: 14px;
+          }
+          ._hm-profile-contacts-207 {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #71767d;
+          }
+          ._hm-profile-contacts-209 {
+            font-size: 12px;
+            margin-top: 15px;
+            color: #71767d;
+          }
+        }
+      }
+      ._hm-profile-ctc-419 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+    }
+    ._hm-profile-interest-847 {
+      padding: 25px 20px 0 0;
+      color: #71767d;
+    }
+    ._hm-cnt-160 {
+      background: white;
+      width: 100%;
+      overflow: auto;
+      margin-top: 20px;
+      font-size: 13px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+    }
+    ._hm-cnt-161 {
+      background: white;
+      width: 100%;
+      overflow: auto;
+      margin-top: 20px;
+      font-size: 13px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+    }
+    ._hm-cnt-959 {
+      background: white;
+      font-size: 12px;
+      width: 100%;
+      overflow: auto;
+      padding: 20px 0;
+      margin-top: 20px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+      ._hm-profile-detail-831 {
+        padding: 20px 0 20px 40px;
+        ._hm-profile-detail-182 {
+          margin-top: 10px;
+        }
+      }
+      ._hm-profile-detail-830 {
+        width: 25%;
+        border-right: 1px solid #ccc;
+        padding: 20px 0 20px 40px;
+        ._hm-profile-detail-122 {
+          margin-top: 10px;
+        }
+        ._hm-profile-detail-121 {
+          margin: 10px 0 0 4px;
+        }
+      }
+    }
+    ._hm-cnt-956 {
+      width: 100%;
+      margin-top: 20px;
+      /*._hm-profile-status-631 {
+        width: 200px;
+        height: 165px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+        background: white;
+        ._hm-profile-photo-1034 {
+          margin-top: 15px;
+        }
+      }*/
+      ._hm-profile-status-632 {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+        height: 280px;
+        background: linear-gradient(#333, #000);
+        ._profile-gallery-content934 {
+          height: 100%;
+        }
+      }
+    }
+    ._hm-cnt-957 {
+      background: white;
+      width: 100%;
+      margin-top: 20px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+      ._hm-profile-842 {
+        width: 50%;
+        padding-right: 5%;
+        ._hm-profile-share-835 {
+          width: 90px;
+          background-color: #d6dce3;
+          color: #3f3f3f;
+          padding: 10px 22px;
+          margin: 22px;
+          border: 1px solid #c1c4cc;
+          font-size: 13px;
+        }
+        ._hm-profile-share-831 {
+          width: 75px;
+          background-color: #d6dce3;
+          color: #3f3f3f;
+          padding: 10px 22px;
+          margin: 22px;
+          border: 1px solid #c1c4cc;
+          font-size: 13px;
+        }
+      }
+      ._hm-profile-843 {
+        width: 50%;
+        height: 80px;
+        ._hm-profile-832 {
+          margin: 30px;
+          color: #3f3f3f;
+        }
+      }
+    }
+    ._hm-cnt-893 {
+      background: white; 
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+      margin: 20px 0;
+    }
+  }
+}
 ._margin-right5 {
   margin-right: 5px;
 }
+._margin-right9 {
+  margin-right: 9px;
+}
+.text-gray-dark {
+  color: #71767d;
+}
+._experience-tab-802 {
+    position: fixed;
+    background-color: red;
+    right: 2%;
+    height: 100px;
+    width: 300px;
+    bottom: 5%;
+    border-radius: 12px;
+    display: none;
+}
 
+/* Gallery */
+._profile-gallery-893 h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+   }
+._profile-gallery-content930 {
+    margin: auto;
+    padding: 20px;
+    margin: 45px auto;
+    width: 730px;
+}
+.slick-slide {
+  outline: none;
+}
