@@ -1,0 +1,12 @@
+/* line 1, ../sass/general_navbar.scss */
+._navbar409 {
+  background-color: black;
+}
+/* line 3, ../sass/general_navbar.scss */
+._navbar409 .navbar-nav > li > a {
+  color: #e7e7e7;
+}
+/* line 5, ../sass/general_navbar.scss */
+._navbar409 .navbar-nav > li > a:hover {
+  color: #e7e7e7;
+}
