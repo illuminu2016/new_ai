@@ -5,27 +5,27 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/stylesheets/ux_login.css">
 
         <title>AI Personality</title>
+
+        <script src="scripts/login.js"></script>
     </head>
 
     <body>
         <div class="header">
             <div class="header_uv420 clearfix col-lg-8 col-md-10 col-xs-12">
                  <!-- <div class="uv_427-logo pull-left"><img src="css/images/logo.png"></div> -->
-                <form class="form-inline pull-right hidden-xs">
-                    <div class="form-group">
+<!--                     <div class="form-group">
                         <label class="sr-only" for="exampleInputEmail3">Email address</label>
                         <input type="email" class="form-control uv_30" id="exampleInputEmail3" placeholder="Email">
                     </div>
                     <div class="form-group">
                         <label class="sr-only" for="exampleInputPassword3">Password</label>
                         <input type="password" class="form-control uv_30" id="exampleInputPassword3" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn uv_30 btn-sign">Sign in</button>
-                </form>
+                    </div> -->
+                    <button class="btn uv_30 pull-right" onclick="logInApp()">Sign In</button>
 <!--                 <div class="pull-right _vw-logo">Online Personality</div>  -->
             </div>
         </div>
@@ -36,8 +36,7 @@
                     <img src="css/images/ai-logo.jpg" class="hidden"/>
                 </div>
                 <div class="vw-636-registration" align="center">
-                    <div class="col-lg-10 col-md-11 col-xs-12 clearfix">
-                        <div class="pull-right uv_789-inner-container">
+                   <div class="uv_799-inner-container">
                          <div class="vw-637-info h4">
                             Register new account
                         </div>
@@ -80,30 +79,29 @@
                                 <button type="button" class="btn btn-primary"><a href="login_attempt.html">Sign Up</a>
                                 </button>
                             </div>
+                        </div>
+                    </div>   
+                    <div class="uv_789-inner-container">
+                         <div class="vw-637-info h4">
+                            Log In into your account
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="vw-registration-container">
+                            <div class="vw-701-btn">
+                                <button type="button" class="btn btn-primary"><a href="profile.html">LOG IN</a>
+                                </button>
                             </div>
                         </div>
-                        <div class="pull-right _uv-terminal">
-                                #include &lt;signal.h&gt;<br>
-                                #include &lt;stdio.h &gt;<br>
-                                #include &lt;string.h &gt;<br>
-                                #include &lt;unistd.h &gt;<br><br>                         
-                                static int got_signal = 0;<br><br>          
-                                static void hdl (int sig)<br>
-                                {   <br>
-                                    &nbsp;&nbsp;got_signal = 1;<br>
-                                }<br>
-                                 <br>
-                                int main (int argc, char *argv[])<br>
-                                {   <br>
-                                    &nbsp;&nbsp;sigset_t mask;<br>
-                                    &nbsp;&nbsp;sigset_t orig_mask;<br>
-                                    &nbsp;&nbsp;struct sigaction act;<br>
-                                    &nbsp;&nbsp;sigset_t mask;<br>
-                                    &nbsp;&nbsp;sigset_t orig_mask;<br>
-                                    &nbsp;&nbsp;struct sigaction act;<br>
+                        <div class="vw-new-account">
+                            <span class="vw-account-text-894">Need an account?</span> <span class="vw-account-text-896" onclick="singUpApp()">Sign Up</div>
                         </div>
-                    </div>
-                </div>
+                    </div>                
+                </div> <!-- registration end-->
             </div>
             <div class="vw-container__inner um_container_203 col-xs-12 visible-xs">
                 <div class="h3 _um_log_768">Log In</div>
@@ -217,8 +215,7 @@
     </body>
 
 </html>
-
+<script src="scripts/jquery.min.js"></script>
 <script src="help/worldmap/js/d3.min.js"></script>
 <script src="help/worldmap/js/topojson.v1.min.js"></script>
 <script src="help/worldmap/js/main.js"></script>
-

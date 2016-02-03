@@ -66,6 +66,32 @@
     float: none;
     padding: 8px 15px;
     font-size: 13px;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    ._hm-nav-relative {
+      position: relative;
+    }
+    ._hm-nav_arrow-profile, ._hm-nav_arrow-contacts, ._hm-nav_arrow-home {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid #e0e0e0;
+      position: absolute;
+      top: 16px;
+      z-index: 3;
+    }
+    ._hm-nav_arrow-profile {
+      left: 37%;
+    }
+    ._hm-nav_arrow-contacts {
+      left: 43%;
+    }
+    ._hm-nav_arrow-home {
+      left: 35%;
+    }
     .list-inline > li {
       margin-right: 30px;
     }
@@ -92,9 +118,9 @@
     box-shadow: #292121 0px 0px 5px;
     ._hm-add-948 {
       height: 30px;
-      background-color: #333;
+      border-bottom: 1px solid #ccc;
       padding: 8px 10px;
-      color: rgb(214, 220, 227);
+      color: #333;
     }
     ._hm-add-req-947 {
       border-bottom: 1px solid #ccc;
@@ -102,10 +128,13 @@
       padding: 7px 10px;
     }
     ._hm-add-req-940 {
-      color: #0066ff;
+      color: #333;
       height: 30px;
       padding: 7px 10px;
-      text-decoration: underline;
+      text-decoration: none;
+    }
+    ._hm-add-req-940:hover {
+      color: #0066ff;
     }
     ._hm-add-cpd-810 {
       border-bottom: 1px solid #ccc;
@@ -182,11 +211,11 @@
 }
 ._hm-email-user-overflow {
   position: absolute;
-  top: 27px;
+  top: 38px;
   display: none;
   width: 370px;
-  height: 444px;
-  right: -176px;
+  height: 517px;
+  right: -155px;
   z-index: 1000;
   padding: 3px;
   ._hm-email-inner-overflow {
@@ -198,6 +227,10 @@
     box-shadow: #292121 0px 0px 5px;
     z-index: 2;
     ._hm-email-body-729 {
+      ul {
+        list-style-type: none;
+        padding: 0px;
+      }
       ._hm-email-cpd-811 {
         color: #333;
         font-size: 12px;
@@ -227,6 +260,7 @@
       padding-bottom: 5px;
       ._hm-email-ul-941 {
          margin: 0 10px;
+        padding: 0px;
          ._hm-email-container-402 {
             padding: 0 2px;
          }
@@ -237,7 +271,9 @@
     }
     ._hm-email-header-745 {
       height: 30px;
-      background-color: #333;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      color: #333;
       font-size: 13px;
       padding: 8px 10px;
     }
@@ -263,7 +299,7 @@
     color: #333;
     ._hm-lang-selector-944 {
       font-size: 15px;
-      color: #0066ff;
+      color: #333;
       padding: 10px 10px 10px 20px;
     }
     ._hm-lang-container-ul {
@@ -348,67 +384,6 @@
     }
   }
 }
-._hm-search-user-overflow {
-  position: absolute;
-  display: none;
-  top: 38px;
-  width: 100%;
-  height: 480px;
-  right: -24.2%;
-  z-index: 1000;
-  padding: 3px;
-  ._hm-search-inner-overflow {
-    background-color: white;
-    height: 98%;
-    width: 100%;
-    position: absolute;
-    border-left: 1px solid #3f3f3f;
-    border-right: 1px solid #3f3f3f;
-    border-bottom: 1px solid #3f3f3f;
-    border-radius: 4px;
-    z-index: 2;
-    box-shadow: #292121 0px 0px 5px;
-    ._hm-recent-search-890 {
-      height: 25px;
-      background-color: #ccccff;
-      padding: 5px;
-      font-size: 13px;
-      ._hm-ftsize11 {
-        font-size: 11px;
-      }
-      ._hm-search-clear-435 {
-          margin-left: 2px;
-          font-size: 11px;
-      }
-    }
-    ._hm-search-list {
-      height: 367px;
-      ._ul-search-976 {
-        ._hm-search-container:hover {
-            background-color: #f2f2f2;
-          }
-        ._hm-search-container {
-          margin: 5px 0 0 5px;
-          ._hm-search-652 {
-            width: 79%;
-            margin-left: 7px;
-            font-size: 12px;
-            ._hm-search-860 {
-              margin-top: 5px;
-            }
-            ._hm-search-676 {
-              ._hm-search-560 {
-                margin: 0 5px 0 5px;
-              }
-              font-size: 11px;
-              margin-top: 3px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
 ._hm-container {
   background: #e0e0e0;
   ._hm-container-780 {
@@ -416,7 +391,10 @@
     float: none;
     ._hm-profile-interest-845 {
       padding: 20px 0 25px 20px;
-      width: 90%;
+      width: 98%;
+      text-align: justify;
+      font-size: 12px;
+      line-height: 17px;
       ._hm-profile-txt-419 {
         font-size: 16px;
         font-weight: 500;
@@ -428,7 +406,7 @@
       width: 100%;
       ._hm-profile-contacts-901 {
         ._hm-profile-contacts-98 {
-          width: 100%;
+          width: 33%;
         }
         ._hm-profile-contacts-108 {
           width: 100%;
@@ -441,12 +419,12 @@
           padding: 4px 4px;
         }
         ._hm-profile-contacts-102 {
-          width: 86%;
+          width: 52%;
           height: 110px;
           border-right: 1px solid #d6dce3;
           border-top: 1px solid #d6dce3;
           border-bottom: 1px solid #d6dce3;
-          padding-left: 10px;
+          padding: 0 10px;
           ._hm-profile-contacts-204 {
             margin-top: 20px;
             font-size: 14px;
@@ -472,6 +450,90 @@
     ._hm-profile-interest-847 {
       padding: 25px 20px 0 0;
       color: #71767d;
+      position: absolute;
+      right: 20px;
+    }
+    ._hm-profile-interest-847:hover {
+      color: #0066ff;
+    }
+    ._home-cnt-779 {
+      background: white;
+      width: 100%;
+      overflow: auto;
+      margin-top: 20px;
+      height: 70px;
+      font-size: 13px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+      position: relative;
+      ._hm-status-569 {
+        text-align: center;
+        font-size: 15px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #286090;
+        cursor: pointer;
+      }
+      ._hm-status-888 {
+        width: 50%;
+        height: 100%; 
+      }
+      ._hm-status-231 {
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid #e0e0e0;
+      }
+    }
+    ._home-cnt-780 {
+      background: white;
+      width: 70%;
+      overflow: auto;
+      margin-top: 15px;
+      font-size: 13px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+      position: relative;
+      ._pulse-cnt-888 {
+        width: 85%;
+        padding: 15px 20px 20px 0;
+        ._pulse-cnt-109 {
+          color: #71767d;
+          margin: 5px 0;
+        }
+        ._pulse-input-821 {
+          border: 1px solid #d6dce3;
+          margin: 2px 12px;
+          padding: 5px;
+          width: 100%;
+          color: #71767d;
+        }
+        ._pulse-cnt-129 {
+          margin-bottom: 20px;
+        }
+      }
+      ._pulse-feed-img-710 {
+        margin: 20px 20px 20px 40px;
+      }
+      ._home-question-header-935 {
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 16px;
+        padding: 18px 30px;
+      }
+      ._home-question-body-935 {
+        margin-top: 15px;
+        padding: 0 30px 20px 30px;
+        ._hm-qst-753 {
+          width: 50%;
+          label {
+            text-align: justify;
+          }
+        }
+        ._hm-qst-903 {
+          padding-left: 30px;
+        }
+      }
+      ._hm-radio-btn-934 {
+        margin-top: 0;
+      }
     }
     ._hm-cnt-160 {
       background: white;
@@ -480,6 +542,7 @@
       margin-top: 20px;
       font-size: 13px;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+      position: relative;
     }
     ._hm-cnt-161 {
       background: white;
@@ -504,7 +567,7 @@
         }
       }
       ._hm-profile-detail-830 {
-        width: 25%;
+        width: 30%;
         border-right: 1px solid #ccc;
         padding: 20px 0 20px 40px;
         ._hm-profile-detail-122 {
@@ -531,9 +594,153 @@
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
         height: 280px;
         background: linear-gradient(#333, #000);
+        ._profile-pic-943 {
+          width: 20%;
+          img {
+            margin-top: 6%;
+          }
+        }
         ._profile-gallery-content934 {
+          width: 100%;
           height: 100%;
         }
+      }
+    }
+    ._hm-cnt-385 {
+      background: white;
+      width: 100%;
+      margin-top: 20px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+    }
+    ._pulse-cnt-385 {
+      background: white;
+      width: 100%;
+      position: relative;
+      ._pulse-cnt-185 {
+        position: absolute;
+        right: 13%;
+        top: 24px;
+        ._pulse-txt-icon {
+          font-size: 16px;
+          margin: 5px;
+          color: #c1c4cc;
+        }
+      }
+    }
+    ._hm-cnt-844 {
+      margin-top: 19px;
+    }
+    .form-group-674 {
+      padding: 20px 20px 20px 40px;
+      width: 30%;
+    }
+    .form-group-pulse-674 {
+      padding: 20px 20px 20px 5%;
+      width: 93%;
+    }
+    ._contact-input-834 {
+      padding: 15px;
+      font-size: 13px;
+      width: 100%;
+      border: 1px solid #d6dce3;
+      height: 90px;
+      resize: none;
+    }
+    ._contact-input-1834 {
+      padding: 8px;
+      font-size: 13px;
+      width: 100%;
+      border: 1px solid #d6dce3;
+      height: 33px;
+      resize: none;
+    }
+    ._hm-cnt-157 {
+      background: white;
+      width: 100%;
+      margin-top: 10px;
+      padding: 40px 0;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+    }
+    ._hm-cnt-237 {
+      width: 70%;
+    }
+    ._hm-cnt-2379 {
+      width: 28%;
+      height: 276px;
+      background-color: white;
+      margin-top: 20px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+    }
+    ._hm-cnt-2370 {
+      width: 28%;
+      height: 140px;
+      background-color: white;
+      margin-top: 20px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+    }
+    ._hm-cnt-776 {
+      background: white;
+      width: 100%;
+      margin-top: 20px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.1) inset;
+      ._hm-cnt-902 {
+        width: 78%;
+      }
+      ._pulse-cnt-902 {
+        width: 85%;
+      }
+      ._hm-status-quo-19 {
+        height: 40px;
+        border-bottom: 1px solid #e0e0e0;
+        margin-left: 15px;
+      }
+      ._hm-status-quo-119 {
+        height: 165px;
+        border-bottom: 1px solid #e0e0e0;
+        margin-left: 15px;
+      }
+      ._hm-status-quo-578, ._hm-status-quo-290 {
+        height: 50px;
+        border-bottom: 1px solid #e0e0e0;
+        margin-left: 15px;
+      }
+      ._hm-status-quo-893 {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-size: 13px;
+      }
+      ._hm-status-quo-294 {
+        height: 35px;
+        ._hm-qst-378 {
+          width: 50%;
+          height: 100%;
+          padding: 16px 0;
+          font-size: 13px;
+          text-align: center;
+          color: #286090;
+        }
+      }
+      ._hm-cnt-903 {
+        width: 22%;
+        height: 186px;
+        border-right: 1px solid #e0e0e0;
+        ._hm-profile-pic-893 {
+          margin-top: 40px;
+          border-radius: 100px;
+        }
+      }
+      ._hm-cnt-1903 {
+        width: 22%;
+      }
+      ._pulse-cnt-1903 {
+        text-align: right;
+        width: 15%;
+      }
+      ._hm-profile-pic-1893 {
+        margin: 40px 0;
+        border-radius: 100px;
       }
     }
     ._hm-cnt-957 {
@@ -546,21 +753,16 @@
         padding-right: 5%;
         ._hm-profile-share-835 {
           width: 90px;
-          background-color: #d6dce3;
-          color: #3f3f3f;
-          padding: 10px 22px;
+          padding: 8px 22px;
           margin: 22px;
-          border: 1px solid #c1c4cc;
-          font-size: 13px;
+          font-size: 12px;
         }
         ._hm-profile-share-831 {
           width: 75px;
-          background-color: #d6dce3;
-          color: #3f3f3f;
-          padding: 10px 22px;
+          color: #fff;
+          padding: 8px 22px;
           margin: 22px;
-          border: 1px solid #c1c4cc;
-          font-size: 13px;
+          font-size: 12px;
         }
       }
       ._hm-profile-843 {
@@ -618,4 +820,10 @@
 }
 .slick-slide {
   outline: none;
+}
+
+@media (max-width: 820px) {
+  ._hm-profile-contacts-901 {
+    margin-left: -20px;
+  }
 }

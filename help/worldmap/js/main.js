@@ -92,6 +92,7 @@ function draw(topo) {
         });
 
     addpoint("27.5902780", "47.1569440", "" );
+
     //EXAMPLE: adding some capitals from external CSV file
     /*                            d3.csv("help/worldmap/data/country-capitals.csv", function(err, capitals) {
 

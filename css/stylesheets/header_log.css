@@ -32,22 +32,29 @@
   top: 0;
 }
 /* line 28, ../sass/header_log.scss */
-.header .form-inline {
-  margin-top: 18px;
-}
-/* line 30, ../sass/header_log.scss */
-.header .form-inline .uv_30 {
+.header .uv_30 {
   height: 30px;
+  margin-top: 18px;
+  color: #fff;
+  background-color: #286090;
+  border-color: #2e6da4;
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  border-radius: 4px;
 }
-/* line 33, ../sass/header_log.scss */
-.header .form-inline .btn-sign {
+/* line 42, ../sass/header_log.scss */
+.header .btn-sign {
   background: #2ca02c;
   border: none;
   color: white;
   box-shadow: 0 1px 1px black;
   padding: 4px 12px;
 }
-/* line 40, ../sass/header_log.scss */
-.header .form-inline .btn:hover {
+/* line 49, ../sass/header_log.scss */
+.header .btn:hover {
   color: white;
 }
