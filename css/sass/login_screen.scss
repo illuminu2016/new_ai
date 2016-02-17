@@ -1,6 +1,9 @@
 .vw_container {
   width: 100%;
   background-color: white;
+  position: relative;
+  background-image: url('../../css/images/social.jpg');
+  background-size: cover;
   ._uv-terminal {
     color:#2ca02c;
     width: 39%;
@@ -13,7 +16,7 @@
   }
   .vw-container__inner {
     margin: 0 auto;
-    height:600px;
+    height:650px;
     float: none;
     position: static;
     .vw-635-logo {
@@ -37,14 +40,14 @@
       display: none;
       width: 385px;
       margin: 85px 0 0 50px;
-      background-color: rgba(204, 204, 204, 0.7);
+      background-color: rgba(204, 204, 204, 0.8);
       padding: 10px 30px 30px 30px;
     }
     .uv_799-inner-container {
       display: none;
       width: 385px;
       margin: 30px 0 0 50px;
-      background-color: rgba(204, 204, 204, 0.7);
+      background-color: rgba(204, 204, 204, 0.8);
       padding: 10px 30px 30px 30px;
     }
     .form-group {
