@@ -13,9 +13,9 @@
 
 /* line 1, ../sass/search_typeahead.scss */
 ._hm-user-typeahead-container89 {
-  width: 55%;
   display: block;
   float: left;
+  padding: 0px;
 }
 /* line 5, ../sass/search_typeahead.scss */
 ._hm-user-typeahead-container89 ._hm-user-typeahead {
@@ -1114,4 +1114,15 @@
 /* line 5, ../sass/screen.scss */
 .navbar-right .dropdown-menu {
   right: -1px;
+}
+
+/* line 8, ../sass/screen.scss */
+.page-dim {
+  background-color: #e7e7e7;
+}
+
+/* line 11, ../sass/screen.scss */
+.container-dim99 {
+  height: 1000px;
+  background-color: white;
 }
