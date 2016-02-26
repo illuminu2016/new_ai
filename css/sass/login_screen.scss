@@ -36,20 +36,42 @@
     right: 0;
     top: 0;
     background-color: rgba(204, 204, 204, 0.5);
+    .fb-895 {
+      border-left: 1px solid white;
+      height: 350px;
+      padding: 120px 0 0 20px;
+      margin-top: 15px;
+    }
+    .fb-container-95 {
+      background-color: #286090;
+      padding: 10px 30px;
+      color: white;
+      margin-top: 10px;
+    }
     .uv_789-inner-container {
       display: none;
       width: 500px;
       margin: 115px 0 0 50px;
-      //background-color: rgba(204, 204, 204, 0.8);
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 10px 30px 30px 30px;
+      .fb-893 {
+        border-left: 1px solid white;
+        height: 240px;
+        padding: 85px 0 0 20px;
+        margin-top: 15px;
+      }
+      .fb-container-90 {
+        background-color: #286090;
+        padding: 10px 30px;
+        color: white;
+        margin-top: 10px;
+      }
     }
     .uv_799-inner-container {
       display: none;
       width: 500px;
       margin: 75px 0 0 50px;
-      background-color: black;
-/*      background-color: rgba(204, 204, 204, 0.8);*/
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 10px 30px 30px 30px;
     }
     .form-group {
@@ -97,12 +119,8 @@
     font-size: 15px;
     .vw-account-text-894 {
       font-weight: 500;
-      color: #ccc;
-    }
-    .vw-account-text-896 {
+      font-size: 14px;
       color: #c90000;
-/*      color: #286090;*/
-      cursor: pointer;
     }
   }
   .vw-registration-container {
@@ -121,7 +139,7 @@
       padding-top: 50px;
       color: #ccc;
 /*      color: #71767d;*/
-      font-size: 11px;
+      font-size: 12px;
       line-height: 14px;
     }
     .vw-701-btn {
@@ -204,4 +222,7 @@
 }
 .margintop45 {
   margin-top: 45px;
+}
+.text-gray {
+  color: #ccc;
 }
