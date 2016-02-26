@@ -35,6 +35,20 @@
   top: 0;
 }
 /* line 28, ../sass/header_log.scss */
+.header .uv_64 {
+  height: 30px;
+  margin: 18px 20px 0 0;
+  color: #fff;
+  background: #70a34b;
+  display: inline-block;
+  padding: 5px 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  border-radius: 4px;
+}
+/* line 41, ../sass/header_log.scss */
 .header .uv_30 {
   height: 30px;
   margin-top: 18px;
@@ -50,7 +64,7 @@
   text-align: center;
   border-radius: 4px;
 }
-/* line 43, ../sass/header_log.scss */
+/* line 56, ../sass/header_log.scss */
 .header .btn-sign {
   background: #2ca02c;
   border: none;

@@ -45,121 +45,143 @@
   background-color: rgba(204, 204, 204, 0.5);
 }
 /* line 39, ../sass/login_screen.scss */
+.vw_container .vw-636-registration .fb-895 {
+  border-left: 1px solid white;
+  height: 350px;
+  padding: 120px 0 0 20px;
+  margin-top: 15px;
+}
+/* line 45, ../sass/login_screen.scss */
+.vw_container .vw-636-registration .fb-container-95 {
+  background-color: #286090;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 10px;
+}
+/* line 51, ../sass/login_screen.scss */
 .vw_container .vw-636-registration .uv_789-inner-container {
   display: none;
   width: 500px;
   margin: 115px 0 0 50px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 30px 30px 30px;
 }
-/* line 47, ../sass/login_screen.scss */
+/* line 57, ../sass/login_screen.scss */
+.vw_container .vw-636-registration .uv_789-inner-container .fb-893 {
+  border-left: 1px solid white;
+  height: 240px;
+  padding: 85px 0 0 20px;
+  margin-top: 15px;
+}
+/* line 63, ../sass/login_screen.scss */
+.vw_container .vw-636-registration .uv_789-inner-container .fb-container-90 {
+  background-color: #286090;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 10px;
+}
+/* line 70, ../sass/login_screen.scss */
 .vw_container .vw-636-registration .uv_799-inner-container {
   display: none;
   width: 500px;
   margin: 75px 0 0 50px;
-  background-color: black;
-  /*      background-color: rgba(204, 204, 204, 0.8);*/
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 30px 30px 30px;
 }
-/* line 56, ../sass/login_screen.scss */
+/* line 78, ../sass/login_screen.scss */
 .vw_container .vw-636-registration .form-group input {
   font-weight: bold;
   font-size: 13px;
 }
-/* line 61, ../sass/login_screen.scss */
+/* line 83, ../sass/login_screen.scss */
 .vw_container .vw-636-registration ::-webkit-input-placeholder {
   color: #5e5e5e;
 }
-/* line 64, ../sass/login_screen.scss */
+/* line 86, ../sass/login_screen.scss */
 .vw_container .vw-636-registration :-moz-placeholder {
   /* Firefox 18- */
   color: #5e5e5e;
 }
-/* line 67, ../sass/login_screen.scss */
+/* line 89, ../sass/login_screen.scss */
 .vw_container .vw-636-registration ::-moz-placeholder {
   /* Firefox 19+ */
   color: #5e5e5e;
 }
-/* line 70, ../sass/login_screen.scss */
+/* line 92, ../sass/login_screen.scss */
 .vw_container .vw-636-registration :-ms-input-placeholder {
   color: #5e5e5e;
 }
-/* line 73, ../sass/login_screen.scss */
+/* line 95, ../sass/login_screen.scss */
 .vw_container .vw-636-registration .vw-637-info {
   color: #ccc;
   margin-bottom: 25px;
 }
-/* line 78, ../sass/login_screen.scss */
+/* line 100, ../sass/login_screen.scss */
 .vw_container ._um-636-registration {
   width: 90%;
 }
-/* line 81, ../sass/login_screen.scss */
+/* line 103, ../sass/login_screen.scss */
 .vw_container .vw-638__year {
   width: 32%;
 }
-/* line 84, ../sass/login_screen.scss */
+/* line 106, ../sass/login_screen.scss */
 .vw_container .um-638__year {
   width: 30%;
 }
-/* line 87, ../sass/login_screen.scss */
+/* line 109, ../sass/login_screen.scss */
 .vw_container .vw-638__month {
   width: 32%;
   margin: 0 5px;
 }
-/* line 91, ../sass/login_screen.scss */
+/* line 113, ../sass/login_screen.scss */
 .vw_container .vw-638__day {
   width: 32%;
 }
-/* line 94, ../sass/login_screen.scss */
+/* line 116, ../sass/login_screen.scss */
 .vw_container .vw-new-account {
   margin-top: 25px;
   text-align: left;
   font-size: 15px;
 }
-/* line 98, ../sass/login_screen.scss */
+/* line 120, ../sass/login_screen.scss */
 .vw_container .vw-new-account .vw-account-text-894 {
   font-weight: 500;
-  color: #ccc;
-}
-/* line 102, ../sass/login_screen.scss */
-.vw_container .vw-new-account .vw-account-text-896 {
+  font-size: 14px;
   color: #c90000;
-  /*      color: #286090;*/
-  cursor: pointer;
 }
-/* line 109, ../sass/login_screen.scss */
+/* line 127, ../sass/login_screen.scss */
 .vw_container .vw-registration-container select {
   font-size: 13px;
 }
-/* line 112, ../sass/login_screen.scss */
+/* line 130, ../sass/login_screen.scss */
 .vw_container .vw-registration-container .form-control {
   padding: 6px 5px;
 }
-/* line 115, ../sass/login_screen.scss */
+/* line 133, ../sass/login_screen.scss */
 .vw_container .vw-registration-container .vw-576 {
   margin: 20px 0 10px 0;
   font-size: 14px;
   color: #ccc;
 }
-/* line 120, ../sass/login_screen.scss */
+/* line 138, ../sass/login_screen.scss */
 .vw_container .vw-registration-container .vw_terms_info {
   padding-top: 50px;
   color: #ccc;
   /*      color: #71767d;*/
-  font-size: 11px;
+  font-size: 12px;
   line-height: 14px;
 }
-/* line 127, ../sass/login_screen.scss */
+/* line 145, ../sass/login_screen.scss */
 .vw_container .vw-registration-container .vw-701-btn {
   width: 100%;
   color: #ccc;
 }
-/* line 130, ../sass/login_screen.scss */
+/* line 148, ../sass/login_screen.scss */
 .vw_container .vw-registration-container .vw-701-btn a {
   color: black;
   text-decoration: none;
 }
-/* line 134, ../sass/login_screen.scss */
+/* line 152, ../sass/login_screen.scss */
 .vw_container .vw-registration-container .vw-701-btn .btn {
   width: 100%;
   margin-top: 25px;
@@ -168,30 +190,30 @@
   border: none;
 }
 
-/* line 144, ../sass/login_screen.scss */
+/* line 162, ../sass/login_screen.scss */
 ._uv_login-attempt {
   position: absolute;
   height: 90%;
 }
-/* line 147, ../sass/login_screen.scss */
+/* line 165, ../sass/login_screen.scss */
 ._uv_login-attempt .uv_809-label {
   color: #8B0000;
   font-size: 14px;
   padding: 2px;
 }
-/* line 152, ../sass/login_screen.scss */
+/* line 170, ../sass/login_screen.scss */
 ._uv_login-attempt ._at-798-container {
   width: 455px;
   background-color: rgba(204, 204, 204, 0.7);
   padding: 40px;
   margin-top: 120px;
 }
-/* line 157, ../sass/login_screen.scss */
+/* line 175, ../sass/login_screen.scss */
 ._uv_login-attempt ._at-798-container .-at_not-member893 {
   margin-top: 17px;
   color: #5e5e5e;
 }
-/* line 163, ../sass/login_screen.scss */
+/* line 181, ../sass/login_screen.scss */
 ._uv_login-attempt .vw-709-btn .btn {
   width: 100%;
   margin-top: 25px;
@@ -199,32 +221,32 @@
   box-shadow: 0 2px 2px black;
   border: none;
 }
-/* line 172, ../sass/login_screen.scss */
+/* line 190, ../sass/login_screen.scss */
 ._uv_login-attempt .form-group ::-webkit-input-placeholder {
   color: #5e5e5e;
 }
-/* line 175, ../sass/login_screen.scss */
+/* line 193, ../sass/login_screen.scss */
 ._uv_login-attempt .form-group :-moz-placeholder {
   /* Firefox 18- */
   color: #5e5e5e;
 }
-/* line 178, ../sass/login_screen.scss */
+/* line 196, ../sass/login_screen.scss */
 ._uv_login-attempt .form-group ::-moz-placeholder {
   /* Firefox 19+ */
   color: #5e5e5e;
 }
-/* line 181, ../sass/login_screen.scss */
+/* line 199, ../sass/login_screen.scss */
 ._uv_login-attempt .form-group :-ms-input-placeholder {
   color: #5e5e5e;
 }
 
-/* line 186, ../sass/login_screen.scss */
+/* line 204, ../sass/login_screen.scss */
 .uw_attempt-99 {
   position: absolute;
   width: 100%;
   z-index: 5;
 }
-/* line 190, ../sass/login_screen.scss */
+/* line 208, ../sass/login_screen.scss */
 .uw_attempt-99 .uw_attempt-100 {
   width: 700px;
   background-color: rgba(255, 0, 0, 0.7);
@@ -232,17 +254,22 @@
   margin: 50px auto;
   color: white;
 }
-/* line 196, ../sass/login_screen.scss */
+/* line 214, ../sass/login_screen.scss */
 .uw_attempt-99 .uw_attempt-100 ._uw-attempt-89 {
   margin-top: 3px;
 }
-/* line 199, ../sass/login_screen.scss */
+/* line 217, ../sass/login_screen.scss */
 .uw_attempt-99 .uw_attempt-100 .uw_attempt-756 {
   margin-right: 10px;
   font-size: 20px;
 }
 
-/* line 205, ../sass/login_screen.scss */
+/* line 223, ../sass/login_screen.scss */
 .margintop45 {
   margin-top: 45px;
+}
+
+/* line 226, ../sass/login_screen.scss */
+.text-gray {
+  color: #ccc;
 }
