@@ -1,18 +1,83 @@
 /* line 1, ../sass/mobile.scss */
 .um_container_203 {
-  padding-top: 180px;
-  width: 90%;
+  padding: 120px 0;
+  width: 100%;
+  background: url("../../css/images/social_network_m.jpg") no-repeat;
+  background-size: cover;
 }
-/* line 4, ../sass/mobile.scss */
+/* line 6, ../sass/mobile.scss */
+.um_container_203 .um_container_205 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 20px 20px 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+/* line 11, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .um-mbottom-893 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/* line 16, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .um-registration-container .um-638__year {
+  width: 32%;
+}
+/* line 19, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .um-registration-container .um-638__month {
+  width: 32%;
+  margin: 0 5px;
+}
+/* line 23, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .um-registration-container .um-638__day {
+  width: 32%;
+}
+/* line 27, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .fb-container-77 {
+  background-color: #286090;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+/* line 36, ../sass/mobile.scss */
+.um_container_203 .um_signUp_892 {
+  display: none;
+  height: 320px;
+}
+/* line 40, ../sass/mobile.scss */
 .um_container_203 .um_btn_432 {
-  background: black;
+  background: #ccc;
   box-shadow: 0 2px 2px black;
   border: none;
-  color: white;
+  color: black;
   width: 100%;
+  font-size: 14px;
 }
 
-/* line 12, ../sass/mobile.scss */
+/* line 49, ../sass/mobile.scss */
 ._um_log_768 {
-  margin: 0 0 15px 5px;
+  margin: 0 0 25px 5px;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* line 55, ../sass/mobile.scss */
+.um-iconic-34 {
+  background-color: black;
+  height: 55px;
+  color: white;
+}
+/* line 59, ../sass/mobile.scss */
+.um-iconic-34 .um-iconic-inner-894 {
+  width: 70%;
+  margin: 17px auto 0 auto;
+}
+/* line 62, ../sass/mobile.scss */
+.um-iconic-34 .um-iconic-inner-894 .um-icon-size-40 {
+  font-size: 40px;
+}
+/* line 65, ../sass/mobile.scss */
+.um-iconic-34 .um-iconic-inner-894 .um-icon-margin932 {
+  margin: 0 0 0 55px;
 }

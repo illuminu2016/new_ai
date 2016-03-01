@@ -4,39 +4,46 @@
   background: linear-gradient(#286090, black);
 }
 /* line 5, ../sass/footer.scss */
-.uv_footer .uv_footer_inner {
+.uv_footer .uv-footer-890 {
   margin: 0 auto;
+}
+/* line 8, ../sass/footer.scss */
+.uv_footer .uv-footer-899 {
+  margin: 600px auto 0 auto;
+}
+/* line 11, ../sass/footer.scss */
+.uv_footer .uv_footer_inner {
   float: none;
   padding-top: 30px;
 }
-/* line 10, ../sass/footer.scss */
+/* line 15, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .um_footer_social img, .uv_footer .uv_footer_inner .uv_footer_social img {
   padding: 5px;
 }
-/* line 14, ../sass/footer.scss */
+/* line 19, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_social {
   margin-top: 30px;
   width: 625px;
 }
-/* line 18, ../sass/footer.scss */
+/* line 23, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .um_footer_social {
   width: 300px;
 }
-/* line 21, ../sass/footer.scss */
+/* line 26, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_456 {
   width: 625px;
 }
-/* line 23, ../sass/footer.scss */
+/* line 28, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_456 ._ux_478 {
   height: 25px;
   padding: 0 12px;
 }
-/* line 27, ../sass/footer.scss */
+/* line 32, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_456 ._ux_479 {
   height: 25px;
   padding: 2px 12px;
 }
-/* line 31, ../sass/footer.scss */
+/* line 36, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_456 .uv_footer_632 {
   width: 100px;
   color: #fff;
@@ -44,56 +51,56 @@
   font-size: 13px;
 }
 
-/* line 41, ../sass/footer.scss */
+/* line 46, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal {
   margin: 0 auto;
   float: none;
 }
-/* line 44, ../sass/footer.scss */
+/* line 49, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .uv_sub_345 {
   margin: 0 auto;
   float: none;
   width: 600px;
 }
-/* line 49, ../sass/footer.scss */
+/* line 54, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .um_sub_345 {
   margin: 0 auto;
   float: none;
   width: 300px;
 }
-/* line 54, ../sass/footer.scss */
+/* line 59, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .uv_sub_copyright {
   font-size: 12px;
   color: #f2f2f2;
   margin: 5px 20px 0 0;
 }
-/* line 59, ../sass/footer.scss */
+/* line 64, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .list-inline {
   float: left;
   cursor: pointer;
 }
-/* line 62, ../sass/footer.scss */
+/* line 67, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .list-inline > li {
   font-size: 12px;
   color: #f2f2f2;
   font-weight: normal;
 }
-/* line 67, ../sass/footer.scss */
+/* line 72, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .list-inline ._ufx878 {
   padding: 0;
 }
-/* line 70, ../sass/footer.scss */
+/* line 75, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .list-inline ._ufx878:hover {
   color: red;
 }
 
-/* line 76, ../sass/footer.scss */
+/* line 81, ../sass/footer.scss */
 .at_sub_page_container {
   position: absolute;
   bottom: 4%;
   width: 100%;
 }
-/* line 80, ../sass/footer.scss */
+/* line 85, ../sass/footer.scss */
 .at_sub_page_container .at_sub-legal {
   width: 600px;
 }

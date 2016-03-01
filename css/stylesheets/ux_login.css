@@ -201,6 +201,9 @@ div.tooltip {
   position: relative;
   background-image: url("../../css/images/social_network.jpg");
   background-size: cover;
+  /*  .um-638__year {
+      width: 30%;
+    }*/
 }
 /* line 7, ../sass/login_screen.scss */
 .vw_container ._uv-terminal {
@@ -319,10 +322,6 @@ div.tooltip {
 /* line 103, ../sass/login_screen.scss */
 .vw_container .vw-638__year {
   width: 32%;
-}
-/* line 106, ../sass/login_screen.scss */
-.vw_container .um-638__year {
-  width: 30%;
 }
 /* line 109, ../sass/login_screen.scss */
 .vw_container .vw-638__month {
@@ -476,39 +475,46 @@ div.tooltip {
   background: linear-gradient(#286090, black);
 }
 /* line 5, ../sass/footer.scss */
-.uv_footer .uv_footer_inner {
+.uv_footer .uv-footer-890 {
   margin: 0 auto;
+}
+/* line 8, ../sass/footer.scss */
+.uv_footer .uv-footer-899 {
+  margin: 600px auto 0 auto;
+}
+/* line 11, ../sass/footer.scss */
+.uv_footer .uv_footer_inner {
   float: none;
   padding-top: 30px;
 }
-/* line 10, ../sass/footer.scss */
+/* line 15, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .um_footer_social img, .uv_footer .uv_footer_inner .uv_footer_social img {
   padding: 5px;
 }
-/* line 14, ../sass/footer.scss */
+/* line 19, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_social {
   margin-top: 30px;
   width: 625px;
 }
-/* line 18, ../sass/footer.scss */
+/* line 23, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .um_footer_social {
   width: 300px;
 }
-/* line 21, ../sass/footer.scss */
+/* line 26, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_456 {
   width: 625px;
 }
-/* line 23, ../sass/footer.scss */
+/* line 28, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_456 ._ux_478 {
   height: 25px;
   padding: 0 12px;
 }
-/* line 27, ../sass/footer.scss */
+/* line 32, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_456 ._ux_479 {
   height: 25px;
   padding: 2px 12px;
 }
-/* line 31, ../sass/footer.scss */
+/* line 36, ../sass/footer.scss */
 .uv_footer .uv_footer_inner .uv_footer_456 .uv_footer_632 {
   width: 100px;
   color: #fff;
@@ -516,77 +522,142 @@ div.tooltip {
   font-size: 13px;
 }
 
-/* line 41, ../sass/footer.scss */
+/* line 46, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal {
   margin: 0 auto;
   float: none;
 }
-/* line 44, ../sass/footer.scss */
+/* line 49, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .uv_sub_345 {
   margin: 0 auto;
   float: none;
   width: 600px;
 }
-/* line 49, ../sass/footer.scss */
+/* line 54, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .um_sub_345 {
   margin: 0 auto;
   float: none;
   width: 300px;
 }
-/* line 54, ../sass/footer.scss */
+/* line 59, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .uv_sub_copyright {
   font-size: 12px;
   color: #f2f2f2;
   margin: 5px 20px 0 0;
 }
-/* line 59, ../sass/footer.scss */
+/* line 64, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .list-inline {
   float: left;
   cursor: pointer;
 }
-/* line 62, ../sass/footer.scss */
+/* line 67, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .list-inline > li {
   font-size: 12px;
   color: #f2f2f2;
   font-weight: normal;
 }
-/* line 67, ../sass/footer.scss */
+/* line 72, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .list-inline ._ufx878 {
   padding: 0;
 }
-/* line 70, ../sass/footer.scss */
+/* line 75, ../sass/footer.scss */
 .uv_sub_page_container .uv_sub_legal .list-inline ._ufx878:hover {
   color: red;
 }
 
-/* line 76, ../sass/footer.scss */
+/* line 81, ../sass/footer.scss */
 .at_sub_page_container {
   position: absolute;
   bottom: 4%;
   width: 100%;
 }
-/* line 80, ../sass/footer.scss */
+/* line 85, ../sass/footer.scss */
 .at_sub_page_container .at_sub-legal {
   width: 600px;
 }
 
 /* line 1, ../sass/mobile.scss */
 .um_container_203 {
-  padding-top: 180px;
-  width: 90%;
+  padding: 120px 0;
+  width: 100%;
+  background: url("../../css/images/social_network_m.jpg") no-repeat;
+  background-size: cover;
 }
-/* line 4, ../sass/mobile.scss */
+/* line 6, ../sass/mobile.scss */
+.um_container_203 .um_container_205 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 20px 20px 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+/* line 11, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .um-mbottom-893 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/* line 16, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .um-registration-container .um-638__year {
+  width: 32%;
+}
+/* line 19, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .um-registration-container .um-638__month {
+  width: 32%;
+  margin: 0 5px;
+}
+/* line 23, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .um-registration-container .um-638__day {
+  width: 32%;
+}
+/* line 27, ../sass/mobile.scss */
+.um_container_203 .um_container_205 .fb-container-77 {
+  background-color: #286090;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+/* line 36, ../sass/mobile.scss */
+.um_container_203 .um_signUp_892 {
+  display: none;
+  height: 320px;
+}
+/* line 40, ../sass/mobile.scss */
 .um_container_203 .um_btn_432 {
-  background: black;
+  background: #ccc;
   box-shadow: 0 2px 2px black;
   border: none;
-  color: white;
+  color: black;
   width: 100%;
+  font-size: 14px;
 }
 
-/* line 12, ../sass/mobile.scss */
+/* line 49, ../sass/mobile.scss */
 ._um_log_768 {
-  margin: 0 0 15px 5px;
+  margin: 0 0 25px 5px;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* line 55, ../sass/mobile.scss */
+.um-iconic-34 {
+  background-color: black;
+  height: 55px;
+  color: white;
+}
+/* line 59, ../sass/mobile.scss */
+.um-iconic-34 .um-iconic-inner-894 {
+  width: 70%;
+  margin: 17px auto 0 auto;
+}
+/* line 62, ../sass/mobile.scss */
+.um-iconic-34 .um-iconic-inner-894 .um-icon-size-40 {
+  font-size: 40px;
+}
+/* line 65, ../sass/mobile.scss */
+.um-iconic-34 .um-iconic-inner-894 .um-icon-margin932 {
+  margin: 0 0 0 55px;
 }
 
 /* line 7, ../sass/ux_login.scss */
