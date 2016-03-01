@@ -1,14 +1,69 @@
 .um_container_203 {
-  padding-top: 180px;
-  width: 90%;
+  padding: 120px 0;
+  width: 100%;
+  background: url("../../css/images/social_network_m.jpg") no-repeat;
+  background-size: cover;
+  .um_container_205 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 20px 20px 20px;
+    background: rgba(0,0,0,0.8);
+    .um-mbottom-893 {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .um-registration-container {
+      .um-638__year {
+        width: 32%;
+      }
+      .um-638__month {
+        width: 32%;
+        margin: 0 5px;
+      }
+      .um-638__day {
+        width: 32%;
+      }
+    }
+    .fb-container-77 {
+      background-color: #286090;
+      padding: 10px 30px;
+      color: white;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  .um_signUp_892 {
+    display: none;
+    height: 320px;
+  }
   .um_btn_432 {
-    background: black;
+    background: #ccc;
     box-shadow: 0 2px 2px black;
     border: none;
-    color: white;
+    color: black;
     width: 100%;
+    font-size: 14px;
   }
 }
 ._um_log_768 {
-  margin: 0 0 15px 5px;
+  margin: 0 0 25px 5px;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+}
+.um-iconic-34 {
+  background-color: black;
+  height: 55px;
+  color: white;
+  .um-iconic-inner-894 {
+    width: 70%;
+    margin: 17px auto 0 auto;
+    .um-icon-size-40 {
+      font-size: 40px;
+    }
+    .um-icon-margin932 {
+      margin: 0 0 0 55px;
+    }
+  }
 }

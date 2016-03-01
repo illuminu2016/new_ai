@@ -5,6 +5,9 @@
   position: relative;
   background-image: url("../../css/images/social_network.jpg");
   background-size: cover;
+  /*  .um-638__year {
+      width: 30%;
+    }*/
 }
 /* line 7, ../sass/login_screen.scss */
 .vw_container ._uv-terminal {
@@ -123,10 +126,6 @@
 /* line 103, ../sass/login_screen.scss */
 .vw_container .vw-638__year {
   width: 32%;
-}
-/* line 106, ../sass/login_screen.scss */
-.vw_container .um-638__year {
-  width: 30%;
 }
 /* line 109, ../sass/login_screen.scss */
 .vw_container .vw-638__month {

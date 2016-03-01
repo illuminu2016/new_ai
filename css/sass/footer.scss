@@ -1,14 +1,19 @@
 .uv_footer {
   height: 200px;
   //#8B0000
-  background: linear-gradient(#286090,black);
-  .uv_footer_inner {
+  background: linear-gradient(#286090, black);
+  .uv-footer-890 {
     margin: 0 auto;
+  }
+  .uv-footer-899 {
+    margin: 600px auto 0 auto;
+  }
+  .uv_footer_inner {
     float: none;
     padding-top: 30px;
-    .um_footer_social,.uv_footer_social {
+    .um_footer_social, .uv_footer_social {
       img {
-        padding:5px;
+        padding: 5px;
       }
     }
     .uv_footer_social {
@@ -74,10 +79,10 @@
   }
 }
 .at_sub_page_container {
-    position: absolute;
-    bottom: 4%;
-    width: 100%;
-    .at_sub-legal {
-      width: 600px;
-    }
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+  .at_sub-legal {
+    width: 600px;
+  }
 }
