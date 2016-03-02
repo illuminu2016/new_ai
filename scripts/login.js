@@ -20,3 +20,31 @@ function loginAppMobile() {
 	$('#signUpContainerMobile').hide();
 	$('#loginBtnMobile').hide();
 }
+var onresize = function(e) {
+	//note i need to pass the event as an argument to the function
+	width = e.target.outerWidth;
+	height = e.target.outerHeight;
+	if(height < 900) {
+		$('#vwContainer').height(500);
+		$('.uv_799-inner-container').css({"margin" : "0 0 0 50px"});
+		$('.uv_789-inner-container').css({"margin" : "50px 0 0 50px"});
+	} else {
+		$('#vwContainer').height(680);
+		$('.uv_799-inner-container').css({"margin" : "75px 0 0 50px"});
+		$('.uv_789-inner-container').css({"margin" : "115px 0 0 50px"});
+	}
+}
+window.addEventListener("resize", onresize);
+
+var screenW = window.outerWidth,
+	screenH = window.outerHeight;
+
+if(screenH < 900) {
+	$('#vwContainer').height(500);
+	$('.uv_799-inner-container').css({"margin" : "0 0 0 50px"});
+	$('.uv_789-inner-container').css({"margin" : "50px 0 0 50px"});
+} else {
+	$('#vwContainer').height(680);
+	$('.uv_799-inner-container').css({"margin" : "75px 0 0 50px"});
+	$('.uv_789-inner-container').css({"margin" : "115px 0 0 50px"});
+}
