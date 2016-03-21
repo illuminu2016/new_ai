@@ -14,6 +14,14 @@ $('*').click(function(e){
 	uploadPhoto = targetUploadEvt(e, uploadPhoto, '.vw-album998', '._upload-overlay899');
 });
 
+function initMap() {
+	var mapDiv = document.getElementById('map');
+	var map = new google.maps.Map(mapDiv, {
+		center: {lat: 47.15, lng: 27.59},
+		zoom: 12
+	});
+}
+
 function targetUploadEvt(event, target, btn, container) {
 	if($(event.target).is(btn)) {
 		target = !target;
