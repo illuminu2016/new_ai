@@ -821,6 +821,10 @@
   .vw-name-984 {
     padding: 100px 0 20px 30px;
     border-bottom: 1px solid #e7e7e7;
+    ._avatar-round99 {
+      background: url("..\\..\\css\\images\\avatar.jpg");
+      position: absolute;
+    }
     .vw-velocity-894 {
       font-size: 50px;
       margin-right: 20px;
@@ -830,11 +834,39 @@
   .vw-album-894 {
     padding: 20px 0px 40px 0px;
     border-bottom: 1px solid #e7e7e7;
+    position: relative;
+    .abum901 {
+      display: inherit;
+    }
+    ._next-container899 {
+      top: 45%;
+      transform: translateY(-45%);
+      position: absolute;
+      right: 7px;
+      z-index: 9999;
+      background: rgba(0,0,0,0.8);
+      border-radius: 45px;
+      width: 41px;
+      text-align: center;
+    }
+    ._next-btn90 {
+      font-size: 37px;
+      background: rgba(255, 255, 255, 0);
+      color: white;
+      margin-left: 4px;
+      padding: 1px;
+    }
     .vw-album-69 {
-      height: 140px;
+      height: 150px;
+      background: black;
+      margin-top: 5px;
+      color: white;
     }
     .vw-album-62 {
-      height: 200px;
+      height: 210px;
+      background: black;
+      margin-top: 5px;
+      color: white;
     }
     .vw-album-upload-903 {
       font-size: 60px;
@@ -844,6 +876,8 @@
     }
     .vw-album-container-832 {
       padding-right: 0px;
+      display: flex;
+      overflow: hidden;
       img {
         margin: 5px;
         cursor: pointer;
@@ -979,6 +1013,10 @@
           width: 30%;
         }
       }
+      .album-format944 {
+        padding-right: 10px;
+        margin-top: 40px;
+      }
     }
     .fileUpload {
       position: relative;
@@ -996,6 +1034,139 @@
       opacity: 0;
       filter: alpha(opacity=0);
     }
+  }
+}
+
+.upload-photos-fb933 {
+  margin: 20px 15px 0 0;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  .fb-container-90 {
+    background-color: #286090;
+    padding: 10px 30px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    width: 42%;
+    margin-left: 20px;
+  }
+}
+
+.x-close88 {
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  top: -15px;
+  right: -20px;
+  border: 3px solid white;
+  .x-close-78 {
+    font-size: 25px;
+    color: white;
+    margin-top: 8px;
+  }
+}
+
+.menu_pencil {
+  display: none;
+  padding: 7px 2px;
+}
+
+._question-banner900 {
+  position: fixed;
+  background: #f6d171;
+  display: none;
+  bottom: 15px;
+  right: 10px;
+  border-radius: 15px;
+  .checkbox-custom, .radio-custom {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .checkbox-custom-label, .radio-custom-label {
+    position: relative;
+  }
+
+  .checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .checkbox-custom:checked + .checkbox-custom-label:before {
+    background: rebeccapurple;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+  }
+
+  .radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+  }
+
+  .radio-custom:checked + .radio-custom-label:before {
+    background: #ccc;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+  }
+
+
+  .checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+    outline: 1px solid #ddd; /* focus style */
+  }
+}
+
+._question-banner901 {
+  position: fixed;
+  background: #f6d171;
+  width: 550px;
+  height: 100px;
+  display: none;
+  bottom: 125px;
+  right: 10px;
+}
+
+._question-banner902 {
+  position: fixed;
+  background: #f6d171;
+  width: 550px;
+  height: 100px;
+  display: none;
+  bottom: 235px;
+  right: 10px;
+}
+
+._banner-inner88 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 25px 20px;
+  ._x-close-btn100 {
+    position: absolute;
+    right: -4px;
+    top: 7px;
+    font-size: 16px;
+    color: #3f3f3f;
+  }
+  label {
+    font-weight: 400;
+  }
+  ._question-header677 {
+     margin-bottom: 10px;
+     font-size: 17px;
   }
 }
 
