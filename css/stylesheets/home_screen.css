@@ -989,32 +989,103 @@
   background-color: white;
 }
 /* line 822, ../sass/home_screen.scss */
+.container-dim99 ._dim993 {
+  margin-top: 80px;
+  padding-left: 74px;
+}
+/* line 826, ../sass/home_screen.scss */
 .container-dim99 .vw-name-984 {
-  padding: 100px 0 20px 30px;
+  padding: 10px 0 20px 30px;
   border-bottom: 1px solid #e7e7e7;
 }
-/* line 825, ../sass/home_screen.scss */
+/* line 829, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._row-874 {
+  width: 1052px;
+  display: inline-block;
+  text-align: left;
+}
+/* line 834, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._port784 {
+  width: 230px;
+  border: 1px solid #e7e7e7;
+  text-align: center;
+  padding: 15px 0;
+  display: inline-block;
+  position: relative;
+  margin: 15px;
+}
+/* line 842, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._port784 ._icon-band-88 {
+  position: absolute;
+  top: 168px;
+  right: 25px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+/* line 850, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._port784 ._icon-band-88 i {
+  font-size: 25px;
+}
+/* line 854, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._port784 ._icon-band-80 {
+  position: absolute;
+  top: 168px;
+  left: 25px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+/* line 862, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._port784 ._icon-band-80 i {
+  font-size: 22px;
+}
+/* line 865, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._port784 ._icon-band-80 ._photo-left-899 {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+/* line 870, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._port784 ._icon-band-80 ._photo-right-899 {
+  display: inline-block;
+}
+/* line 874, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._port784 ._sub-portrait900 {
+  margin: 10px 0 0 0;
+  font-size: 13px;
+  text-align: left;
+  padding: 0 15px;
+}
+/* line 880, ../sass/home_screen.scss */
+.container-dim99 .vw-name-984 ._port784 ._sub-portrait950 {
+  padding: 0 17px;
+  text-align: left;
+}
+/* line 885, ../sass/home_screen.scss */
 .container-dim99 .vw-name-984 ._avatar-round99 {
   background: url("..\\..\\css\\images\\avatar.jpg");
   position: absolute;
 }
-/* line 829, ../sass/home_screen.scss */
+/* line 889, ../sass/home_screen.scss */
 .container-dim99 .vw-name-984 .vw-velocity-894 {
   font-size: 50px;
   margin-right: 20px;
   color: #70a34b;
 }
-/* line 835, ../sass/home_screen.scss */
+/* line 895, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 {
   padding: 20px 0px 40px 0px;
   border-bottom: 1px solid #e7e7e7;
   position: relative;
 }
-/* line 839, ../sass/home_screen.scss */
+/* line 899, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .abum901 {
   display: inherit;
 }
-/* line 842, ../sass/home_screen.scss */
+/* line 902, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 ._next-container899 {
   top: 45%;
   transform: translateY(-45%);
@@ -1026,7 +1097,7 @@
   width: 41px;
   text-align: center;
 }
-/* line 853, ../sass/home_screen.scss */
+/* line 913, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 ._next-btn90 {
   font-size: 37px;
   background: rgba(255, 255, 255, 0);
@@ -1034,45 +1105,45 @@
   margin-left: 4px;
   padding: 1px;
 }
-/* line 860, ../sass/home_screen.scss */
+/* line 920, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-69 {
   height: 150px;
   background: black;
   margin-top: 5px;
   color: white;
 }
-/* line 866, ../sass/home_screen.scss */
+/* line 926, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-62 {
   height: 210px;
   background: black;
   margin-top: 5px;
   color: white;
 }
-/* line 872, ../sass/home_screen.scss */
+/* line 932, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-upload-903 {
   font-size: 60px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 878, ../sass/home_screen.scss */
+/* line 938, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-container-832 {
   padding-right: 0px;
   display: flex;
   overflow: hidden;
 }
-/* line 882, ../sass/home_screen.scss */
+/* line 942, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-container-832 img {
   margin: 5px;
   cursor: pointer;
 }
-/* line 886, ../sass/home_screen.scss */
+/* line 946, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-container-832 .vw-portrait-754 {
   margin: 5px;
   border: 1px solid #e7e7e7;
   position: relative;
 }
-/* line 890, ../sass/home_screen.scss */
+/* line 950, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-container-832 .vw-portrait-754 ._pencil-overlay99 {
   width: 130px;
   background: rgba(0, 0, 0, 0.8);
@@ -1080,7 +1151,7 @@
   top: 43px;
   right: 11px;
 }
-/* line 896, ../sass/home_screen.scss */
+/* line 956, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-container-832 .vw-portrait-754 ._pencil-overlay99 ul._ulover-900 {
   list-style-type: none;
   padding: 0;
@@ -1088,11 +1159,11 @@
   color: #ccc;
   font-size: 11px;
 }
-/* line 902, ../sass/home_screen.scss */
+/* line 962, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-container-832 .vw-portrait-754 ._pencil-overlay99 ul._ulover-900 li {
   padding: 2px 10px;
 }
-/* line 907, ../sass/home_screen.scss */
+/* line 967, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-container-832 .vw-portrait-754 ._overlay-ip78 {
   background: rgba(0, 0, 0, 0.8);
   bottom: 5px;
@@ -1103,13 +1174,13 @@
   text-align: center;
   color: #ccc;
 }
-/* line 916, ../sass/home_screen.scss */
+/* line 976, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-container-832 .vw-portrait-754 ._overlay-ip78 ._igh-900 {
   top: 50%;
   transform: translateY(-50%);
   position: relative;
 }
-/* line 922, ../sass/home_screen.scss */
+/* line 982, ../sass/home_screen.scss */
 .container-dim99 .vw-album-894 .vw-album-container-832 .vw-portrait-754 ._pencil-ulp677 {
   position: absolute;
   top: 10px;
@@ -1120,31 +1191,31 @@
   color: #ccc;
   border: 1px solid #ccc;
 }
-/* line 935, ../sass/home_screen.scss */
+/* line 995, ../sass/home_screen.scss */
 .container-dim99 ._activity-88 {
   padding: 20px;
 }
-/* line 937, ../sass/home_screen.scss */
+/* line 997, ../sass/home_screen.scss */
 .container-dim99 ._activity-88 ._snapshot-889 {
   color: #aaa;
 }
-/* line 941, ../sass/home_screen.scss */
+/* line 1001, ../sass/home_screen.scss */
 .container-dim99 .vw-information-894 {
   border-bottom: 1px solid #e7e7e7;
 }
-/* line 943, ../sass/home_screen.scss */
+/* line 1003, ../sass/home_screen.scss */
 .container-dim99 .vw-information-894 .vw-personality-990 {
   padding: 30px;
 }
-/* line 945, ../sass/home_screen.scss */
+/* line 1005, ../sass/home_screen.scss */
 .container-dim99 .vw-information-894 .vw-personality-990 .vw-profile78 {
   padding: 10px 0;
 }
-/* line 947, ../sass/home_screen.scss */
+/* line 1007, ../sass/home_screen.scss */
 .container-dim99 .vw-information-894 .vw-personality-990 .vw-profile78 ._pencil-109 {
   padding: 12px 8px;
 }
-/* line 952, ../sass/home_screen.scss */
+/* line 1012, ../sass/home_screen.scss */
 .container-dim99 .vw-information-894 ._map-89 {
   width: 400px;
   height: 300px;
@@ -1152,7 +1223,7 @@
   margin: 40px 20px;
 }
 
-/* line 960, ../sass/home_screen.scss */
+/* line 1020, ../sass/home_screen.scss */
 ._mds932 {
   position: absolute;
   z-index: 9999;
@@ -1161,12 +1232,12 @@
   top: 0px;
   display: none;
 }
-/* line 967, ../sass/home_screen.scss */
+/* line 1027, ../sass/home_screen.scss */
 ._mds932 ._ijd766 {
   background: rgba(0, 0, 0, 0.8);
   height: 100%;
 }
-/* line 970, ../sass/home_screen.scss */
+/* line 1030, ../sass/home_screen.scss */
 ._mds932 ._ijd766 ._unk877 {
   width: 65%;
   background: black;
@@ -1175,7 +1246,7 @@
   transform: translateY(-50%);
   padding: 40px 0;
 }
-/* line 977, ../sass/home_screen.scss */
+/* line 1037, ../sass/home_screen.scss */
 ._mds932 ._ijd766 ._unk877 i {
   position: absolute;
   top: 5px;
@@ -1185,7 +1256,7 @@
   cursor: pointer;
 }
 
-/* line 988, ../sass/home_screen.scss */
+/* line 1048, ../sass/home_screen.scss */
 ._upload-overlay899 {
   position: absolute;
   z-index: 9999;
@@ -1196,7 +1267,7 @@
   display: none;
   background: rgba(0, 0, 0, 0.8);
 }
-/* line 997, ../sass/home_screen.scss */
+/* line 1057, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 {
   background: white;
   height: 75%;
@@ -1207,64 +1278,64 @@
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 1006, ../sass/home_screen.scss */
+/* line 1066, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._img007 {
   display: block;
 }
-/* line 1009, ../sass/home_screen.scss */
+/* line 1069, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album894 {
   width: 70%;
 }
-/* line 1011, ../sass/home_screen.scss */
+/* line 1071, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album894 ._alp900 {
   margin-left: 3%;
 }
-/* line 1013, ../sass/home_screen.scss */
+/* line 1073, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album894 ._alp900 ._ijk88 {
   margin: 10px 3%;
 }
-/* line 1015, ../sass/home_screen.scss */
+/* line 1075, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album894 ._alp900 ._ijk88 ._icheck999 {
   margin: 10px;
   width: 15px;
   height: 15px;
 }
-/* line 1023, ../sass/home_screen.scss */
+/* line 1083, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album893 {
   width: 30%;
   border-right: 1px solid #ccc;
   height: 100%;
 }
-/* line 1027, ../sass/home_screen.scss */
+/* line 1087, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album893 ._ijn777 {
   margin: 15px 0;
 }
-/* line 1029, ../sass/home_screen.scss */
+/* line 1089, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album893 ._ijn777 ._upload-file888 {
   padding: 4px;
   width: 60%;
 }
-/* line 1033, ../sass/home_screen.scss */
+/* line 1093, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album893 ._ijn777 ._upload-file889 {
   padding: 4px;
   width: 50%;
 }
-/* line 1037, ../sass/home_screen.scss */
+/* line 1097, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album893 ._ijn777 .fileUpload {
   width: 30%;
 }
-/* line 1041, ../sass/home_screen.scss */
+/* line 1101, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 ._album893 .album-format944 {
   padding-right: 10px;
   margin-top: 40px;
 }
-/* line 1046, ../sass/home_screen.scss */
+/* line 1106, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 .fileUpload {
   position: relative;
   overflow: hidden;
   margin: 10px;
 }
-/* line 1051, ../sass/home_screen.scss */
+/* line 1111, ../sass/home_screen.scss */
 ._upload-overlay899 ._upload-container778 .fileUpload input.upload {
   position: absolute;
   top: 0;
@@ -1277,13 +1348,13 @@
   filter: alpha(opacity=0);
 }
 
-/* line 1065, ../sass/home_screen.scss */
+/* line 1125, ../sass/home_screen.scss */
 .upload-photos-fb933 {
   margin: 20px 15px 0 0;
   border-top: 1px solid #ccc;
   padding-top: 20px;
 }
-/* line 1069, ../sass/home_screen.scss */
+/* line 1129, ../sass/home_screen.scss */
 .upload-photos-fb933 .fb-container-90 {
   background-color: #286090;
   padding: 10px 30px;
@@ -1294,7 +1365,7 @@
   margin-left: 20px;
 }
 
-/* line 1080, ../sass/home_screen.scss */
+/* line 1140, ../sass/home_screen.scss */
 .x-close88 {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -1305,20 +1376,20 @@
   right: -20px;
   border: 3px solid white;
 }
-/* line 1089, ../sass/home_screen.scss */
+/* line 1149, ../sass/home_screen.scss */
 .x-close88 .x-close-78 {
   font-size: 25px;
   color: white;
   margin-top: 8px;
 }
 
-/* line 1096, ../sass/home_screen.scss */
+/* line 1156, ../sass/home_screen.scss */
 .menu_pencil {
   display: none;
   padding: 7px 2px;
 }
 
-/* line 1101, ../sass/home_screen.scss */
+/* line 1161, ../sass/home_screen.scss */
 ._question-banner900 {
   position: fixed;
   background: #f6d171;
@@ -1327,23 +1398,23 @@
   right: 10px;
   border-radius: 15px;
 }
-/* line 1108, ../sass/home_screen.scss */
+/* line 1168, ../sass/home_screen.scss */
 ._question-banner900 .checkbox-custom, ._question-banner900 .radio-custom {
   opacity: 0;
   position: absolute;
 }
-/* line 1113, ../sass/home_screen.scss */
+/* line 1173, ../sass/home_screen.scss */
 ._question-banner900 .checkbox-custom, ._question-banner900 .checkbox-custom-label, ._question-banner900 .radio-custom, ._question-banner900 .radio-custom-label {
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
   cursor: pointer;
 }
-/* line 1120, ../sass/home_screen.scss */
+/* line 1180, ../sass/home_screen.scss */
 ._question-banner900 .checkbox-custom-label, ._question-banner900 .radio-custom-label {
   position: relative;
 }
-/* line 1124, ../sass/home_screen.scss */
+/* line 1184, ../sass/home_screen.scss */
 ._question-banner900 .checkbox-custom + .checkbox-custom-label:before, ._question-banner900 .radio-custom + .radio-custom-label:before {
   content: '';
   background: #fff;
@@ -1356,27 +1427,27 @@
   margin-right: 10px;
   text-align: center;
 }
-/* line 1137, ../sass/home_screen.scss */
+/* line 1197, ../sass/home_screen.scss */
 ._question-banner900 .checkbox-custom:checked + .checkbox-custom-label:before {
   background: rebeccapurple;
   box-shadow: inset 0px 0px 0px 4px #fff;
 }
-/* line 1142, ../sass/home_screen.scss */
+/* line 1202, ../sass/home_screen.scss */
 ._question-banner900 .radio-custom + .radio-custom-label:before {
   border-radius: 50%;
 }
-/* line 1146, ../sass/home_screen.scss */
+/* line 1206, ../sass/home_screen.scss */
 ._question-banner900 .radio-custom:checked + .radio-custom-label:before {
   background: #ccc;
   box-shadow: inset 0px 0px 0px 4px #fff;
 }
-/* line 1152, ../sass/home_screen.scss */
+/* line 1212, ../sass/home_screen.scss */
 ._question-banner900 .checkbox-custom:focus + .checkbox-custom-label, ._question-banner900 .radio-custom:focus + .radio-custom-label {
   outline: 1px solid #ddd;
   /* focus style */
 }
 
-/* line 1157, ../sass/home_screen.scss */
+/* line 1217, ../sass/home_screen.scss */
 ._question-banner901 {
   position: fixed;
   background: #f6d171;
@@ -1387,7 +1458,7 @@
   right: 10px;
 }
 
-/* line 1167, ../sass/home_screen.scss */
+/* line 1227, ../sass/home_screen.scss */
 ._question-banner902 {
   position: fixed;
   background: #f6d171;
@@ -1398,14 +1469,14 @@
   right: 10px;
 }
 
-/* line 1177, ../sass/home_screen.scss */
+/* line 1237, ../sass/home_screen.scss */
 ._banner-inner88 {
   width: 100%;
   height: 100%;
   position: relative;
   padding: 25px 20px;
 }
-/* line 1182, ../sass/home_screen.scss */
+/* line 1242, ../sass/home_screen.scss */
 ._banner-inner88 ._x-close-btn100 {
   position: absolute;
   right: -4px;
@@ -1413,24 +1484,24 @@
   font-size: 16px;
   color: #3f3f3f;
 }
-/* line 1189, ../sass/home_screen.scss */
+/* line 1249, ../sass/home_screen.scss */
 ._banner-inner88 label {
   font-weight: 400;
 }
-/* line 1192, ../sass/home_screen.scss */
+/* line 1252, ../sass/home_screen.scss */
 ._banner-inner88 ._question-header677 {
   margin-bottom: 10px;
   font-size: 17px;
 }
 
 @media (max-width: 1200px) {
-  /* line 1199, ../sass/home_screen.scss */
+  /* line 1259, ../sass/home_screen.scss */
   ._alp900 {
     margin-left: 7% !important;
   }
 }
 @media (max-width: 820px) {
-  /* line 1205, ../sass/home_screen.scss */
+  /* line 1265, ../sass/home_screen.scss */
   ._hm-profile-contacts-901 {
     margin-left: -20px;
   }

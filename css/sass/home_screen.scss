@@ -819,9 +819,69 @@
 
 .container-dim99 {
   background-color: white;
+  ._dim993 {
+    margin-top: 80px;
+    padding-left: 74px;
+  }
   .vw-name-984 {
-    padding: 100px 0 20px 30px;
+    padding: 10px 0 20px 30px;
     border-bottom: 1px solid #e7e7e7;
+    ._row-874 {
+      width: 1052px;
+      display: inline-block;
+      text-align: left;
+    }
+    ._port784 {
+      width: 230px;
+      border: 1px solid #e7e7e7;
+      text-align: center;
+      padding: 15px 0;
+      display: inline-block;
+      position: relative;
+      margin: 15px;
+      ._icon-band-88 {
+        position: absolute;
+        top: 168px;
+        right: 25px;
+        color: white;
+        background: rgba(0,0,0,0.6);
+        padding: 7px 10px;
+        border-radius: 20px;
+        i {
+          font-size: 25px;
+        }
+      }
+      ._icon-band-80 {
+        position: absolute;
+        top: 168px;
+        left: 25px;
+        color: white;
+        background: rgba(0,0,0,0.6);
+        padding: 7px 10px;
+        border-radius: 20px;
+        i {
+          font-size: 22px;
+        }
+        ._photo-left-899 {
+          display: inline-block;
+          vertical-align: text-bottom;
+          margin-right: 5px;
+        }
+        ._photo-right-899 {
+          display: inline-block;
+        }
+      }
+      ._sub-portrait900 {
+        margin: 10px 0 0 0;
+        font-size: 13px;
+        text-align: left;
+        padding: 0 15px;
+      }
+      ._sub-portrait950 {
+        padding: 0 17px;
+        text-align: left;
+      }
+    }
     ._avatar-round99 {
       background: url("..\\..\\css\\images\\avatar.jpg");
       position: absolute;
