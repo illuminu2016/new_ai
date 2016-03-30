@@ -163,3 +163,8 @@ function answerAlg(id,question,q,answer) {
 	closeQuestionTab(id);
 	$('#' + question).fadeIn(1000,"linear");
 }
+
+function loadComments() {
+	$('#comment_4').fadeIn(1000,"linear");
+	$('#comment_5').fadeIn(1000,"linear");
+}
