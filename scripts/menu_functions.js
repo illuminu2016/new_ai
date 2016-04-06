@@ -129,25 +129,35 @@ function addTwoLinearQuestion() {
 	$('._question-banner902').fadeIn(2000,"linear");
 }
 
-document.getElementById("uploadBtn1").onchange = function () {
-	document.getElementById("uploadFile1").value = this.value;
-};
+if(document.getElementById("uploadBtn1")) {
+	document.getElementById("uploadBtn1").onchange = function () {
+		document.getElementById("uploadFile1").value = this.value;
+	};
+}
 
-document.getElementById("uploadBtn2").onchange = function () {
-	document.getElementById("uploadFile2").value = this.value;
-};
+if(document.getElementById("uploadBtn2")) {
+	document.getElementById("uploadBtn2").onchange = function () {
+		document.getElementById("uploadFile2").value = this.value;
+	};
+}
 
-document.getElementById("uploadBtn3").onchange = function () {
-	document.getElementById("uploadFile3").value = this.value;
-};
+if(document.getElementById("uploadBtn3")) {
+	document.getElementById("uploadBtn3").onchange = function () {
+		document.getElementById("uploadFile3").value = this.value;
+	};
+}
 
-document.getElementById("uploadBtn4").onchange = function () {
-	document.getElementById("uploadFile4").value = this.value;
-};
+if(document.getElementById("uploadBtn4")) {
+	document.getElementById("uploadBtn4").onchange = function () {
+		document.getElementById("uploadFile4").value = this.value;
+	};
+}
 
-document.getElementById("uploadBtn5").onchange = function () {
-	document.getElementById("uploadFile5").value = this.value;
-};
+if(document.getElementById("uploadBtn5")) {
+	document.getElementById("uploadBtn5").onchange = function () {
+		document.getElementById("uploadFile5").value = this.value;
+	};
+}
 
 $(document).ready(function () {
 	setTimeout(function(){
@@ -167,4 +177,13 @@ function answerAlg(id,question,q,answer) {
 function loadComments() {
 	$('#comment_4').fadeIn(1000,"linear");
 	$('#comment_5').fadeIn(1000,"linear");
+}
+
+function preparePostTimb() {
+		$('#initial-comment86').html('');
+		$('#ai-post-904').css('min-height', '100px');
+}
+
+function activateLocation() {
+	$('#ai-main-99').css('color', '#286090');
 }
