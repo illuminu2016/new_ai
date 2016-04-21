@@ -1,0 +1,64 @@
+.popover {
+  max-width: 700px;
+}
+
+.ui-tooltip {
+  padding: 4px !important;
+  font-size: 12px !important;
+}
+
+._avatar-popover-900 {
+  background: white;
+  ._popover-btn903 {
+    height: 55px;
+    width: 150px;
+  }
+  ._photo-av7324 {
+    background: black;
+    text-align: center;
+    height: 100px;
+    img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+  ._header-av840 {
+    padding-top: 20px;
+    width: auto;
+    ._name-av930 {
+      font-weight: 700;
+      font-size: 14px;
+    }
+    ._add-contact938 {
+      font-size: 11px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  ._popover-inf502 {
+    margin: 20px 0 10px 0;
+    ._tickblue900 {
+      & > div:first-child {
+        font-size: 12px;
+        font-weight: 700;
+      }
+      & > div:last-child {
+        color: #286090;
+      }
+    }
+    & > div:first-child {
+      width: 25%;
+    }
+    & > div:nth-child(2) {
+      width: 50%;
+    }
+    & > div:last-child {
+      width: 25%;
+      padding-right: 5px;
+    }
+  }
+}
