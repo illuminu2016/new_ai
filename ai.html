@@ -122,11 +122,24 @@
         </li>
       </ul>
 
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Message Settings</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a>Change Language of App</a></li>
+            <li><a>Change Password</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
 
+      <div class="_hm-user-typeahead-container89 col-md-6 col-sm-5" align="right">
 
-      <div class="_hm-user-typeahead-container89 col-md-6 col-sm-5" align="center">
-
-       <div class="form-group _hm-user-typeahead">
+        <div class="form-group _hm-user-typeahead">
           <input type="text" class="form-control _hm-typeahead-856" placeholder="Search ArtificialSpace">
           <div class="_hm-search-user-overflow">
             <div class="_hm-search-inner-overflow">
@@ -304,21 +317,6 @@
         </div>
 
       </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
     </div><!--/.nav-collapse -->
   </div>
 </nav>
@@ -336,7 +334,7 @@
               <input id="radio-41" class="radio-custom" name="radio-group" type="radio">
               <label for="radio-41" class="radio-custom-label">My Posts</label>
             </div>
-            <div class="clearfix">
+            <div class="clearfix" style="margin: 5px 0 0 3px;">
               <div class="pull-left">
                 <input type="checkbox" name="vehicle" value="AI" class="_icheck999"> AI posts
               </div>
@@ -348,10 +346,10 @@
         </div>
         <div contenteditable id="ai-post-904" class="col-lg-7 col-md-7 col-sm-7 _ai-space-778" onclick="preparePostTimb();">
           <div id="initial-comment86" class="_add-comment86">Add a post ...</div>
-          <div class="_ai-location-899" onclick="activateLocation();">
+          <div contenteditable="false" class="_ai-location-899" onclick="activateLocation();">
             <i class="fa fa-globe" id="ai-main-99"></i>
           </div>
-          <div class="_send-893">Send</div>
+          <div contenteditable="false" class="_send-893">Send</div>
         </div>
       </div>
       <div class="clearfix _ai-space-container80">
@@ -369,7 +367,15 @@
         <div class="pull-right" style="width: 60%">
           <div class="_post-803 _post-bz83 ">
             <div class="_post-hdr89">
-              <div><b>Crismaru Constantin</b> <span class="_post-date88">@19, August 2015</span></div>
+              <div class="clearfix">
+                <div class="pull-left _avatar-900"></div>
+                <div class="pull-left _header87">
+                  <b>Lidia Buble</b>
+                </div>
+                <div class="pull-left _header88">
+                  <span class="_post-date88">@19, August 2015</span>
+                </div>
+              </div>
             </div>
             <div class="_post-body78">"Dirt all under my nails, thumbing through currency, mindset currently<br>
               Niggas don't worry me, white Panamera playin' Curren$y, pussy niggas say they wanna murda' me<br>
@@ -386,28 +392,33 @@
               11-5 on the side I ain't take a day off<br>
               Bread Winner, guap getter hustle for the pay off"
               <div class="clearfix _post-footer90">
-                <div class="pull-left _post-btn93" style="text-align: left;"><i class="fa fa-share-alt"></i></div>
-                <div class="pull-left _post-btn93"><i class="fa fa-thumbs-o-up"></i> 2015</div>
-                <div class="pull-left _post-btn93"><i class="fa fa-bolt"></i></div>
-                <div class="pull-left _post-btn93" style="text-align: right;"><i class="fa fa-flag"></i></div>
-                <!--          <div class="_retimb-900">ReTimb</div>-->
+                <div class="text-left"><i class="fa fa-share-alt" title="Share"></i></div>
+                <div class="clearfix" id="_like-contain1" onclick="zoomPulse('_like-contain1', '_like-btn1')">
+                  <div class="pull-left"><i class="fa fa-heart" title="Like" id="_like-btn1" aria-hidden="true"></i></div>
+                  <div class="pull-left marginleft5">2015</div>
+                </div>
+                <div><i class="fa fa-bolt" title="AI Share"></i></div>
+                <div class="text-right" id="_report-contain1" onclick="zoomPulse('_report-contain1', '_report-btn1')"><i class="fa fa-flag" title="Report" id="_report-btn1"></i></div>
               </div>
               <div class="_post-comments-933">
                 <div class="_post-yr900" style="margin: 0;">
                   <div class="_avatar-778"><img src="css\images\img_f1.png" width="40" height="40"></div>
                   <div class="_add-comm76" contenteditable>
                     <div class="_add-comment84"></div>
-                    <div class="_ai-location-899">
+                    <div class="_ai-location-899" contenteditable="false">
                       <i class="fa fa-globe"></i>
                     </div>
-                    <div class="_send-893">Send</div>
+                    <div class="_send-893" contenteditable="false">Send</div>
                   </div>
                 </div>
                 <div class="_post-yr900">
                   <div class="clearfix">
                     <img src="css\images\img_f3.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 22 Octomber 2015</div>
@@ -416,7 +427,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f2.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 3 November 2015</div>
@@ -425,7 +439,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f3.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 22 Octomber 2015</div>
@@ -434,7 +451,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f5.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 3 November 2015</div>
@@ -443,7 +463,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f6.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Patriciann Palka I favor "political correctness" to an extent .. I favor NOT overly thick skin .. Lets keep things in balance .
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Patriciann Palka I favor "political correctness" to an extent .. I favor NOT overly thick skin .. Lets keep things in balance.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 2 March 2016</div>
@@ -456,19 +479,38 @@
           </div>
           <div class="_post-803 _post-bz83">
             <div class="_post-hdr89">
-              <div><b>Crismaru Constantin</b> <span class="_post-date88">@22, August 2015</span></div>
+              <div class="clearfix">
+                <div class="pull-left _avatar-901"></div>
+                <div class="pull-left _header87">
+                  <b>Crismaru Constantin</b>
+                </div>
+                <div class="pull-left _header88">
+                  <span class="_post-date88">@22, August 2015</span>
+                </div>
+              </div>
             </div>
             <div class="_post-body78"><img src="css\images\foto4.jpg"></div>
             <div class="clearfix _post-footer90">
-              <div class="pull-left _post-btn93" style="text-align: left;"><i class="fa fa-share-alt"></i></div>
-              <div class="pull-left _post-btn93"><i class="fa fa-thumbs-o-up"></i> 2015</div>
-              <div class="pull-left _post-btn93"><i class="fa fa-bolt"></i></div>
-              <div class="pull-left _post-btn93" style="text-align: right;"><i class="fa fa-flag"></i></div>
+              <div class="text-left"><i class="fa fa-share-alt" title="Share"></i></div>
+              <div class="clearfix" id="_like-contain2" onclick="zoomPulse('_like-contain2', '_like-btn2')">
+                <div class="pull-left"><i class="fa fa-heart" title="Like" id="_like-btn2" aria-hidden="true"></i></div>
+                <div class="pull-left marginleft5">2015</div>
+              </div>
+              <div><i class="fa fa-bolt" title="AI Share"></i></div>
+              <div class="text-right" id="_report-contain2" onclick="zoomPulse('_report-contain2', '_report-btn2')"><i class="fa fa-flag" title="Report" id="_report-btn2"></i></div>
             </div>
           </div>
           <div class="_post-803 _post-bz83">
             <div class="_post-hdr89">
-              <div><b>Crismaru Constantin</b> <span class="_post-date88">@22, August 2015</span></div>
+              <div class="clearfix">
+                <div class="pull-left _avatar-901"></div>
+                <div class="pull-left _header87">
+                  <b>Crismaru Constantin</b>
+                </div>
+                <div class="pull-left _header88">
+                  <span class="_post-date88">@22, August 2015</span>
+                </div>
+              </div>
             </div>
             <div class="_post-body78">
               <video width="400" controls>
@@ -478,15 +520,26 @@
               </video>
             </div>
             <div class="clearfix _post-footer90">
-              <div class="pull-left _post-btn93" style="text-align: left;"><i class="fa fa-share-alt"></i></div>
-              <div class="pull-left _post-btn93"><i class="fa fa-thumbs-o-up"></i> 2015</div>
-              <div class="pull-left _post-btn93"><i class="fa fa-bolt"></i></div>
-              <div class="pull-left _post-btn93" style="text-align: right;"><i class="fa fa-flag"></i></div>
+              <div class="text-left"><i class="fa fa-share-alt" title="Share"></i></div>
+              <div class="clearfix" id="_like-contain3" onclick="zoomPulse('_like-contain3', '_like-btn3')">
+                <div class="pull-left"><i class="fa fa-heart" title="Like" id="_like-btn3" aria-hidden="true"></i></div>
+                <div class="pull-left marginleft5">2015</div>
+              </div>
+              <div><i class="fa fa-bolt" title="AI Share"></i></div>
+              <div class="text-right" id="_report-contain3" onclick="zoomPulse('_report-contain3', '_report-btn3')"><i class="fa fa-flag" title="Report" id="_report-btn3"></i></div>
             </div>
           </div>
           <div class="_post-803 _post-bz83">
             <div class="_post-hdr89">
-              <div><b>Crismaru Constantin</b> <span class="_post-date88">@19, August 2015</span></div>
+              <div class="clearfix">
+                <div class="pull-left _avatar-901"></div>
+                <div class="pull-left _header87">
+                  <b>Crismaru Constantin</b>
+                </div>
+                <div class="pull-left _header88">
+                  <span class="_post-date88">@19, August 2015</span>
+                </div>
+              </div>
             </div>
             <div class="_post-body78">"Dirt all under my nails, thumbing through currency, mindset currently<br>
               Niggas don't worry me, white Panamera playin' Curren$y, pussy niggas say they wanna murda' me<br>
@@ -503,11 +556,13 @@
               11-5 on the side I ain't take a day off<br>
               Bread Winner, guap getter hustle for the pay off"
               <div class="clearfix _post-footer90">
-                <div class="pull-left _post-btn93" style="text-align: left;"><i class="fa fa-share-alt"></i></div>
-                <div class="pull-left _post-btn93"><i class="fa fa-thumbs-o-up"></i> 2015</div>
-                <div class="pull-left _post-btn93"><i class="fa fa-bolt"></i></div>
-                <div class="pull-left _post-btn93" style="text-align: right;"><i class="fa fa-flag"></i></div>
-                <!--          <div class="_retimb-900">ReTimb</div>-->
+                <div class="text-left"><i class="fa fa-share-alt" title="Share"></i></div>
+                <div class="clearfix" id="_like-contain4" onclick="zoomPulse('_like-contain4', '_like-btn4')">
+                  <div class="pull-left"><i class="fa fa-heart" title="Like" id="_like-btn4" aria-hidden="true"></i></div>
+                  <div class="pull-left marginleft5">2015</div>
+                </div>
+                <div><i class="fa fa-bolt" title="AI Share"></i></div>
+                <div class="text-right" id="_report-contain4" onclick="zoomPulse('_report-contain4', '_report-btn4')"><i class="fa fa-flag" title="Report" id="_report-btn4"></i></div>
               </div>
               <div class="_post-comments-933">
                 <div class="_post-yr900" style="margin: 0;">
@@ -521,7 +576,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f3.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 22 Octomber 2015</div>
@@ -530,7 +588,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f2.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 3 November 2015</div>
@@ -539,7 +600,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f3.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 22 Octomber 2015</div>
@@ -548,7 +612,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f5.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 3 November 2015</div>
@@ -557,7 +624,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f6.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Patriciann Palka I favor "political correctness" to an extent .. I favor NOT overly thick skin .. Lets keep things in balance .
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Patriciann Palka I favor "political correctness" to an extent .. I favor NOT overly thick skin .. Lets keep things in balance.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 2 March 2016</div>
@@ -570,7 +640,15 @@
           </div>
           <div class="_post-803 _post-bz83">
             <div class="_post-hdr89">
-              <div><b>Crismaru Constantin</b> <span class="_post-date88">@19, August 2015</span></div>
+              <div class="clearfix">
+                <div class="pull-left _avatar-901"></div>
+                <div class="pull-left _header87">
+                  <b>Crismaru Constantin</b>
+                </div>
+                <div class="pull-left _header88">
+                  <span class="_post-date88">@19, August 2015</span>
+                </div>
+              </div>
             </div>
             <div class="_post-body78">"Dirt all under my nails, thumbing through currency, mindset currently<br>
               Niggas don't worry me, white Panamera playin' Curren$y, pussy niggas say they wanna murda' me<br>
@@ -587,11 +665,13 @@
               11-5 on the side I ain't take a day off<br>
               Bread Winner, guap getter hustle for the pay off"
               <div class="clearfix _post-footer90">
-                <div class="pull-left _post-btn93" style="text-align: left;"><i class="fa fa-share-alt"></i></div>
-                <div class="pull-left _post-btn93"><i class="fa fa-thumbs-o-up"></i> 2015</div>
-                <div class="pull-left _post-btn93"><i class="fa fa-bolt"></i></div>
-                <div class="pull-left _post-btn93" style="text-align: right;"><i class="fa fa-flag"></i></div>
-                <!--          <div class="_retimb-900">ReTimb</div>-->
+                <div class="text-left"><i class="fa fa-share-alt" title="Share"></i></div>
+                <div class="clearfix" id="_like-contain5" onclick="zoomPulse('_like-contain5', '_like-btn5')">
+                  <div class="pull-left"><i class="fa fa-heart" title="Like" id="_like-btn5" aria-hidden="true"></i></div>
+                  <div class="pull-left marginleft5">2015</div>
+                </div>
+                <div><i class="fa fa-bolt" title="AI Share"></i></div>
+                <div class="text-right" id="_report-contain5" onclick="zoomPulse('_report-contain5', '_report-btn5')"><i class="fa fa-flag" title="Report" id="_report-btn5"></i></div>
               </div>
               <div class="_post-comments-933">
                 <div class="_post-yr900" style="margin: 0;">
@@ -605,7 +685,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f3.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 22 Octomber 2015</div>
@@ -614,7 +697,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f2.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 3 November 2015</div>
@@ -623,7 +709,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f3.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Why do we abandon our veterans, as far as Im concerned they should have adequate benefits for life, and if in active service/hazard zone tour or injured especially. When will this country quit giving handouts to deadbeats at cost of one group that deserves benefits (I wont call them entitlements because im not sure anything is trade off for what some veterans sacrifice in name of country). Get rid of welfare for those who use it as hammock--that would allow reallocation to VA.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 22 Octomber 2015</div>
@@ -632,7 +721,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f5.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Patriciann Palka Many people denounce political correctness because they want to keep putting down Blacks, Jews, gays, Latinos and poor people like they could in the "Good Old Days." I don't think this is a good goal. We used to call it respect and good manners, but people fought fairness with police dogs and lynchings. Big Ag denies free speech. If you give information about the pollution or unhealthful qualities of CAFO feed lots, you go to jail. That is an actual threat to Free Speech. It's also unconstitutional.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 3 November 2015</div>
@@ -641,7 +733,10 @@
                   <div class="clearfix">
                     <img src="css\images\img_f6.png" class="pull-left" width="40" height="40">
                     <div class="pull-left _post-content-998">
-                      Patriciann Palka I favor "political correctness" to an extent .. I favor NOT overly thick skin .. Lets keep things in balance .
+                      <div>
+                        <span class="_comment-author-93">Marian Nicolescu</span><span class="_comment-msg-89">Patriciann Palka I favor "political correctness" to an extent .. I favor NOT overly thick skin .. Lets keep things in balance.</span>
+                      </div>
+                      <div class="_mark-ai-component900">Mark AI Component</div>
                     </div>
                   </div>
                   <div class="_comment-date-994"><span style="color: #999;">Comment added on</span> 2 March 2016</div>
@@ -662,65 +757,6 @@
         <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-sm hidden-md" width="600" height="600">
         <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-lg" width="400" height="400">
     </div>
-  </div>
-</div>
-
-<div id="_question34" class="_question-banner900 col-lg-4 col-md-6 col-sm-6">
-  <div class="_banner-inner88">
-    <div class="_question-header677">What do you think about dating a stranger in a white long dress?</div>
-    <div>
-      <input id="radio-1" class="radio-custom" name="radio-group" type="radio" onclick="answerAlg('_question34','_question90','q1','c1')">
-      <label for="radio-1" class="radio-custom-label">Yes i would</label>
-    </div>
-    <div>
-      <input id="radio-2" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question34','_question90','q1','c2')">
-      <label for="radio-2" class="radio-custom-label">Maybe</label>
-    </div>
-    <div>
-      <input id="radio-3" class="radio-custom" name="radio-group" type="radio" onclick="answerAlg('_question34','_question90','q1','c3')">
-      <label for="radio-3" class="radio-custom-label">No chance</label>
-    </div>
-    <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question34')"></i>
-  </div>
-</div>
-<div id="_question90" class="_question-banner900 col-lg-4 col-md-6 col-sm-6" style="display:none;">
-  <div class="_banner-inner88">
-    <div class="_question-header677">What do you think about traveling by plane?</div>
-    <div>
-      <input id="radio-4" class="radio-custom" name="radio-group" type="radio" onclick="answerAlg('_question90','_question91','q2','c1')">
-      <label for="radio-4" class="radio-custom-label">I'm scared</label>
-    </div>
-    <div>
-      <input id="radio-5" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question34','_question91','q2','c2')">
-      <label for="radio-5" class="radio-custom-label">I love it</label>
-    </div>
-    <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question90')"></i>
-  </div>
-</div>
-<div id="_question91" class="_question-banner900 col-lg-4 col-md-6 col-sm-6" style="display:none;">
-  <div class="_banner-inner88">
-    <div class="_question-header677">Around which hour do you take dinner?</div>
-    <div>
-      <input id="radio-6" class="radio-custom" name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-6" class="radio-custom-label">19.00</label>
-    </div>
-    <div>
-      <input id="radio-7" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-7" class="radio-custom-label">20.00</label>
-    </div>
-    <div>
-      <input id="radio-8" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-8" class="radio-custom-label">21.00</label>
-    </div>
-    <div>
-      <input id="radio-9" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-9" class="radio-custom-label">22.00</label>
-    </div>
-    <div>
-      <input id="radio-11" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-11" class="radio-custom-label">None of the above</label>
-    </div>
-    <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question90')"></i>
   </div>
 </div>
 

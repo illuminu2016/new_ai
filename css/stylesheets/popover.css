@@ -1,0 +1,77 @@
+/* line 1, ../sass/popover.scss */
+.popover {
+  max-width: 700px;
+}
+
+/* line 5, ../sass/popover.scss */
+.ui-tooltip {
+  padding: 4px !important;
+  font-size: 12px !important;
+}
+
+/* line 10, ../sass/popover.scss */
+._avatar-popover-900 {
+  background: white;
+}
+/* line 12, ../sass/popover.scss */
+._avatar-popover-900 ._popover-btn903 {
+  height: 55px;
+  width: 150px;
+}
+/* line 16, ../sass/popover.scss */
+._avatar-popover-900 ._photo-av7324 {
+  background: black;
+  text-align: center;
+  height: 100px;
+}
+/* line 20, ../sass/popover.scss */
+._avatar-popover-900 ._photo-av7324 img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  border-radius: 0;
+}
+/* line 28, ../sass/popover.scss */
+._avatar-popover-900 ._header-av840 {
+  padding-top: 20px;
+  width: auto;
+}
+/* line 31, ../sass/popover.scss */
+._avatar-popover-900 ._header-av840 ._name-av930 {
+  font-weight: 700;
+  font-size: 14px;
+}
+/* line 35, ../sass/popover.scss */
+._avatar-popover-900 ._header-av840 ._add-contact938 {
+  font-size: 11px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 42, ../sass/popover.scss */
+._avatar-popover-900 ._popover-inf502 {
+  margin: 20px 0 10px 0;
+}
+/* line 45, ../sass/popover.scss */
+._avatar-popover-900 ._popover-inf502 ._tickblue900 > div:first-child {
+  font-size: 12px;
+  font-weight: 700;
+}
+/* line 49, ../sass/popover.scss */
+._avatar-popover-900 ._popover-inf502 ._tickblue900 > div:last-child {
+  color: #286090;
+}
+/* line 53, ../sass/popover.scss */
+._avatar-popover-900 ._popover-inf502 > div:first-child {
+  width: 25%;
+}
+/* line 56, ../sass/popover.scss */
+._avatar-popover-900 ._popover-inf502 > div:nth-child(2) {
+  width: 50%;
+}
+/* line 59, ../sass/popover.scss */
+._avatar-popover-900 ._popover-inf502 > div:last-child {
+  width: 25%;
+  padding-right: 5px;
+}

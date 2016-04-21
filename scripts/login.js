@@ -48,3 +48,4 @@ if(screenH < 900) {
 	$('.uv_799-inner-container').css({"margin" : "75px 0 0 50px"});
 	$('.uv_789-inner-container').css({"margin" : "115px 0 0 50px"});
 }
+

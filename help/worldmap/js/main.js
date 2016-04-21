@@ -1,8 +1,8 @@
 d3.select(window).on("resize", throttle);
 
-/*    var zoom = d3.behavior.zoom()
+    var zoom = d3.behavior.zoom()
  .scaleExtent([0, 9])
- .on("zoom", move);*/
+ .on("zoom", move);
 
 
 /*    var width = document.getElementById('container').offsetWidth;
@@ -11,6 +11,7 @@ d3.select(window).on("resize", throttle);
 
 
 /*var width = document.getElementById('container').offsetWidth;*/
+var centered;
 var width = 720;
 var height = 480;
 
@@ -33,7 +34,7 @@ function setup(width,height){
         .attr("width", width)
         .attr("height", height)
         .attr("style","padding-top: 80px")
-        /*           .call(zoom)*/
+/*                   .call(zoom)*/
         .on("click", click)
         .append("g");
 
@@ -89,9 +90,61 @@ function draw(topo) {
         })
         .on("mouseout",  function(d,i) {
             tooltip.classed("hidden", true);
+        })
+        .on("click", function(d) {
+            var latlon = projection.invert(d3.mouse(this));
+
+            $('._map-tooltip902').remove();
+
+            // add country name
+            d3.select("#container").append("div")
+                .attr('pointer-events', 'none')
+                .attr("class", "tooltip _map-tooltip902")
+                .style("opacity", 1)
+                .html('')
+                .html("<div class='_country-932'>Country: " + d.properties.name + "</div>")
+                .style("left", (d.x + 50 + "%"))
+                .call(zoom)
+                .style("top", (d.y +"px"));
+
+            if((d.properties.name === "Canada") || (d.properties.name === "United States") || (d.properties.name === "Russian Federation") || (d.properties.name === "Greenland")) {
+                centered = d;
+                g.selectAll("path")
+                    .classed("active-path", centered && function(d) { return d === centered; });
+            } else {
+                // zoom only small countries
+                var x, y, k;
+
+                if (d && centered !== d) {
+                    var centroid = path.centroid(d);
+                    x = centroid[0];
+                    y = centroid[1];
+                    k = 4;
+                    centered = d;
+                    g.selectAll("path")
+                        .classed("active-path", centered && function(d) { return d === centered; });
+                } else {
+                    x = width / 2;
+                    y = height / 2;
+                    k = 1;
+                    centered = null;
+
+                    g.selectAll("path")
+                        .classed("color-path", centered && function(d) { return d === centered; });
+                }
+
+/*                g.selectAll("path")
+                    .classed("active-path", centered && function(d) { return d === centered; });*/
+
+                g.transition()
+                    .duration(750)
+                    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+                    .style("stroke-width", 5.5 / k + "px");
+            }
         });
 
-    addpoint("27.5902780", "47.1569440", "" );
+
+    //addpoint("27.5902780", "47.1569440", "" );
 
     //EXAMPLE: adding some capitals from external CSV file
     /*                            d3.csv("help/worldmap/data/country-capitals.csv", function(err, capitals) {
@@ -156,8 +209,7 @@ function throttle() {
 
 //geo translation on mouse click in map
 function click() {
-    var latlon = projection.invert(d3.mouse(this));
-    console.log(latlon);
+
 }
 
 
@@ -168,12 +220,13 @@ function addpoint(lat,lon,text) {
     var x = projection([lat,lon])[0];
     var y = projection([lat,lon])[1];
 
-    gpoint.append("svg:circle")
+
+/*    gpoint.append("svg:circle")
         .attr("cx", x)
         .attr("cy", y)
         .attr("class","point")
         .style("fill", "url(/#image)")
-        .attr("r", 34.5);
+        .attr("r", 34.5);*/
 
     //conditional in case a point has no associated text
     if(text.length>0){

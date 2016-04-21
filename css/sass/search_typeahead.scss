@@ -1,7 +1,9 @@
 ._hm-user-typeahead-container89 {
   display: block;
-  float: left;
+  float: right;
   padding: 0px;
+  width: 32%;
+  margin: 2px 15px 0 0;
   ._hm-user-typeahead {
     width: 75%;
     margin-top: 9px;
@@ -9,6 +11,7 @@
     position: relative;
     ._hm-typeahead-856 {
       height: 30px;
+      font-size: 12px;
     }
   }
 }

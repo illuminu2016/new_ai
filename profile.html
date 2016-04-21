@@ -4,11 +4,18 @@
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/stylesheets/screen.css" rel="stylesheet">
 <link rel="stylesheet" href="css\sass\font-awesome\font-awesome-4.4.0\css\font-awesome.min.css">
+
+<!-- jQuery UI CSS -->
+<link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+<!-- Bootstrap styling for Typeahead -->
+<link href="dist/tokenfield-typeahead.min.css" type="text/css" rel="stylesheet">
+<!-- Tokenfield CSS -->
+<link href="dist/bootstrap-tokenfield.min.css" type="text/css" rel="stylesheet">
 
 </head>
 <body class="page-dim">
@@ -122,11 +129,24 @@
         </li>
       </ul>
 
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Message Settings</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a>Change Language of App</a></li>
+            <li><a>Change Password</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
 
+      <div class="_hm-user-typeahead-container89 col-md-6 col-sm-5" align="right">
 
-      <div class="_hm-user-typeahead-container89 col-md-6 col-sm-5" align="center">
-
-       <div class="form-group _hm-user-typeahead">
+        <div class="form-group _hm-user-typeahead">
           <input type="text" class="form-control _hm-typeahead-856" placeholder="Search ArtificialSpace">
           <div class="_hm-search-user-overflow">
             <div class="_hm-search-inner-overflow">
@@ -304,21 +324,6 @@
         </div>
 
       </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
     </div><!--/.nav-collapse -->
   </div>
 </nav>
@@ -535,37 +540,149 @@
       </div>
     </div>
     <div class="clearfix vw-information-894">
-      <div class="pull-left vw-personality-990">
+      <div class="pull-left vw-personality-990 _relative-positioning">
         <div class="vw-profile78">
-          <div class="clearfix">
-            <h4 class="pull-left">Place</h4>
-            <i class="pointer pull-left fa fa-pencil _pencil-109"></i>
-          </div>
-          <div>Iasi, Romania</div>
+          <h4>Place</h4>
+          <div class="_profile-edit-88" id="position-input-map" onclick="openMapSelection()">Iasi, Romania</div>
         </div>
         <div class="vw-profile78">
-          <div class="clearfix">
-            <h4 class="pull-left">Age</h4>
-            <i class="pointer pull-left fa fa-pencil _pencil-109"></i>
-          </div>
+          <h4 style="margin-bottom: 10px;">Age</h4>
           <div>32 years old</div>
         </div>
         <div class="vw-profile78">
-          <div class="clearfix">
-            <h4 class="pull-left">Studies</h4>
-            <i class="pointer pull-left fa fa-pencil _pencil-109"></i>
-          </div>
-          <div>Universitatea Alexandru Ioan Cuza</div>
+          <h4>Studies</h4>
+          <div class="_profile-edit-88">Universitatea Alexandru Ioan Cuza</div>
         </div>
         <div class="vw-profile78">
-          <div class="clearfix">
-            <h4 class="pull-left">Birthday</h4>
-            <i class="pointer pull-left fa fa-pencil _pencil-109"></i>
-          </div>
-          <div><i class="fa fa-calendar"></i> 31.07.1983</div>
+            <h4 style="margin-bottom: 10px;">Birthday</h4>
+            <i class="fa fa-calendar" style="margin-right: 5px;"></i>31.07.1983
+        </div>
+        <div class="clearfix _can-edit-pencil" style="top: 40px;">
+          <i class="pointer pull-left fa fa-pencil _pencil-109" id="pencil-profile-info" onclick="editProfileInformation()"></i>
+          <div class="pull-left _modify-info875" id="save-profile-info" onclick="saveProfileInformation()">Save</div>
+          <div class="pull-left _profile-save-loader" id="_profile-information-loader"><img src="css\images\ajax-loader.gif" width="27"></div>
         </div>
       </div>
-      <div id="map" class="pull-right _map-89"></div>
+      <div id="map_placeholder" class="pull-right _map-89"></div>
+    </div>
+    <div class="vw-information-894 _activity-88 _relative-positioning">
+      <h4>Interests</h4>
+      <div class="clearfix">
+        <input type="text" class="col-lg-4 col-md-4 col-sm-4 _add-interest-89" placeholder="Add a interest and press enter" id="tokenfield">
+      </div>
+      <div>
+        <div class="_hobby-983 _margin-right15" id="interest1">
+          <span>Gym</span>
+          <i class="fa fa-times _hobby-close-67" style="display: none" onclick="removeInterest('interest1')"></i>
+        </div>
+        <div class="_hobby-983 _margin-right15" id="interest2">
+          <span>Travel</span>
+          <i class="fa fa-times _hobby-close-67" style="display: none" onclick="removeInterest('interest2')"></i></div>
+        <div class="_hobby-983 _margin-right15" id="interest3">
+          <span>Movies</span>
+          <i class="fa fa-times _hobby-close-67" style="display: none" onclick="removeInterest('interest3')"></i></div>
+      </div>
+      <div class="_can-edit-pencil">
+        <i class="pointer fa fa-pencil _pencil-109" id="pencil-profile-interest" onclick="editInterests()"></i>
+        <div class="pull-left _modify-info875" id="save-profile-interest" onclick="saveInterests()">Save</div>
+        <div class="pull-left _profile-save-loader" id="_profile-interest-loader"><img src="css\images\ajax-loader.gif" width="27"></div>
+      </div>
+    </div>
+    <div class="vw-information-894 _activity-88">
+      <h4>More information</h4>
+      <div>
+          <div class="clearfix _profile-inf903">
+            <div class="pull-left clearfix">
+              <div class="pull-left">Relationship:</div>
+              <select class="pull-left marginleft10" id="_profile-relationship-select89" style="display: none;">
+                <option>Single</option>
+                <option>Divorced</option>
+                <option>In a relationship</option>
+              </select>
+              <span id="_profile-relationship" class="_mobiqui67">Single</span>
+            </div>
+            <div class="pull-left _modify-info870" onclick="editProfileMoreInformation('_modify-profile-relationship', '_save-profile-relationship', '_profile-relationship', '_profile-relationship-select89')" id="_modify-profile-relationship">Modify this value</div>
+            <div class="pull-left _modify-info870 marginleft10" onclick="saveProfileMoreInformation('_save-profile-relationship', '_modify-profile-relationship', '_profile-relationship','_profile-relationship-loader', '_profile-relationship-select89')" id="_save-profile-relationship" style="display: none;">Save</div>
+            <div class="pull-left _profile-save-loader778" id="_profile-relationship-loader"><img src="css\images\ajax-loader.gif" width="27"></div>
+          </div>
+        <div class="clearfix _profile-inf903">
+          <div class="pull-left clearfix">
+            <div class="pull-left">Height: </div>
+            <select class="pull-left marginleft10" id="_profile-height-select89" style="display: none;">
+              <option>150 cm</option>
+              <option>151 cm</option>
+              <option>152 cm</option>
+              <option>153 cm</option>
+              <option>154 cm</option>
+              <option>155 cm</option>
+              <option>156 cm</option>
+              <option>157 cm</option>
+              <option>158 cm</option>
+              <option>159 cm</option>
+              <option>160 cm</option>
+              <option>161 cm</option>
+              <option>162 cm</option>
+              <option>163 cm</option>
+              <option>164 cm</option>
+              <option>165 cm</option>
+              <option>166 cm</option>
+              <option>167 cm</option>
+              <option>168 cm</option>
+              <option>169 cm</option>
+              <option>170 cm</option>
+              <option>171 cm</option>
+              <option>172 cm</option>
+              <option>173 cm</option>
+              <option>174 cm</option>
+              <option>175 cm</option>
+              <option>176 cm</option>
+              <option>177 cm</option>
+              <option>178 cm</option>
+              <option>179 cm</option>
+              <option>180 cm</option>
+              <option>181 cm</option>
+              <option>182 cm</option>
+              <option>183 cm</option>
+              <option>184 cm</option>
+              <option>185 cm</option>
+              <option>186 cm</option>
+              <option>187 cm</option>
+              <option>188 cm</option>
+              <option>189 cm</option>
+              <option>190 cm</option>
+              <option>191 cm</option>
+              <option>192 cm</option>
+              <option>193 cm</option>
+              <option>194 cm</option>
+              <option>195 cm</option>
+              <option>196 cm</option>
+              <option>197 cm</option>
+              <option>198 cm</option>
+              <option>199 cm</option>
+              <option>200 cm</option>
+            </select>
+            <span id="_profile-height" class="_mobiqui67">1.73cm</span>
+          </div>
+          <div class="pull-left _modify-info870" onclick="editProfileMoreInformation('_modify-profile-height', '_save-profile-height', '_profile-height', '_profile-height-select89')" id="_modify-profile-height">Modify this value</div>
+          <div class="pull-left _modify-info870 marginleft10" onclick="saveProfileMoreInformation('_save-profile-height', '_modify-profile-height', '_profile-height', '_profile-height-loader', '_profile-height-select89')" id="_save-profile-height" style="display: none;">Save</div>
+          <div class="pull-left _profile-save-loader778" id="_profile-height-loader"><img src="css\images\ajax-loader.gif" width="27"></div>
+        </div>
+        <div class="clearfix _profile-inf903">
+          <div class="pull-left clearfix">
+            <div class="pull-left">Here for: </div>
+            <select class="pull-left marginleft10" id="_profile-date-select89" style="display: none;">
+              <option>Looking for friends</option>
+              <option>Date</option>
+              <option>Work</option>
+            </select>
+            <span id="_profile-date" class="_mobiqui67">Date</span>
+          </div>
+          <div class="pull-left _modify-info870" onclick="editProfileMoreInformation('_modify-profile-date', '_save-profile-date', '_profile-date', '_profile-date-select89')" id="_modify-profile-date">Modify this value</div>
+          <div class="pull-left _modify-info870 marginleft10" onclick="saveProfileMoreInformation('_save-profile-date', '_modify-profile-date', '_profile-date', '_profile-date-loader', '_profile-date-select89')" id="_save-profile-date" style="display: none;">Save</div>
+          <div class="pull-left _profile-save-loader778" id="_profile-date-loader"><img src="css\images\ajax-loader.gif" width="27"></div>
+        </div>
+        <div class="_profile-inf903">Friends: 120</div>
+      </div>
     </div>
     <div class="_activity-88">
       <h4>Recent activity</h4>
@@ -584,6 +701,21 @@
     <div class="_unk877">
         <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-sm hidden-md" width="600" height="600">
         <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-lg" width="400" height="400">
+    </div>
+  </div>
+</div>
+<div class="_map-overlay98" align="center">
+  <div class="_map-container col-lg-9 col-md-11 col-sm-12">
+    <div class="_map-cluster-90" style="height: 90%;">
+      <div id="map" style="height: 100%;">
+      </div>
+      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    </div>
+    <div class="_map-controls-84">
+      <div class="clearfix _map-inner-controls">
+          <div class="pull-left btn btn-primary marginright60" onclick="saveGlobalPosition()">Save</div>
+          <div class="pull-right btn btn-danger" onclick="hideMapOverlay()">Cancel</div>
+      </div>
     </div>
   </div>
 </div>
@@ -715,7 +847,7 @@
   </div>
 </div>
 
-<div id="_question34" class="_question-banner900 col-lg-4 col-md-6 col-sm-6">
+<div id="_question34" class="_question-banner900 right10 col-lg-4 col-md-6 col-sm-6">
   <div class="_banner-inner88">
       <div class="_question-header677">What do you think about dating a stranger in a white long dress?</div>
       <div>
@@ -733,7 +865,7 @@
       <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question34')"></i>
   </div>
 </div>
-<div id="_question90" class="_question-banner900 col-lg-4 col-md-6 col-sm-6" style="display:none;">
+<div id="_question90" class="_question-banner900 right10 col-lg-4 col-md-6 col-sm-6" style="display:none;">
   <div class="_banner-inner88">
     <div class="_question-header677">What do you think about traveling by plane?</div>
     <div>
@@ -747,7 +879,7 @@
     <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question90')"></i>
   </div>
 </div>
-<div id="_question91" class="_question-banner900 col-lg-4 col-md-6 col-sm-6" style="display:none;">
+<div id="_question91" class="_question-banner900 right10 col-lg-4 col-md-6 col-sm-6" style="display:none;">
   <div class="_banner-inner88">
     <div class="_question-header677">Around which hour do you take dinner?</div>
     <div>
@@ -779,16 +911,88 @@
   </div>
 </div>-->
 <div class="_question-banner902"></div>
-  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-          async defer></script>
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script type="text/javascript" src="dist/bootstrap-tokenfield.min.js" charset="UTF-8"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="scripts/ie10-viewport-bug-workaround.js"></script>
 
     <script src="scripts/menu_functions.js"></script>
+  <script>
+    //https://developers.google.com/maps/documentation/javascript/examples/places-searchbox
+    function initAutocomplete() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 47.15, lng: 27.59},
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+
+      initMap();
+
+      // Create the search box and link it to the UI element.
+      var input = document.getElementById('pac-input');
+      var searchBox = new google.maps.places.SearchBox(input);
+      map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+      // Bias the SearchBox results towards current map's viewport.
+      map.addListener('bounds_changed', function() {
+        searchBox.setBounds(map.getBounds());
+      });
+
+      var markers = [];
+      // Listen for the event fired when the user selects a prediction and retrieve
+      // more details for that place.
+      searchBox.addListener('places_changed', function() {
+        var places = searchBox.getPlaces();
+
+        profileMap.name = places[0].name;
+
+        if (places.length == 0) {
+          return;
+        }
+
+        // Clear out the old markers.
+        markers.forEach(function(marker) {
+          marker.setMap(null);
+        });
+        markers = [];
+
+        // For each place, get the icon, name and location.
+        var bounds = new google.maps.LatLngBounds();
+        places.forEach(function(place) {
+          var icon = {
+            url: place.icon,
+            size: new google.maps.Size(71, 71),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(17, 34),
+            scaledSize: new google.maps.Size(25, 25)
+          };
+
+          // Create a marker for each place.
+          markers.push(new google.maps.Marker({
+            map: map,
+            icon: icon,
+            title: place.name,
+            position: place.geometry.location
+          }));
+
+          if (place.geometry.viewport) {
+            // Only geocodes have viewport.
+            bounds.union(place.geometry.viewport);
+          } else {
+            bounds.extend(place.geometry.location);
+          }
+        });
+        map.fitBounds(bounds);
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0PYZPU66T9zHFmvmJmU5b18RP1QcJnzY&libraries=places&callback=initAutocomplete"
+          async defer></script>
 </body>
 </html>
