@@ -1,8 +1,7 @@
 .vw_container {
   width: 100%;
-  background-color: white;
   position: relative;
-  background-image: url('../../css/images/social_network.jpg');
+  background: url('../../css/images/social_network.jpg') white;
   background-size: cover;
   ._uv-terminal {
     color:#2ca02c;
@@ -225,4 +224,7 @@
 }
 .text-gray {
   color: #ccc;
+}
+._width280 {
+  width: 280px;
 }
