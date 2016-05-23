@@ -1,0 +1,40 @@
+.container-dim99 {
+  .ui-progressbar {
+    height: 22px;
+    margin: 50px 20px 0 20px;
+    .ui-progressbar-value {
+      margin: 0;
+    }
+  }
+  .ui-widget-content {
+    border: 1px solid #d9534f;
+  }
+  .ui-widget-header {
+    border: 1px solid #d9534f;
+    background: #d9534f 50% 50% repeat-x;
+  }
+}
+
+#bar-chart710 {
+  text {
+    display: none;
+  }
+  rect {
+    fill: rgb(110, 169, 248);
+  }
+}
+
+.tooltip-8201 {
+  margin-left: 40px;
+  background: #333;
+  padding: 10px;
+  color: white;
+}
+
+.tooltip-8202 {
+  margin-left: 10px;
+  background: #333;
+  padding: 5px 10px;
+  color: white;
+}
+

@@ -2,6 +2,9 @@
 @import "search_typeahead";
 @import "popover";
 @import "ux_home";
+@import "progress_bar";
+@import "ai_graph";
+@import "contacts_map";
 
 .navbar-right .dropdown-menu {
   right: -1px;
@@ -9,3 +12,5 @@
 .page-dim {
   background-color: #e7e7e7;
 }
+
+

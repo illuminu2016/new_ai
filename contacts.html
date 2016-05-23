@@ -9,7 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/stylesheets/screen.css" rel="stylesheet">
     <link rel="stylesheet" href="css\sass\font-awesome\font-awesome-4.4.0\css\font-awesome.min.css">
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   </head>
   <body class="page-dim">
 
@@ -27,7 +27,7 @@
         <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
           <ul class="nav navbar-nav">
             <li><a href="profile.html">Profile</a></li>
-            <li class="active"><a href="contacts.html">Contacts</a></li>
+            <li><a href="find_match.html">Find Match</a></li>
             <li><a href="ai.html">AI Space</a></li>
             <li>
               <a class="fa-envelope56 pointer">Pulse</a>
@@ -322,10 +322,41 @@
       </div>
     </nav>
     <div class="container container-dim99">
-      <div id="container" style="margin-top: 115px;" align="center"></div>
-      <div class="clearfix _dim993">
-        <div class="pull-left">
-          <!--<h3> Contacts(432) </h3>-->
+      <div class="controls-loader">
+        <div class="country-loader895" align="center">
+          <img src="css\images\preloader.gif">
+        </div>
+      </div>
+      <div class="contact-controls-892">
+        <div id="container" style="margin: 115px 0 0 70px;" align="center"></div>
+        <div class="pointer map_zoom_indicator btn btn-success" onclick="zoomOutMap()">
+          <div style="font-size: 11px">Zoom Out</div>
+          <div align="center">
+            <i class="fa fa-search-minus" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="_user930" >
+          <div class="clearfix country-selector942">
+            <div class="pull-left">
+              <div style="padding: 5px 2px;">Users from</div>
+              <select class="pull-left marginleft10" id="countriesSelect">
+              </select>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
+              <p>
+                <label for="search-age">Age</label>
+                <input type="text" id="search-age" readonly style="border:0; color:#f6931f; font-weight:bold;">
+              </p>
+              <div id="age-slider" class="slider-widget-826"></div>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
+              <p>
+                <label for="personality-context">Personality</label>
+                <input type="text" id="personality-context" readonly style="border:0; color:#f6931f; font-weight:bold; width: 40px;">
+              </p>
+              <div id="personality-slider" class="slider-widget-826"></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="vw-name-984" style="text-align: center;">
@@ -503,8 +534,11 @@
     <!-- Bootstrap core JavaScript
         ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="scripts/underscore.js"></script>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="scripts/menu_functions.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="scripts/ie10-viewport-bug-workaround.js"></script>
     <script src="help/worldmap/js/d3.min.js"></script>

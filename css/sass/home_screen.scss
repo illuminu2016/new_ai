@@ -1,3 +1,5 @@
+@import "mixins";
+
 ._hm-header {
   height: 55px;
   width: 100%;
@@ -455,11 +457,9 @@
       ._hm-status-569 {
         text-align: center;
         font-size: 15px;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
         color: #286090;
         cursor: pointer;
+        @include vertical-align();
       }
       ._hm-status-888 {
         width: 50%;
@@ -692,9 +692,7 @@
         margin-left: 15px;
       }
       ._hm-status-quo-893 {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        @include vertical-align();
         text-align: center;
         font-size: 13px;
       }
@@ -822,6 +820,7 @@
 
 .container-dim99 {
   background-color: white;
+  position: relative;
   ._dim993 {
     margin-top: 80px;
     padding-left: 74px;
@@ -934,9 +933,7 @@
     }
     .vw-album-upload-903 {
       font-size: 60px;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
+      @include vertical-align();
     }
     .vw-album-container-832 {
       padding-right: 0px;
@@ -977,9 +974,7 @@
           text-align: center;
           color: #ccc;
           ._igh-900 {
-            top: 50%;
-            transform: translateY(-50%);
-            position: relative;
+            @include vertical-align();
           }
         }
         ._pencil-ulp677 {
@@ -1137,11 +1132,9 @@
   ._report-overlay {
     width: 600px;
     background: white;
-    position: relative;
-    top: 50%;
     left: 0;
-    transform: translateY(-50%);
     cursor: move;
+    @include vertical-align();
     ._report-header-11 {
       border: 1px solid #ddd;
       ._report-101 {
@@ -1178,10 +1171,8 @@
   ._retimb-container933 {
     width: 600px;
     background: white;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     cursor: move;
+    @include vertical-align();
     ._retimb-ycomment-674 {
       background: #e7e7e7;
       margin: 0 30px;
@@ -1235,10 +1226,8 @@
   ._unk877 {
     width: 65%;
     background: black;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     padding: 40px 0;
+    @include vertical-align();
     i {
       position: absolute;
       top: 5px;
@@ -1515,6 +1504,13 @@
   }
 }
 
+._ijl-8932 {
+  width: 40%;
+  height: auto;
+  margin-top: 100px;
+  & > div > div { @include vertical-align(); }
+}
+
 ._space-hall-98 {
   margin: 50px 20px 40px 50px;
 }
@@ -1577,6 +1573,21 @@
   margin-right: 60px;
 }
 
+._menu-802 {
+  margin-top: 20px;
+  .btn-profile {
+    color: white;
+    background: #444;
+  }
+  .btn-profile:hover {
+    color: white !important;
+    background: #111;
+  }
+  & > div {
+    margin-right: 15px;
+  }
+}
+
 ._adsense-900 {
   height: 400px;
   width: 98%;
@@ -1595,12 +1606,6 @@
   width: 98%;
   background: #aaa;
   margin-top: 40px;
-}
-
-._adv-center-99 {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 ._map-controls-84 {
@@ -1759,12 +1764,36 @@
   cursor: text;
 }
 
+.ai-header-894 {
+  height: 100px;
+  & > div {
+    padding-left: 40px;
+    height: 100%;
+    margin-top: 10px;
+  }
+  ._ai-separator-935 {
+    border-right: 1px solid #e7e7e7;
+  }
+  ._hdr-820 {
+    position: relative;
+    top: 55%;
+    transform: translateY(-50%);
+    ._hdr-89 {
+      font-size: 26px;
+    }
+  }
+}
+
 .text-left {
   text-align: left !important;
 }
 
 .text-right {
   text-align: right !important;
+}
+
+.tooltip-8201 {
+  left: 150px;
 }
 
 .multiglass-884 {
@@ -1775,6 +1804,62 @@
 
 ._zoom-green100 {
   color: #5cb85c;
+}
+
+._ai-questionair-701 {
+  margin: 0 20px 30px 20px;
+  & > div {
+    width: 50%;
+  }
+  .ai-question-body-820 {
+    border: 1px solid #e7e7e7;
+/*    padding: 20px;*/
+    margin-top: 20px;
+    width: 96%;
+    height: 212px;
+    position: relative;
+    label {
+      font-weight: 400;
+    }
+    & > div {
+      margin: 20px;
+    }
+    ._badge-133 {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      .verify-893 {
+        height: 80px;
+        width: 80px;
+        background: url('../images/sprite_animation.png') no-repeat;
+        background-size: cover;
+        display: none;
+      }
+      .frame_0_delay-005s { background-position: 0 0; }
+      .frame_1_delay-005s { background-position: -85px 0; }
+      .frame_2_delay-005s { background-position: -170px 0; }
+      .frame_3_delay-005s { background-position: -255px 0; }
+      .frame_4_delay-005s { background-position: -335px 0; }
+      .frame_5_delay-005s { background-position: -415px 0; }
+      .frame_6_delay-005s { background-position: -500px 0; }
+      .frame_7_delay-005s { background-position: -585px 0; }
+      .frame_8_delay-005s { background-position: -665px 0; }
+      .frame_9_delay-005s { background-position: -752px 0; }
+      .frame_10_delay-005s { background-position: -830px 0; }
+/*      .frame_11_delay-005s { background-position: -910px 0; }*/
+      .frame_11_delay-005s { background-position: -2065px 0; }
+/*      .frame_12_delay-005s { background-position: -992px 0; }
+      .frame_13_delay-005s { background-position: -1080px 0; }
+      .frame_14_delay-005s { background-position: -1165px 0; }
+      .frame_15_delay-005s { background-position: -1245px 0; }
+      .frame_16_delay-005s { background-position: -1330px 0; }
+      .frame_17_delay-005s { background-position: -1412px 0; }
+      .frame_18_delay-005s { background-position: -1493px 0; }
+      .frame_19_delay-005s { background-position: -1580px 0; }
+      .frame_20_delay-005s { background-position: -1660px 0; }
+      .frame_21_delay-005s { background-position: -2065px 0; }*/
+    }
+  }
 }
 
 ._avatar-893 {
@@ -1801,8 +1886,42 @@
   width: 40px;
 }
 
+.slider-widget-826 {
+  position: relative;
+  top: 10px;
+}
+
 ._header87 {
   margin: 10px 0 0 10px;
+}
+
+._ai-questions-82 {
+  height: 600px;
+  margin-left: 7%;
+  display: none;
+  & > div {
+    @include vertical-align();
+    padding: 80px 60px;
+    //border: 1px solid #e7e7e7;
+    border-radius: 68%;
+    background: rgb(248, 211, 110);
+    font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .radio-custom {
+    width: 20px;
+    height: 16px;
+    margin: 2px 4px 0 0;
+    transform: translateY(22%);
+  }
+  label {
+    font-weight: 400;
+  }
+}
+
+._ai-header-943 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 ._header88 {
@@ -1897,29 +2016,10 @@
 #target {
   width: 345px;
 }
-/* google map */
 
-.active-path {
-  fill: black!important;
-  stroke-width: 1px !important;
-  stroke: rebeccapurple;
-  stroke-opacity: 0.5;
-}
 
-._map-tooltip902 {
-  top: 15%;
-  left: 43%;
-  border: 1px solid black;
-  width: 200px;
-  height: 75px;
-  text-align: center;
-  position: absolute;
-  z-index: 2000;
-  background: white;
-  box-shadow: #292121 0px 0px 5px;
-  ._country-932 {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
+
+
+
+
+

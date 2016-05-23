@@ -295,7 +295,7 @@ function saveProfileMoreInformation(btn1, btn2, btn3, loader, selectOpt) {
 function openMapSelection() {
 	if(profileMap.openStatus) {
 		$('._map-overlay98').css('visibility', 'visible');
-		$('._map-overlay98').css('z-index', '100');
+		$('._map-overlay98').css('z-index', '9999');
 		$('html').css('overflow', 'hidden');
 	}
 }
@@ -447,20 +447,42 @@ $(function() {
 	$('.fa-heart').tooltip();
 	$('.fa-bolt').tooltip();
 	$('.fa-flag').tooltip();
-/*	$(document).tooltip({
-		track: true,
-		items: "[data-profile]",
-		content: function() {
-			var element = $( this );
-			if ( element.is( "[data-profile]" ) ) {
-				return "";
+
+	$( "#age-slider" ).slider({
+		range: true,
+		min: 18,
+		max: 90,
+		values: [ 20, 30 ],
+		slide: function( event, ui ) {
+			if((ui.values[ 1 ] > 23) && (ui.values[ 0 ] < 80)) {
+				$( "#search-age" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
 			}
 		}
-	});*/
+	});
+	$( "#search-age" ).val( "" + $( "#age-slider" ).slider( "values", 0 ) + " - " + $( "#age-slider" ).slider( "values", 1 ) );
+
+	$( "#personality-slider" ).slider({
+		range: "min",
+		value: 10,
+		min: 0,
+		max: 100,
+		slide: function( event, ui ) {
+			$( "#personality-context" ).val( ui.value + "%" );
+		}
+	});
+	$( "#personality-context" ).val( $( "#personality-slider" ).slider( "value" ) + "%");
+
 });
 
 function addContact(source) {
 	$(source).html('Contact requested');
 };
+
+function goToRoute(url) {
+	window.location = url;
+}
+
+
+
 
 

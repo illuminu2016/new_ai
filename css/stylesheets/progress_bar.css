@@ -1,0 +1,43 @@
+/* line 2, ../sass/progress_bar.scss */
+.container-dim99 .ui-progressbar {
+  height: 22px;
+  margin: 50px 20px 0 20px;
+}
+/* line 5, ../sass/progress_bar.scss */
+.container-dim99 .ui-progressbar .ui-progressbar-value {
+  margin: 0;
+}
+/* line 9, ../sass/progress_bar.scss */
+.container-dim99 .ui-widget-content {
+  border: 1px solid #d9534f;
+}
+/* line 12, ../sass/progress_bar.scss */
+.container-dim99 .ui-widget-header {
+  border: 1px solid #d9534f;
+  background: #d9534f 50% 50% repeat-x;
+}
+
+/* line 19, ../sass/progress_bar.scss */
+#bar-chart710 text {
+  display: none;
+}
+/* line 22, ../sass/progress_bar.scss */
+#bar-chart710 rect {
+  fill: #6ea9f8;
+}
+
+/* line 27, ../sass/progress_bar.scss */
+.tooltip-8201 {
+  margin-left: 40px;
+  background: #333;
+  padding: 10px;
+  color: white;
+}
+
+/* line 34, ../sass/progress_bar.scss */
+.tooltip-8202 {
+  margin-left: 10px;
+  background: #333;
+  padding: 5px 10px;
+  color: white;
+}
