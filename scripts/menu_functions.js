@@ -6,6 +6,7 @@ var searchUsr = false,
 	sharePost = false,
 	aiSharePost = false,
 	reportPost = false,
+	removeScreen = false,
 	selfAlbum = {
 		position: 0,
 		cards: 0
@@ -21,9 +22,10 @@ $('*').click(function(e){
 	messageUsr = targetEvt(e, messageUsr, '.multiglass-884', '._message-ai-83', '._inner-message-ai-83');
 	sharePost = targetShareEvt(e, sharePost, '.fa-share-alt', '._mds933', '.fa-times');
 	reportPost = targetShareEvt(e, reportPost, '.fa-flag', '._mds182', '.fa-times');
+	removeScreen = targetShareEvt(e, removeScreen, '._irem-894', '._mds682', '.fa-times');
 	aiSharePost = targetShareEvt(e, aiSharePost, '.fa-bolt', '._mds939', '.fa-times');
 	galleryUsr = targetGalleryEvt(e, galleryUsr, '._ijl-874', '._mds932', '._unk877', '._imgk984');
-	uploadPhoto = targetUploadEvt(e, uploadPhoto, '.vw-album998', '._upload-overlay899');
+/*	uploadPhoto = targetUploadEvt(e, uploadPhoto, '.vw-album998', '._upload-overlay899');*/
 });
 
 function initMap() {
@@ -34,39 +36,18 @@ function initMap() {
 	});
 }
 
-function targetUploadEvt(event, target, btn, container) {
-	if($(event.target).is(btn)) {
-		target = !target;
-
-		$('html').css('overflow', 'hidden');
-
-		event.stopPropagation();
-	} else {
-		if($(event.target).is(container)) {
-			if(target) {
-				target = !target;
-				$('html').css('overflow', 'scroll');
-			}
-		}
-	}
-
-	target ? $(container).show() : $(container).hide();
-
-	return target;
-}
-
 function targetShareEvt(event, target, btn, container, closeBtn) {
 	if($(event.target).is(btn)) {
 		target = !target;
 
-		$('html').css('overflow', 'hidden');
+		hideScrollBar();
 
 		event.stopPropagation();
 	} else {
 		if($(event.target).is(container) || $(event.target).is(closeBtn)) {
 			if(target) {
 				target = !target;
-				$('html').css('overflow', 'scroll');
+				showScrollBar();
 			}
 		}
 	}
@@ -81,7 +62,7 @@ function targetGalleryEvt(event, target, btn, container, inDivider, imgPlacehold
 		$(imgPlaceholder).attr('src', event.delegateTarget.src);
 		target = !target;
 
-		$('html').css('overflow', 'hidden');
+		hideScrollBar();
 
 		event.stopPropagation();
 	} else {
@@ -89,7 +70,7 @@ function targetGalleryEvt(event, target, btn, container, inDivider, imgPlacehold
 		} else {
 			if(target) {
 				target = !target;
-				$('html').css('overflow', 'scroll');
+				showScrollBar();
 			}
 		}
 	}
@@ -155,49 +136,42 @@ function nextAlbumScroll(items) {
 	}
 }
 
-function addLinearQuestion() {
-	$('._question-banner901').fadeIn(2000,"linear");
+function getScrollbarWidth() {
+	var outer = document.createElement("div");
+	outer.style.visibility = "hidden";
+	outer.style.width = "100px";
+	outer.style.msOverflowStyle = "scrollbar"; // needed for WinJS apps
+
+	document.body.appendChild(outer);
+
+	var widthNoScroll = outer.offsetWidth;
+	// force scrollbars
+	outer.style.overflow = "scroll";
+
+	// add innerdiv
+	var inner = document.createElement("div");
+	inner.style.width = "100%";
+	outer.appendChild(inner);
+
+	var widthWithScroll = inner.offsetWidth;
+
+	// remove divs
+	outer.parentNode.removeChild(outer);
+
+	return widthNoScroll - widthWithScroll;
 }
 
-function addTwoLinearQuestion() {
-	$('._question-banner902').fadeIn(2000,"linear");
+function hideScrollBar() {
+	$('html').css('overflow', 'hidden');
+	$('body').css("paddingRight", getScrollbarWidth() + "px");
+	$('.navbar').css("paddingRight", getScrollbarWidth() + "px");
 }
 
-if(document.getElementById("uploadBtn1")) {
-	document.getElementById("uploadBtn1").onchange = function () {
-		document.getElementById("uploadFile1").value = this.value;
-	};
+function showScrollBar() {
+	$('html').css('overflow', 'scroll');
+	$('body').css("paddingRight", 0);
+	$('.navbar').css("paddingRight", 0);
 }
-
-if(document.getElementById("uploadBtn2")) {
-	document.getElementById("uploadBtn2").onchange = function () {
-		document.getElementById("uploadFile2").value = this.value;
-	};
-}
-
-if(document.getElementById("uploadBtn3")) {
-	document.getElementById("uploadBtn3").onchange = function () {
-		document.getElementById("uploadFile3").value = this.value;
-	};
-}
-
-if(document.getElementById("uploadBtn4")) {
-	document.getElementById("uploadBtn4").onchange = function () {
-		document.getElementById("uploadFile4").value = this.value;
-	};
-}
-
-if(document.getElementById("uploadBtn5")) {
-	document.getElementById("uploadBtn5").onchange = function () {
-		document.getElementById("uploadFile5").value = this.value;
-	};
-}
-
-$(document).ready(function () {
-	setTimeout(function(){
-		$('#_question34').fadeIn(1000,"linear");
-	}, 3000);
-});
 
 function closeQuestionTab(id) {
 	$('#' + id).fadeOut(1000,"linear");
@@ -313,10 +287,6 @@ function hideMapOverlay() {
 	$('html').css('overflow', 'scroll');
 }
 
-if(document.getElementById("tokenfield")) {
-	$('#tokenfield').tokenfield();
-}
-
 function zoomPulse(container, btn) {
 	$('#' + container).addClass('_zoom-green100');
 	$('#' + btn).addClass('transition');
@@ -325,31 +295,10 @@ function zoomPulse(container, btn) {
 	}, 1000);
 }
 
-function retimb(value) {
-	$('._retimb-btn-506').hide();
-	$('._retimb-loader').fadeIn(1000,"linear");
+function removeContact() {
 	setTimeout(function(){
-		$('._retimb-loader').hide();
-		if(value == 0) {
-			$('._mds933').hide();
-			sharePost = false;
-		} else {
-			$('._mds939').hide();
-			aiSharePost = false;
-		}
-		$('._retimb-btn-506').show();
-		$('html').css('overflow', 'scroll');
-	}, 1000);
-}
-
-function reportPostFn() {
-	$('._report-btn-193').hide();
-	$('._report-loader').fadeIn(1000,"linear");
-	setTimeout(function(){
-		$('._report-loader').hide();
-		$('._mds182').hide();
-		reportPost = false;
-		$('._report-btn-193').show();
+		$('._mds682').hide();
+		removeScreen = false;
 		$('html').css('overflow', 'scroll');
 	}, 1000);
 }
@@ -358,6 +307,68 @@ function retimbAddComment() {
 	$('._add-comment89').html('');
 	$('._retimb100').css('min-height', '70px');
 }
+
+function addContact(source) {
+	$(source).html('Contact requested');
+};
+
+function goToRoute(url) {
+	window.location = url;
+}
+
+function uploadPhotos() {
+	$('._photo-form-942').modal('show');
+}
+
+$('._retimb-manual').on('click', function () {
+	var $btn = $(this).button('loading');
+
+	setTimeout(function(){
+		$btn.button('reset');
+		$('._mds933').hide();
+		sharePost = false;
+		showScrollBar();
+	}, 1000);
+	// business logic...
+	//$btn.button('reset')
+})
+
+$('._retimb-auto').on('click', function () {
+	var $btn = $(this).button('loading');
+
+	setTimeout(function(){
+		$btn.button('reset');
+		$('._mds939').hide();
+		aiSharePost = false;
+		hideScrollBar();
+	}, 1000);
+	// business logic...
+	//$btn.button('reset')
+})
+
+$('.report-btn').on('click', function () {
+	var $btn = $(this).button('loading');
+
+	setTimeout(function(){
+		$btn.button('reset');
+		$('._mds182').hide();
+		reportPost = false;
+		hideScrollBar();
+	}, 1000);
+	// business logic...
+	//$btn.button('reset')
+})
+
+$('.save-position-map').on('click', function () {
+	var $btn = $(this).button('loading');
+
+	setTimeout(function(){
+		$btn.button('reset');
+		saveGlobalPosition();
+	}, 1000);
+	// business logic...
+	//$btn.button('reset')
+})
 
 $(function() {
 	var element = null;
@@ -448,39 +459,142 @@ $(function() {
 	$('.fa-bolt').tooltip();
 	$('.fa-flag').tooltip();
 
-	$( "#age-slider" ).slider({
-		range: true,
-		min: 18,
-		max: 90,
-		values: [ 20, 30 ],
-		slide: function( event, ui ) {
-			if((ui.values[ 1 ] > 23) && (ui.values[ 0 ] < 80)) {
-				$( "#search-age" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+	if($( "#age-slider").length > 0) {
+		$( "#age-slider" ).slider({
+			range: true,
+			min: 18,
+			max: 90,
+			values: [ 20, 30 ],
+			slide: function( event, ui ) {
+				if((ui.values[ 1 ] > 23) && (ui.values[ 0 ] < 80)) {
+					$( "#search-age" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+				}
 			}
-		}
-	});
-	$( "#search-age" ).val( "" + $( "#age-slider" ).slider( "values", 0 ) + " - " + $( "#age-slider" ).slider( "values", 1 ) );
+		});
 
-	$( "#personality-slider" ).slider({
-		range: "min",
-		value: 10,
-		min: 0,
-		max: 100,
-		slide: function( event, ui ) {
-			$( "#personality-context" ).val( ui.value + "%" );
-		}
-	});
-	$( "#personality-context" ).val( $( "#personality-slider" ).slider( "value" ) + "%");
+		$( "#search-age" ).val( "" + $( "#age-slider" ).slider( "values", 0 ) + " - " + $( "#age-slider" ).slider( "values", 1 ) );
+
+		$( "#personality-slider" ).slider({
+			range: "min",
+			value: 10,
+			min: 0,
+			max: 100,
+			slide: function( event, ui ) {
+				$( "#personality-context" ).val( ui.value + "%" );
+			}
+		});
+		$( "#personality-context" ).val( $( "#personality-slider" ).slider( "value" ) + "%");
+	}
 
 });
 
-function addContact(source) {
-	$(source).html('Contact requested');
-};
+$(document).ready(function () {
+	setTimeout(function(){
+		$('#_question34').fadeIn(1000,"linear");
+	}, 3000);
+})
 
-function goToRoute(url) {
-	window.location = url;
+if($('#uploadBtn1').length ) {
+	$('#uploadBtn1').onchange = function () {
+		$('#uploadBtn1').value = this.value;
+	};
 }
+
+if($('#uploadBtn2').length ) {
+	$('#uploadBtn2').onchange = function () {
+		$('#uploadBtn2').value = this.value;
+	};
+}
+
+if($('#uploadBtn3').length ) {
+	$('#uploadBtn3').onchange = function () {
+		$('#uploadBtn3').value = this.value;
+	};
+}
+
+if($('#uploadBtn4').length ) {
+	$('#uploadBtn4').onchange = function () {
+		$('#uploadBtn4').value = this.value;
+	};
+}
+
+if($('#uploadBtn5').length ) {
+	$('#uploadBtn5').onchange = function () {
+		$('#uploadBtn5').value = this.value;
+	};
+}
+
+if($('#tokenfield').length) {
+	$('#tokenfield').tokenfield();
+}
+
+/*function retimb(value) {
+ $('._retimb-btn-506').hide();
+ $('._retimb-loader').fadeIn(1000,"linear");
+ setTimeout(function(){
+ $('._retimb-loader').hide();
+ if(value == 0) {
+ $('._mds933').hide();
+ sharePost = false;
+ } else {
+ $('._mds939').hide();
+ aiSharePost = false;
+ }
+ $('._retimb-btn-506').show();
+ $('html').css('overflow', 'scroll');
+ }, 1000);
+ }*/
+
+/*function reportPostFn() {
+ $('._report-btn-193').hide();
+ $('._report-loader').fadeIn(1000,"linear");
+ setTimeout(function(){
+ $('._report-loader').hide();
+ $('._mds182').hide();
+ reportPost = false;
+ $('._report-btn-193').show();
+ $('html').css('overflow', 'scroll');
+ }, 1000);
+ }*/
+
+/*function closePhotoUpload() {
+ $('._upload-overlay899').hide();
+ uploadPhoto = false;
+ $('html').css('overflow', 'scroll');
+ }*/
+
+/*function openMapSelection() {
+ $('._photo-form-945').modal('show');
+ }*/
+
+/*function addLinearQuestion() {
+ $('._question-banner901').fadeIn(2000,"linear");
+ }
+
+ function addTwoLinearQuestion() {
+ $('._question-banner902').fadeIn(2000,"linear");
+ }*/
+
+/*function targetUploadEvt(event, target, btn, container) {
+ if($(event.target).is(btn)) {
+ target = !target;
+
+ $('html').css('overflow', 'hidden');
+
+ event.stopPropagation();
+ } else {
+ if($(event.target).is(container)) {
+ if(target) {
+ target = !target;
+ $('html').css('overflow', 'scroll');
+ }
+ }
+ }
+
+ target ? $(container).show() : $(container).hide();
+
+ return target;
+ }*/
 
 
 

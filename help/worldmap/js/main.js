@@ -33,7 +33,7 @@ function setup(width, height) {
     svg = d3.select("#container").append("svg")
         .attr("width", width)
         .attr("height", height)
-        .attr("style", "padding-top: 80px")
+        .attr("style", "padding-top: 95px")
         /*                   .call(zoom)*/
         .append("g");
 

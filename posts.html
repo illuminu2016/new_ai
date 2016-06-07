@@ -133,18 +133,18 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Privacy</a></li>
+            <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
             <li><a href="#">Notifications</a></li>
             <li><a href="#">Message Settings</a></li>
             <li role="separator" class="divider"></li>
             <li><a>Change Language of App</a></li>
             <li><a>Change Password</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
 
-      <div class="_hm-user-typeahead-container89 col-md-6 col-sm-5" align="right">
+      <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
         <div class="form-group _hm-user-typeahead">
           <input type="text" class="form-control _hm-typeahead-856" placeholder="Search ArtificialSpace">
@@ -411,7 +411,7 @@
             <div class="_avatar-778"><img src="accounts/test1/9.jpg" width="40" height="40"></div>
             <div class="_add-comm76" contenteditable>
               <div class="_add-comment84"></div>
-              <div class="_send-893">Send</div>
+              <div class="_send-893" contenteditable="false">Send</div>
             </div>
           </div>
           <div class="_post-yr900">
@@ -672,7 +672,7 @@
             <div class="_avatar-778"><img src="accounts/test1/9.jpg" width="40" height="40"></div>
             <div class="_add-comm76" contenteditable>
               <div class="_add-comment84"></div>
-              <div class="_send-893">Send</div>
+              <div class="_send-893" contenteditable="false">Send</div>
             </div>
           </div>
           <div class="_post-yr900">
@@ -857,7 +857,7 @@
           <div class="_avatar-778"><img src="accounts/test1/9.jpg" width="40" height="40"></div>
           <div class="_add-comm76" contenteditable>
             <div class="_add-comment84"></div>
-            <div class="_send-893">Send</div>
+            <div class="_send-893" contenteditable="false">Send</div>
           </div>
         </div>
         <div class="_post-yr900">
@@ -960,7 +960,7 @@
             <div class="_avatar-778"><img src="accounts/test1/9.jpg" width="40" height="40"></div>
             <div class="_add-comm76" contenteditable>
               <div class="_add-comment84"></div>
-              <div class="_send-893">Send</div>
+              <div class="_send-893" contenteditable="false">Send</div>
             </div>
           </div>
           <div class="_post-yr900">
@@ -1077,8 +1077,7 @@
         </div>
       </div>
       <div class="clearfix _retimb-footer-103">
-        <div class="pull-right btn btn-primary _retimb-btn-506" onclick="retimb(0)">Retimb</div>
-        <div class="pull-right _retimb-loader"><img src="css\images\ajax-loader.gif" width="35"></div>
+        <div class="pull-right btn btn-primary _retimb-btn-506 _retimb-manual" data-loading-text="Retimb...">Retimb</div>
       </div>
     </div>
   </div>
@@ -1110,8 +1109,7 @@
         </div>
       </div>
       <div class="clearfix _retimb-footer-103">
-        <div class="pull-right btn btn-primary _retimb-btn-506" onclick="retimb(1)">Retimb</div>
-        <div class="pull-right _retimb-loader"><img src="css\images\ajax-loader.gif" width="35"></div>
+        <div class="pull-right btn btn-primary _retimb-btn-506 _retimb-auto" data-loading-text="Retimb...">Retimb</div>
       </div>
     </div>
   </div>
@@ -1141,8 +1139,7 @@
         </div>
       </div>
       <div class="clearfix _report-footer-10">
-        <div class="pull-right btn btn-primary _report-btn-193" onclick="reportPostFn()">Report</div>
-        <div class="pull-right _report-loader"><img src="css\images\ajax-loader.gif" width="35"></div>
+        <div class="pull-right btn btn-primary _report-btn-193 report-btn"  data-loading-text="Report...">Report</div>
       </div>
     </div>
   </div>
@@ -1150,9 +1147,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
 
-  <script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="dist/bootstrap-tokenfield.min.js" charset="UTF-8"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="scripts/ie10-viewport-bug-workaround.js"></script>
