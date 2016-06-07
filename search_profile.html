@@ -129,18 +129,18 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Privacy</a></li>
+            <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
             <li><a href="#">Notifications</a></li>
             <li><a href="#">Message Settings</a></li>
             <li role="separator" class="divider"></li>
             <li><a>Change Language of App</a></li>
             <li><a>Change Password</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
 
-      <div class="_hm-user-typeahead-container89" align="right">
+      <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
         <div class="form-group _hm-user-typeahead">
           <input type="text" class="form-control _hm-typeahead-856" placeholder="Search ArtificialSpace">
@@ -338,8 +338,8 @@
           <div class="_message-ai-83">
             <div class="_inner-message-ai-83">
               <div>Message</div>
-              <div>User AI</div>
-              <div>Remove contact</div>
+              <div onclick="goToRoute('ai_contact_profile.html')">User AI</div>
+              <div class="_irem-894">Remove contact</div>
             </div>
           </div>
       </div>
@@ -529,7 +529,7 @@
                 <div class="_avatar-778"><img src="accounts/test1/9.jpg" width="40" height="40"></div>
                 <div class="_add-comm76" contenteditable>
                   <div class="_add-comment84"></div>
-                  <div class="_send-893">Send</div>
+                  <div class="_send-893" contenteditable="false">Send</div>
                 </div>
               </div>
               <div class="_post-yr900">
@@ -790,7 +790,7 @@
                 <div class="_avatar-778"><img src="accounts/test1/9.jpg" width="40" height="40"></div>
                 <div class="_add-comm76" contenteditable>
                   <div class="_add-comment84"></div>
-                  <div class="_send-893">Send</div>
+                  <div class="_send-893" contenteditable="false">Send</div>
                 </div>
               </div>
               <div class="_post-yr900">
@@ -975,7 +975,7 @@
               <div class="_avatar-778"><img src="accounts/test1/9.jpg" width="40" height="40"></div>
               <div class="_add-comm76" contenteditable>
                 <div class="_add-comment84"></div>
-                <div class="_send-893">Send</div>
+                <div class="_send-893" contenteditable="false">Send</div>
               </div>
             </div>
             <div class="_post-yr900">
@@ -1078,7 +1078,7 @@
                 <div class="_avatar-778"><img src="accounts/test1/9.jpg" width="40" height="40"></div>
                 <div class="_add-comm76" contenteditable>
                   <div class="_add-comment84"></div>
-                  <div class="_send-893">Send</div>
+                  <div class="_send-893" contenteditable="false">Send</div>
                 </div>
               </div>
               <div class="_post-yr900">
@@ -1195,8 +1195,7 @@
       </div>
     </div>
     <div class="clearfix _retimb-footer-103">
-      <div class="pull-right btn btn-primary _retimb-btn-506" onclick="retimb(0)">Retimb</div>
-      <div class="pull-right _retimb-loader"><img src="css\images\ajax-loader.gif" width="35"></div>
+      <div class="pull-right btn btn-primary _retimb-btn-506 _retimb-manual" data-loading-text="Retimb...">Retimb</div>
     </div>
   </div>
 </div>
@@ -1228,8 +1227,7 @@
       </div>
     </div>
     <div class="clearfix _retimb-footer-103">
-      <div class="pull-right btn btn-primary _retimb-btn-506" onclick="retimb(1)">Retimb</div>
-      <div class="pull-right _retimb-loader"><img src="css\images\ajax-loader.gif" width="35"></div>
+      <div class="pull-right btn btn-primary _retimb-btn-506 _retimb-auto" data-loading-text="Retimb...">Retimb</div>
     </div>
   </div>
 </div>
@@ -1259,11 +1257,31 @@
       </div>
     </div>
     <div class="clearfix _report-footer-10">
-      <div class="pull-right btn btn-primary _report-btn-193" onclick="reportPostFn()">Report</div>
-      <div class="pull-right _report-loader"><img src="css\images\ajax-loader.gif" width="35"></div>
+      <div class="pull-right btn btn-primary _report-btn-193 report-btn"  data-loading-text="Report...">Report</div>
     </div>
   </div>
 </div>
+<div class="_mds682" align="center">
+    <div class="_report-overlay">
+      <div class="clearfix _report-header-11">
+        <div class="pull-left _report-101">Remove this contact</div>
+        <div class="pull-right pointer _report-102"><i class="fa fa-times" aria-hidden="true"></i></div>
+      </div>
+      <div class="_report-body-334" align="left">
+        <div class="_report-msg-1004">Do you really want to remove this contact?</div>
+        <div style="margin: 10px 30px;">
+          <input id="radio-12312" class="report-custom" name="radio-group" type="radio" onclick="removeContact()">
+          <label for="radio-12312" class="report-custom-label">Yes</label>
+        </div>
+        <div style="margin: 10px 30px;">
+          <input id="radio-12322" class="report-custom" name="radio-group" type="radio" onclick="removeContact()">
+          <label for="radio-12322" class="report-custom-label">No</label>
+        </div>
+        <div class="_report-footer-20">
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="_mds932">
   <div class="_ijd766" align="center">
     <div class="_unk877">
@@ -1285,8 +1303,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="scripts/ie10-viewport-bug-workaround.js"></script>

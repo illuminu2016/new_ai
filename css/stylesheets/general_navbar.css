@@ -1,7 +1,7 @@
 /* line 1, ../sass/general_navbar.scss */
 ._navbar409 {
   background-color: black;
-  z-index: 9999;
+  z-index: 1000;
 }
 /* line 4, ../sass/general_navbar.scss */
 ._navbar409 .navbar-nav > li > a {

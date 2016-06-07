@@ -5,6 +5,7 @@
 @import "progress_bar";
 @import "ai_graph";
 @import "contacts_map";
+@import "modal";
 
 .navbar-right .dropdown-menu {
   right: -1px;
@@ -13,4 +14,7 @@
   background-color: #e7e7e7;
 }
 
+.anchor-blue {
+  color: #6ea9f8;
+}
 
