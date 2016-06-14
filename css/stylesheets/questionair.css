@@ -1,0 +1,41 @@
+/* line 1, ../sass/questionair.scss */
+.ai-question-body-820 {
+  position: relative;
+}
+
+/* line 4, ../sass/questionair.scss */
+.check-90 {
+  height: 20px;
+  position: absolute;
+  left: 15px;
+}
+
+/* line 10, ../sass/questionair.scss */
+.check-1 {
+  top: 56px;
+}
+
+/* line 14, ../sass/questionair.scss */
+.check-2 {
+  top: 82px;
+}
+
+/* line 18, ../sass/questionair.scss */
+.check-3 {
+  top: 109px;
+}
+
+/* line 22, ../sass/questionair.scss */
+.check-4 {
+  top: 137px;
+}
+
+/* line 26, ../sass/questionair.scss */
+.check-5 {
+  top: 164px;
+}
+
+/* line 30, ../sass/questionair.scss */
+.radio-custom {
+  opacity: 0.5;
+}

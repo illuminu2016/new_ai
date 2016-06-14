@@ -1,0 +1,38 @@
+/* line 3, ../sass/modal.scss */
+.modal {
+  padding: 0 !important;
+}
+
+/* line 7, ../sass/modal.scss */
+.modal-open {
+  padding: 0 !important;
+  overflow: auto;
+}
+
+/* line 12, ../sass/modal.scss */
+.modal-dialog {
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 17, ../sass/modal.scss */
+.modal-header {
+  padding: 15px 15px 0 15px;
+  border: none;
+}
+
+/* line 22, ../sass/modal.scss */
+.modal-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 26, ../sass/modal.scss */
+.close {
+  opacity: 1;
+}
+/* line 28, ../sass/modal.scss */
+.close:hover {
+  opacity: 1;
+}
