@@ -1,0 +1,47 @@
+@import "mixins";
+@import 'questionair';
+
+.illustration-graph-38 {
+  margin: 40px 0 20px 0;
+  display: none;
+  .tabular-730 {
+    height: 205px;
+    border: 1px solid #9ECAE1;
+    top: 40px;
+    position: relative;
+    padding: 0;
+    ._ijh-748 {
+      height: 30px;
+      background: #9ECAE1;
+      padding: 5px 15px;
+      font-weight: 700;
+    }
+    ._row-93 {
+      height: 35px;
+      padding: 0 15px;
+      div {
+        @include vertical-align();
+      }
+    }
+  }
+}
+
+.question-chart-392 {
+  margin: 0 0 0 40px;
+  width: 40%;
+}
+
+.question-tab-45 {
+  width: 50%;
+  height: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.paginate-nav-894 {
+  margin-right: 40px;
+}
+
+._loader-692 {
+  @include vertical-align();
+}

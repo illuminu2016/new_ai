@@ -186,32 +186,33 @@
   background: #ccc;
   box-shadow: 0 2px 2px black;
   border: none;
+  color: black;
 }
 
-/* line 161, ../sass/login_screen.scss */
+/* line 162, ../sass/login_screen.scss */
 ._uv_login-attempt {
   position: absolute;
   height: 90%;
 }
-/* line 164, ../sass/login_screen.scss */
+/* line 165, ../sass/login_screen.scss */
 ._uv_login-attempt .uv_809-label {
   color: #8B0000;
   font-size: 14px;
   padding: 2px;
 }
-/* line 169, ../sass/login_screen.scss */
+/* line 170, ../sass/login_screen.scss */
 ._uv_login-attempt ._at-798-container {
   width: 455px;
   background-color: rgba(204, 204, 204, 0.7);
   padding: 40px;
   margin-top: 120px;
 }
-/* line 174, ../sass/login_screen.scss */
+/* line 175, ../sass/login_screen.scss */
 ._uv_login-attempt ._at-798-container .-at_not-member893 {
   margin-top: 17px;
   color: #5e5e5e;
 }
-/* line 180, ../sass/login_screen.scss */
+/* line 181, ../sass/login_screen.scss */
 ._uv_login-attempt .vw-709-btn .btn {
   width: 100%;
   margin-top: 25px;
@@ -219,32 +220,32 @@
   box-shadow: 0 2px 2px black;
   border: none;
 }
-/* line 189, ../sass/login_screen.scss */
+/* line 190, ../sass/login_screen.scss */
 ._uv_login-attempt .form-group ::-webkit-input-placeholder {
   color: #5e5e5e;
 }
-/* line 192, ../sass/login_screen.scss */
+/* line 193, ../sass/login_screen.scss */
 ._uv_login-attempt .form-group :-moz-placeholder {
   /* Firefox 18- */
   color: #5e5e5e;
 }
-/* line 195, ../sass/login_screen.scss */
+/* line 196, ../sass/login_screen.scss */
 ._uv_login-attempt .form-group ::-moz-placeholder {
   /* Firefox 19+ */
   color: #5e5e5e;
 }
-/* line 198, ../sass/login_screen.scss */
+/* line 199, ../sass/login_screen.scss */
 ._uv_login-attempt .form-group :-ms-input-placeholder {
   color: #5e5e5e;
 }
 
-/* line 203, ../sass/login_screen.scss */
+/* line 204, ../sass/login_screen.scss */
 .uw_attempt-99 {
   position: absolute;
   width: 100%;
   z-index: 5;
 }
-/* line 207, ../sass/login_screen.scss */
+/* line 208, ../sass/login_screen.scss */
 .uw_attempt-99 .uw_attempt-100 {
   width: 700px;
   background-color: rgba(255, 0, 0, 0.7);
@@ -252,27 +253,27 @@
   margin: 50px auto;
   color: white;
 }
-/* line 213, ../sass/login_screen.scss */
+/* line 214, ../sass/login_screen.scss */
 .uw_attempt-99 .uw_attempt-100 ._uw-attempt-89 {
   margin-top: 3px;
 }
-/* line 216, ../sass/login_screen.scss */
+/* line 217, ../sass/login_screen.scss */
 .uw_attempt-99 .uw_attempt-100 .uw_attempt-756 {
   margin-right: 10px;
   font-size: 20px;
 }
 
-/* line 222, ../sass/login_screen.scss */
+/* line 223, ../sass/login_screen.scss */
 .margintop45 {
   margin-top: 45px;
 }
 
-/* line 225, ../sass/login_screen.scss */
+/* line 226, ../sass/login_screen.scss */
 .text-gray {
   color: #ccc;
 }
 
-/* line 228, ../sass/login_screen.scss */
+/* line 229, ../sass/login_screen.scss */
 ._width280 {
   width: 280px;
 }

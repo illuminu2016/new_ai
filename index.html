@@ -72,8 +72,7 @@
                                      By clicking Sign Up, you agree to our Terms and that you have read our Data Privacy.
                                  </div>
                                  <div class="vw-701-btn">
-                                     <button type="button" class="btn btn-primary"><a href="login_attempt.html">Sign Up</a>
-                                     </button>
+                                     <button type="button" class="btn btn-primary" onclick="signUp(this)" data-loading-text="Sign Up...">Sign Up</button>
                                  </div>
                                  </div>
                          </div>
@@ -168,7 +167,7 @@
                         </select>
                     </div>
                     <div class="vw-701-btn" style="margin-top: 20px;">
-                        <button type="submit" class="btn uv_30 um_btn_432">Sign Up</button>
+                        <button type="submit" class="btn uv_30 um_btn_432" onclick="goToRoute('register.html')">Sign Up</button>
                     </div>
                 </div>
             </div>
@@ -282,6 +281,7 @@
 
 </html>
 <script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
 <script src="help/worldmap/js/d3.min.js"></script>
 <script src="help/worldmap/js/topojson.v1.min.js"></script>
 <script src="help/worldmap/js/main.js"></script>

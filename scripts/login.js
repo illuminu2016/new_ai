@@ -20,6 +20,13 @@ function loginAppMobile() {
 	$('#signUpContainerMobile').hide();
 	$('#loginBtnMobile').hide();
 }
+function signUp(btn) {
+	var $btn = $(btn).button('loading');
+
+	setTimeout(function(){
+		window.location = 'register.html';
+	}, 1000);
+}
 var onresize = function(e) {
 	//note i need to pass the event as an argument to the function
 	width = e.target.outerWidth;

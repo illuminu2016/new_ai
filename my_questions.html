@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/stylesheets/screen.css" rel="stylesheet">
+<link href="css/stylesheets/pieChart.css" rel="stylesheet">
+<link rel="stylesheet" href="css\sass\font-awesome\font-awesome-4.4.0\css\font-awesome.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+</head>
+<body class="page-dim">
+
+<nav class="navbar navbar-default navbar-fixed-top _navbar409">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">&nbsp;</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="profile.html">Profile</a></li>
+        <li><a href="find_match.html">Find Match</a></li>
+        <li><a href="ai.html">AI Space</a></li>
+        <li>
+          <a class="fa-envelope56 pointer">Pulse</a>
+          <div class="pull-left _hm-user-email-btn _hm-user-dim pointer">
+            <div class="_hm-email-user-overflow">
+              <div class="_hm-email_arrow-up"></div>
+              <div class="_hm-email-inner-overflow">
+                <div class="_hm-email-count-296">5 people visited your profile recently</div>
+                <div class="_hm-email-ppl-496">
+                  <ul class="_hm-email-ul-941">
+                    <li>
+                      <div class="_hm-email-container-402">
+                        <img src="css/images/img_f2.png" height="50">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="_hm-email-container-402">
+                        <img src="css/images/img_f3.png" height="50">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="_hm-email-container-402">
+                        <img src="css/images/ramona.jpg" height="50">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="_hm-email-container-402">
+                        <img src="css/images/img_f5.png" height="50">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="_hm-email-container-402">
+                        <img src="css/images/img_f6.png" height="50">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="_hm-email-header-745"><i class="fa fa-envelope-o _margin-right5"></i>Messages (3)</div>
+                <div class="_hm-email-body-729">
+                  <ul>
+                    <li>
+                      <div class="_hm-email-cpd-810 clearfix">
+                        <div class="pull-left pointer">
+                          <img src="css/images/ramona.jpg" height="36" class="_hm-email-tnt-811">
+                        </div>
+                        <div class="pull-left _hm-email-tnt-810">
+                          <div>Costia Ramona Irina, Botosani Romania</div>
+                          <div class="_hm-email-945">58 min ago</div>
+                        </div>
+                      </div>
+                      <div class="_hm-email-cpd-811">
+                        Ce fel de site este acesta? Nu imi aduc aminte sa fi dat accept.<br>
+                        Hey de ce m-ai inscris pe acest site pentru ...
+                      </div>
+                    </li>
+                    <li>
+                      <div class="_hm-email-cpd-810 clearfix">
+                        <div class="pull-left pointer">
+                          <img src="css/images/img_f4.png" height="36" class="_hm-email-tnt-811">
+                        </div>
+                        <div class="pull-left _hm-email-tnt-810">
+                          <div>Balciuc Elena, Berlin Germany</div>
+                          <div class="_hm-email-945">6 hours ago</div>
+                        </div>
+                      </div>
+                      <div class="_hm-email-cpd-811">
+                        How's it going? Are you considering any new opportunities based in Berlin?<br>
+                        I am currently working with a good digital agency, and they are looking for a number of senior angular front-end developers to come into their ...
+                      </div>
+                    </li>
+                    <li>
+                      <div class="_hm-email-cpd-810 clearfix">
+                        <div class="pull-left pointer">
+                          <img src="css/images/img_f5.png" height="36" class="_hm-email-tnt-811">
+                        </div>
+                        <div class="pull-left _hm-email-tnt-810">
+                          <div>Spitelnicu Adrian, London Great Britain</div>
+                          <div class="_hm-email-945">28 aug</div>
+                        </div>
+                      </div>
+                      <div class="_hm-email-cpd-811">
+                        Hi Constantin <br><br>
+                        I hope you're well.<br>
+                        I'm currently recruiting for a senior AngularJS role with a leading company in ...
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Message Settings</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a>Change Language of App</a></li>
+            <li><a>Change Password</a></li>
+            <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
+
+        <div class="form-group _hm-user-typeahead">
+          <input type="text" class="form-control _hm-typeahead-856" placeholder="Search ArtificialSpace">
+          <div class="_hm-search-user-overflow">
+            <div class="_hm-search-inner-overflow">
+              <div class="_hm-recent-search-890 clearfix">
+                <span class="pull-left">Recent AI search</span>
+                <span class="pull-right _hm-ftsize11 pointer">Clear<i class="fa fa-times _hm-search-clear-435"></i></span>
+              </div>
+              <div class="_hm-search-list">
+                <ul class="_ul-search-976">
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/img_f1.png" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Sleapca Dan
+                        </div>
+                        <div class="_hm-search-676">Iasi, Romania 21 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/online.png" height="8"> Online
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/ramona.jpg" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Costia Ramona Irina
+                        </div>
+                        <div class="_hm-search-676">Botosani, Romania 23 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/online.png" height="8"> Online
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/costea.jpg" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Costea Mihai
+                        </div>
+                        <div class="_hm-search-676">Motca, Romania 27 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/offline.gif" height="8"> Offline
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/avatar.jpg" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Crismaru Constantin
+                        </div>
+                        <div class="_hm-search-676">Iasi, Romania 32 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/offline.gif" height="8"> Offline
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/img_f1.png" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Ion Micu
+                        </div>
+                        <div class="_hm-search-676">Iasi, Romania 23 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/offline.gif" height="8"> Offline
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/img_f4.png" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Balciuc Elena
+                        </div>
+                        <div class="_hm-search-676">Galati, Romania 27 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/offline.gif" height="8"> Offline
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/img_f5.png" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Spitelnicu Adrian
+                        </div>
+                        <div class="_hm-search-676">Iasi, Romania 34 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/online.png" height="8"> Online
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/img_f6.png" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Emil Martinas
+                        </div>
+                        <div class="_hm-search-676">Dublin, Irland 21 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/offline.gif" height="8"> Offline
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/img_f1.png" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Bucurenciu Sorin
+                        </div>
+                        <div class="_hm-search-676">New York, America 44 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/offline.gif" height="8"> Offline
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="_hm-search-container clearfix">
+                      <div class="pull-left pointer">
+                        <img src="css/images/img_f2.png" height="36" class="_img-search-654">
+                      </div>
+                      <div class="pull-left _hm-search-652 pointer">
+                        <div class="_hm-search-860">
+                          Trkdid Mihn
+                        </div>
+                        <div class="_hm-search-676">Lao, Vietnam 20 years old
+                          <i class="fa fa-ellipsis-h _hm-search-560"></i>
+                          <img src="css/images/online.png" height="8"> Online
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <i class="fa fa-search _hm-search-978 pointer"></i>
+        </div>
+
+      </div>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="container container-dim99">
+  <div class="clearfix vw-name-984" style="padding-top: 100px;">
+      <div class="pull-left">
+          <h3> Crismaru Constantin </h3>
+      </div>
+      <div class="pull-right clearfix _menu-802">
+        <!--<i class="fa fa-battery-three-quarters vw-velocity-894"></i>-->
+        <div class="pull-left btn btn-profile" onclick="goToRoute('profile.html')">User Information</div>
+        <div class="pull-left btn btn-profile" onclick="goToRoute('posts.html')">Posts</div>
+        <div class="pull-left btn btn-profile" onclick="goToRoute('my_contacts.html')">Contacts</div>
+        <div class="pull-left btn btn-profile" onclick="goToRoute('ai_profile.html')">AI Profile</div>
+      </div>
+      <div class="_avatar-round99"></div>
+    </div>
+  <div class="controls-loader">
+    <div class="country-loader895" align="center">
+      <img src="css\images\preloader.gif">
+    </div>
+  </div>
+  <div class="clearfix illustration-graph-38">
+    <div id="chart" class="pull-left question-chart-392"></div>
+    <div class="pull-right question-tab-45">
+      <div id="tabular1" class="tabular-730 col-md-9">
+      <div class="_ijh-748"></div>
+      <div>
+        <div class="clearfix _row-93">
+          <div class="pull-left">Family</div>
+          <div class="pull-right">145 questions</div>
+        </div>
+        <div class="clearfix _row-93">
+          <div class="pull-left">Friends</div>
+          <div class="pull-right">34 questions</div>
+        </div>
+        <div class="clearfix _row-93">
+          <div class="pull-left">Social</div>
+          <div class="pull-right">14 questions</div>
+        </div>
+        <div class="clearfix _row-93">
+          <div class="pull-left">Attitude</div>
+          <div class="pull-right">100 questions</div>
+        </div>
+        <div class="clearfix _row-93">
+          <div class="pull-left">Work</div>
+          <div class="pull-right">205 questions</div>
+        </div>
+      </div>
+    </div>
+      <div id="tabular2" class="tabular-730 col-md-9" style="display: none">
+        <div class="_ijh-748">Family</div>
+        <div>
+          <div class="clearfix _row-93">
+            <div class="pull-left">Strongly Disagree</div>
+            <div class="pull-right">10%</div>
+          </div>
+          <div class="clearfix _row-93">
+            <div class="pull-left">Disagree</div>
+            <div class="pull-right">34%</div>
+          </div>
+          <div class="clearfix _row-93">
+            <div class="pull-left">Unsure</div>
+            <div class="pull-right">14%</div>
+          </div>
+          <div class="clearfix _row-93">
+            <div class="pull-left">Agree</div>
+            <div class="pull-right">5%</div>
+          </div>
+          <div class="clearfix _row-93">
+            <div class="pull-left">Strongly Agree</div>
+            <div class="pull-right">40%</div>
+          </div>
+        </div>
+      </div>
+      <img src="css\images\preloader.gif" class="_loader-692" style="display: none">
+    </div>
+  </div>
+  <nav class="paginate-nav-894" align="right">
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="clearfix _ai-questionair-701">
+    <div class="pull-left _ai-often-822">
+      <div id="ai-question-body-1" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-91" class="radio-custom ai-question-101" name="radio-group1" type="radio" onclick="closeAIQuestion(1)">
+            <label for="radio-91" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-92" class="radio-custom" name="radio-group1" type="radio" onclick="closeAIQuestion(1)">
+            <label for="radio-92" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-93" class="radio-custom" name="radio-group1" type="radio" onclick="closeAIQuestion(1)">
+            <label for="radio-93" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-94" class="radio-custom" name="radio-group1" type="radio" onclick="closeAIQuestion(1)">
+            <label for="radio-94" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-95" class="radio-custom" name="radio-group1" type="radio" onclick="closeAIQuestion(1)">
+            <label for="radio-95" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-1">
+        </div>
+      </div>
+      <div id="ai-question-body-2" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-291" class="radio-custom ai-question-101" name="radio-group2" type="radio" onclick="closeAIQuestion(2)">
+            <label for="radio-291" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-292" class="radio-custom" name="radio-group2" type="radio" onclick="closeAIQuestion(2)">
+            <label for="radio-292" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-293" class="radio-custom" name="radio-group2" type="radio" onclick="closeAIQuestion(2)">
+            <label for="radio-293" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-294" class="radio-custom" name="radio-group2" type="radio" onclick="closeAIQuestion(2)">
+            <label for="radio-294" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-295" class="radio-custom" name="radio-group2" type="radio" onclick="closeAIQuestion(2)">
+            <label for="radio-295" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-4">
+        </div>
+      </div>
+      <div id="ai-question-body-3" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-4391" class="radio-custom ai-question-101" name="radio-group3" type="radio" onclick="closeAIQuestion(3)">
+            <label for="radio-4391" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-4392" class="radio-custom" name="radio-group3" type="radio" onclick="closeAIQuestion(3)">
+            <label for="radio-4392" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-4393" class="radio-custom" name="radio-group3" type="radio" onclick="closeAIQuestion(3)">
+            <label for="radio-4393" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-4394" class="radio-custom" name="radio-group3" type="radio" onclick="closeAIQuestion(3)">
+            <label for="radio-4394" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-4395" class="radio-custom" name="radio-group3" type="radio" onclick="closeAIQuestion(3)">
+            <label for="radio-4395" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-1">
+        </div>
+      </div>
+      <div id="ai-question-body-11" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-911" class="radio-custom ai-question-101" name="radio-group1" type="radio" onclick="closeAIQuestion(7)">
+            <label for="radio-911" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-922" class="radio-custom" name="radio-group1" type="radio" onclick="closeAIQuestion(7)">
+            <label for="radio-922" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-933" class="radio-custom" name="radio-group1" type="radio" onclick="closeAIQuestion(7)">
+            <label for="radio-933" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-944" class="radio-custom" name="radio-group1" type="radio" onclick="closeAIQuestion(7)">
+            <label for="radio-944" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-955" class="radio-custom" name="radio-group1" type="radio" onclick="closeAIQuestion(7)">
+            <label for="radio-955" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-5">
+        </div>
+      </div>
+      <div id="ai-question-body-22" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-298" class="radio-custom ai-question-101" name="radio-group2" type="radio" onclick="closeAIQuestion(8)">
+            <label for="radio-298" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-2988" class="radio-custom" name="radio-group2" type="radio" onclick="closeAIQuestion(8)">
+            <label for="radio-2988" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-299" class="radio-custom" name="radio-group2" type="radio" onclick="closeAIQuestion(8)">
+            <label for="radio-299" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-2999" class="radio-custom" name="radio-group2" type="radio" onclick="closeAIQuestion(8)">
+            <label for="radio-2999" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-2900" class="radio-custom" name="radio-group2" type="radio" onclick="closeAIQuestion(8)">
+            <label for="radio-2900" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-1">
+        </div>
+      </div>
+      <div id="ai-question-body-33" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-43910" class="radio-custom ai-question-101" name="radio-group3" type="radio" onclick="closeAIQuestion(9)">
+            <label for="radio-43910" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-43921" class="radio-custom" name="radio-group3" type="radio" onclick="closeAIQuestion(9)">
+            <label for="radio-43921" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-43932" class="radio-custom" name="radio-group3" type="radio" onclick="closeAIQuestion(9)">
+            <label for="radio-43932" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-43943" class="radio-custom" name="radio-group3" type="radio" onclick="closeAIQuestion(9)">
+            <label for="radio-43943" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-43954" class="radio-custom" name="radio-group3" type="radio" onclick="closeAIQuestion(9)">
+            <label for="radio-43954" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-4">
+        </div>
+      </div>
+    </div>
+    <div class="clearfix pull-right _ai-often-823">
+      <div id="ai-question-body-4" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-41" class="radio-custom ai-question-101" name="radio-group4" type="radio" onclick="closeAIQuestion(4)">
+            <label for="radio-41" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-42" class="radio-custom" name="radio-group4" type="radio" onclick="closeAIQuestion(4)">
+            <label for="radio-42" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-43" class="radio-custom" name="radio-group4" type="radio" onclick="closeAIQuestion(4)">
+            <label for="radio-43" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-44" class="radio-custom" name="radio-group4" type="radio" onclick="closeAIQuestion(4)">
+            <label for="radio-44" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-45" class="radio-custom" name="radio-group4" type="radio" onclick="closeAIQuestion(4)">
+            <label for="radio-45" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-4">
+        </div>
+      </div>
+      <div id="ai-question-body-5" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-51" class="radio-custom ai-question-101" name="radio-group5" type="radio" onclick="closeAIQuestion(5)">
+            <label for="radio-51" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-52" class="radio-custom" name="radio-group5" type="radio" onclick="closeAIQuestion(5)">
+            <label for="radio-52" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-53" class="radio-custom" name="radio-group5" type="radio" onclick="closeAIQuestion(5)">
+            <label for="radio-53" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-54" class="radio-custom" name="radio-group5" type="radio" onclick="closeAIQuestion(5)">
+            <label for="radio-54" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-55" class="radio-custom" name="radio-group5" type="radio" onclick="closeAIQuestion(5)">
+            <label for="radio-55" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-1">
+        </div>
+      </div>
+      <div id="ai-question-body-6" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-61" class="radio-custom ai-question-101" name="radio-group6" type="radio" onclick="closeAIQuestion(6)">
+            <label for="radio-61" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-62" class="radio-custom" name="radio-group6" type="radio" onclick="closeAIQuestion(6)">
+            <label for="radio-62" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-63" class="radio-custom" name="radio-group6" type="radio" onclick="closeAIQuestion(6)">
+            <label for="radio-63" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-64" class="radio-custom" name="radio-group6" type="radio" onclick="closeAIQuestion(6)">
+            <label for="radio-64" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-65" class="radio-custom" name="radio-group6" type="radio" onclick="closeAIQuestion(6)">
+            <label for="radio-65" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-2">
+        </div>
+      </div>
+      <div id="ai-question-body-44" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-141" class="radio-custom ai-question-101" name="radio-group4" type="radio" onclick="closeAIQuestion(40)">
+            <label for="radio-141" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-142" class="radio-custom" name="radio-group4" type="radio" onclick="closeAIQuestion(40)">
+            <label for="radio-142" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-143" class="radio-custom" name="radio-group4" type="radio" onclick="closeAIQuestion(40)">
+            <label for="radio-143" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-144" class="radio-custom" name="radio-group4" type="radio" onclick="closeAIQuestion(40)">
+            <label for="radio-144" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-145" class="radio-custom" name="radio-group4" type="radio" onclick="closeAIQuestion(40)">
+            <label for="radio-145" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-3">
+        </div>
+      </div>
+      <div id="ai-question-body-55" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-351" class="radio-custom ai-question-101" name="radio-group5" type="radio" onclick="closeAIQuestion(50)">
+            <label for="radio-351" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-352" class="radio-custom" name="radio-group5" type="radio" onclick="closeAIQuestion(50)">
+            <label for="radio-352" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-353" class="radio-custom" name="radio-group5" type="radio" onclick="closeAIQuestion(50)">
+            <label for="radio-353" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-354" class="radio-custom" name="radio-group5" type="radio" onclick="closeAIQuestion(50)">
+            <label for="radio-354" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-355" class="radio-custom" name="radio-group5" type="radio" onclick="closeAIQuestion(50)">
+            <label for="radio-355" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-4">
+        </div>
+      </div>
+      <div id="ai-question-body-66" class="ai-question-body-820">
+        <div>
+          <div class="_ai-header-943">I sometimes make mistakes.</div>
+          <div>
+            <input id="radio-661" class="radio-custom ai-question-101" name="radio-group6" type="radio" onclick="closeAIQuestion(60)">
+            <label for="radio-661" class="radio-custom-label">Strongly Disagree</label>
+          </div>
+          <div>
+            <input id="radio-662" class="radio-custom" name="radio-group6" type="radio" onclick="closeAIQuestion(60)">
+            <label for="radio-662" class="radio-custom-label">Disagree</label>
+          </div>
+          <div>
+            <input id="radio-663" class="radio-custom" name="radio-group6" type="radio" onclick="closeAIQuestion(60)">
+            <label for="radio-663" class="radio-custom-label">Unsure</label>
+          </div>
+          <div>
+            <input id="radio-664" class="radio-custom" name="radio-group6" type="radio" onclick="closeAIQuestion(60)">
+            <label for="radio-664" class="radio-custom-label">Agree</label>
+          </div>
+          <div>
+            <input id="radio-665" class="radio-custom" name="radio-group6" type="radio" onclick="closeAIQuestion(60)">
+            <label for="radio-665" class="radio-custom-label">Strongly Agree</label>
+          </div>
+          <img src="css\images\check.gif" class="check-90 check-5">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="_question-banner901">
+  <div class="_banner-inner88">
+    <i class="fa fa-times pointer _x-close-btn100"></i>
+  </div>
+</div>-->
+<div class="_question-banner902"></div>
+  <!-- Bootstrap core JavaScript
+      ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+
+  <script src="scripts/menu_functions.js"></script>
+  <script src="scripts/d3v3.js"></script>
+  <script src="scripts/pieChartQ.js"></script>
+  <script src="scripts/questionAI.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+/* line 3, ../sass/privacy.scss */
+._header-849 {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px 15px 0px 30px;
+}
+
+/* line 8, ../sass/privacy.scss */
+._ipdk-900 {
+  margin: 20px 30px;
+}
+
+/* line 12, ../sass/privacy.scss */
+._statement-820 {
+  height: 47px;
+}
+/* line 14, ../sass/privacy.scss */
+._statement-820 h5, ._statement-820 i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+/* line 20, ../sass/privacy.scss */
+._ipdk-901 {
+  margin: 20px 30px 90px 30px;
+}
+
+/* line 24, ../sass/privacy.scss */
+.dd-select {
+  background: white !important;
+}
+/* line 26, ../sass/privacy.scss */
+.dd-select a {
+  color: #333;
+}
+/* line 29, ../sass/privacy.scss */
+.dd-select label {
+  font-weight: 500;
+}
+
+/* line 34, ../sass/privacy.scss */
+.dd-option-text {
+  font-weight: 500;
+}

@@ -1,0 +1,175 @@
+/* line 1, ../sass/general_navbar.scss */
+._navbar409 {
+  background-color: black;
+  z-index: 1000;
+}
+/* line 4, ../sass/general_navbar.scss */
+._navbar409 .navbar-nav > li > a {
+  color: #e7e7e7;
+}
+/* line 6, ../sass/general_navbar.scss */
+._navbar409 .navbar-nav > li > a:hover {
+  color: #e7e7e7;
+}
+
+/* line 3, ../sass/register.scss */
+* {
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* line 7, ../sass/register.scss */
+html {
+  margin: 0px;
+  height: 100%;
+}
+
+/* line 12, ../sass/register.scss */
+body {
+  margin: 0px;
+  min-height: 100%;
+  height: 100%;
+}
+
+/* line 18, ../sass/register.scss */
+.navbar-right .dropdown-menu {
+  right: -1px;
+}
+
+/* line 21, ../sass/register.scss */
+.page-dim {
+  background-color: #e7e7e7;
+}
+
+/* line 25, ../sass/register.scss */
+.anchor-blue {
+  color: #6ea9f8;
+}
+
+/* line 29, ../sass/register.scss */
+.pointer {
+  cursor: pointer;
+}
+
+/* line 33, ../sass/register.scss */
+.container-dim90 {
+  background-color: white;
+  height: 100%;
+  position: relative;
+}
+
+/* line 39, ../sass/register.scss */
+.wizard-container {
+  padding: 80px 0 0 0;
+  height: 100%;
+}
+
+/* line 44, ../sass/register.scss */
+.nopadding {
+  padding: 0;
+}
+
+/* line 48, ../sass/register.scss */
+.margintop60 {
+  margin-top: 60px;
+}
+
+/* line 52, ../sass/register.scss */
+.margintop30 {
+  margin-top: 30px;
+}
+
+/* line 56, ../sass/register.scss */
+.margintop200 {
+  margin-top: 200px;
+}
+
+/* line 60, ../sass/register.scss */
+.margintop100 {
+  margin-top: 100px;
+}
+
+/* line 64, ../sass/register.scss */
+.width100 {
+  width: 100%;
+}
+
+/* line 68, ../sass/register.scss */
+.wizard-head {
+  height: 90%;
+}
+/* line 70, ../sass/register.scss */
+.wizard-head a:focus, .wizard-head a:hover {
+  text-decoration: none !important;
+}
+
+/* line 75, ../sass/register.scss */
+.wizard-footer {
+  height: 10%;
+}
+
+/* line 79, ../sass/register.scss */
+.width50perc {
+  width: 50%;
+}
+
+/* line 83, ../sass/register.scss */
+.width45perc {
+  width: 48%;
+}
+
+/* line 87, ../sass/register.scss */
+.global-856 {
+  font-size: 24px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 92, ../sass/register.scss */
+._upload-204 {
+  height: 300px;
+}
+/* line 94, ../sass/register.scss */
+._upload-204 .dz-message {
+  position: relative;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+/* line 101, ../sass/register.scss */
+.selectable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*  .ui-selecting {
+      //background: #FECA40;
+      background: #31708f;
+    }*/
+}
+/* line 105, ../sass/register.scss */
+.selectable li {
+  margin: 3px;
+  padding: 0.4em;
+  font-size: 12px;
+  height: 28px;
+  cursor: pointer;
+}
+/* line 116, ../sass/register.scss */
+.selectable .ui-selected {
+  /*    background: #31708f;
+      color: white;*/
+}
+/* line 121, ../sass/register.scss */
+.selectable .ui-widget-content {
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 15px;
+  padding: 3px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 131, ../sass/register.scss */
+.panel-title {
+  color: #333;
+}
