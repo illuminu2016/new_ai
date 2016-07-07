@@ -29,11 +29,14 @@
   border: 2px dashed #aaa;
   background: white;
   padding: 54px 54px;
-  & > div {
+/*  & > div {
     display: none !important;
   }
   div:nth-child(-n+4) {
     display: inline-block !important;
+  }*/
+  .dz-complete {
+    display: none !important;
   }
 }
 .dropzone.dz-clickable { cursor: pointer; }

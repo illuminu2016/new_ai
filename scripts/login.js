@@ -27,6 +27,14 @@ function signUp(btn) {
 		window.location = 'register.html';
 	}, 1000);
 }
+function showForgotPasswordScreen() {
+	$('.forgot-pass23').hide();
+	$('.vw-account-text-894').hide();
+	$('.forgot-pass56').show();
+}
+function goToRoute(url) {
+	window.location = url;
+}
 var onresize = function(e) {
 	//note i need to pass the event as an argument to the function
 	width = e.target.outerWidth;

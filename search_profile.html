@@ -130,15 +130,17 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
+            <li><a href="#" onclick="goToRoute('notifications.html')">Notifications</a></li>
+            <li><a href="#" onclick="goToRoute('messages.html')">Message Settings</a></li>
             <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
+            <li><a href="#" onclick="goToRoute('language.html')">Change Language of App</a></li>
+            <li><a href="#" onclick="goToRoute('change_password.html')">Change Password</a></li>
             <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
+      <div class="pull-right _avatar-up">
+      </div>
 
       <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
@@ -343,8 +345,14 @@
             </div>
           </div>
       </div>
+      <div class="pull-right _contact-list67">
+        List contact
+      </div>
     </div>
 	<div class="clearfix vw-album-894">
+      <div class="pointer _next-container100 next-container" style="display: none;" onclick="backAlbumScroll(7)">
+        <i class="fa fa-angle-left _next-btn80 _btn-next"></i>
+      </div>
       <div class="pull-right clearfix col-lg-12 col-md-12 col-sm-12 vw-album-container-832" style="padding-left: 0px;">
         <div class="abum901">
           <div class="pull-right">
@@ -409,8 +417,8 @@
           </div>
         </div>
       </div>
-      <div class="pointer _next-container899" onclick="nextAlbumScroll(7)">
-        <i class="fa fa-angle-right _next-btn90"></i>
+      <div class="pointer _next-container899 next-container" onclick="nextAlbumScroll(7)">
+        <i class="fa fa-angle-right _next-btn90 _btn-next"></i>
       </div>
     </div>
     <div class="clearfix vw-information-894">
@@ -1284,9 +1292,16 @@
   </div>
 <div class="_mds932">
   <div class="_ijd766" align="center">
-    <div class="_unk877">
-        <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-sm hidden-md" width="600" height="600">
-        <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-lg" width="400" height="400">
+    <div class="clearfix _unk877">
+      <div class="pull-left _arrow-st89" align="right">
+        <i class="fa fa-angle-left _next-btn90"></i>
+      </div>
+      <div class="pull-left _img-748">
+        <img src="css/images/pic1.jpg" class="_imgk984">
+      </div>
+      <div class="pull-left _arrow-st89" align="left">
+        <i class="fa fa-angle-right _next-btn90"></i>
+      </div>
     </div>
   </div>
 </div>

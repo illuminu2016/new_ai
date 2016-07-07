@@ -128,15 +128,17 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
+            <li><a href="#" onclick="goToRoute('notifications.html')">Notifications</a></li>
+            <li><a href="#" onclick="goToRoute('messages.html')">Message Settings</a></li>
             <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
+            <li><a href="#" onclick="goToRoute('language.html')">Change Language of App</a></li>
+            <li><a href="#" onclick="goToRoute('change_password.html')">Change Password</a></li>
             <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
+      <div class="pull-right _avatar-up">
+      </div>
 
       <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
@@ -330,8 +332,8 @@
       <div class="pull-right clearfix _menu-802">
         <!--<i class="fa fa-battery-three-quarters vw-velocity-894"></i>-->
         <div class="pull-left btn btn-profile" onclick="goToRoute('profile.html')">User Information</div>
-        <div class="pull-left btn btn-profile" onclick="goToRoute('posts.html')">Posts</div>
-        <div class="pull-left btn btn-danger">Contacts</div>
+        <div class="pull-left btn btn-profile" onclick="goToRoute('posts.html')">Posts <span class="badge">4</span></div>
+        <div class="pull-left btn btn-danger" onclick="goToRoute('my_contacts.html')">Contacts <span class="badge">604</span></div>
         <div class="pull-left btn btn-profile" onclick="goToRoute('ai_profile.html')">AI Profile</div>
       </div>
       <div class="_avatar-round99"></div>
@@ -501,220 +503,6 @@
   </div>
 
 </div>
-<div class="_mds932">
-  <div class="_ijd766" align="center">
-    <div class="_unk877">
-        <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-sm hidden-md" width="600" height="600">
-        <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-lg" width="400" height="400">
-    </div>
-  </div>
-</div>
-<div class="_map-overlay98" align="center">
-  <div class="_map-container col-lg-9 col-md-11 col-sm-12">
-    <div class="_map-cluster-90" style="height: 90%;">
-      <div id="map" style="height: 100%;">
-      </div>
-      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    </div>
-    <div class="_map-controls-84">
-      <div class="clearfix _map-inner-controls">
-          <div class="pull-left btn btn-primary marginright60" onclick="saveGlobalPosition()">Save</div>
-          <div class="pull-right btn btn-danger" onclick="hideMapOverlay()">Cancel</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="_upload-overlay899" align="center">
-  <div class="clearfix _upload-container778 col-lg-9 col-md-11 col-sm-12">
-    <div class="pull-left _album893">
-      <!-- LG MD -->
-      <div class="_ijn777 hidden-sm">
-        <input class="_upload-file888" id="uploadFile1" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn1" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- LG MD -->
-      <!-- SM -->
-      <div class="_ijn777 hidden-lg hidden-md">
-        <input class="_upload-file889" id="uploadFile1" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn1" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- SM -->
-      <!-- LG MD -->
-      <div class="_ijn777 hidden-sm">
-        <input class="_upload-file888" id="uploadFile2" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn2" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- LG MD -->
-      <!-- SM -->
-      <div class="_ijn777 hidden-lg hidden-md">
-        <input class="_upload-file889" id="uploadFile2" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn2" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- SM -->
-      <!-- LG MD -->
-      <div class="_ijn777 hidden-sm">
-        <input class="_upload-file888" id="uploadFile3" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn3" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- LG MD -->
-      <!-- SM -->
-      <div class="_ijn777 hidden-lg hidden-md">
-        <input class="_upload-file889" id="uploadFile3" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn3" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- SM -->
-      <!-- LG MD -->
-      <div class="_ijn777 hidden-sm">
-        <input class="_upload-file888" id="uploadFile4" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn4" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- LG MD -->
-      <!-- SM -->
-      <div class="_ijn777 hidden-lg hidden-md">
-        <input class="_upload-file889" id="uploadFile4" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn4" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- SM -->
-      <!-- LG MD -->
-      <div class="_ijn777 hidden-sm">
-        <input class="_upload-file888" id="uploadFile5" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn5" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- LG MD -->
-      <!-- SM -->
-      <div class="_ijn777 hidden-lg hidden-md">
-        <input class="_upload-file889" id="uploadFile5" placeholder="Choose File" disabled="disabled" />
-        <div class="fileUpload btn btn-primary">
-          <span>Upload</span>
-          <input id="uploadBtn5" type="file" class="upload" />
-        </div>
-      </div>
-      <!-- SM -->
-      <div class="upload-photos-fb933">
-        Or use to upload photos <a href="http://www.facebook.com"><div class="fb-container-90 pointer">Facebook</div></a>
-      </div>
-      <div class="album-format944">
-        Accepted format is JPG and PNG. Please don't upload files that exceed 128 MB.
-      </div>
-    </div>
-    <div class="pull-right _album894">
-      <div class="clearfix _alp900">
-        <div class="pull-left _ijk88">
-          <img src="css/images/pic1.jpg" class="_img007" width="200" height="200">
-          <input type="checkbox" name="vehicle" value="Bike" class="_icheck999">
-        </div>
-        <div class="pull-left _ijk88">
-          <img src="css/images/pic2.jpg" class="_img007" width="200" height="200">
-          <input type="checkbox" name="vehicle" value="Bike" class="_icheck999">
-        </div>
-        <div class="pull-left _ijk88">
-          <img src="css/images/pic3.jpg" class="_img007" width="200" height="200">
-          <input type="checkbox" name="vehicle" value="Bike" class="_icheck999">
-        </div>
-        <div class="pull-left _ijk88">
-          <img src="css/images/pic4.jpg" class="_img007" width="200" height="200">
-          <input type="checkbox" name="vehicle" value="Bike" class="_icheck999">
-        </div>
-        <div class="pull-left _ijk88">
-          <img src="css/images/pic1.jpg" class="_img007" width="200" height="200">
-          <input type="checkbox" name="vehicle" value="Bike" class="_icheck999">
-        </div>
-      </div>
-    </div>
-    <div class="pointer x-close88"><i class="fa fa-times x-close-78"></i></div>
-  </div>
-</div>
-
-<!--<div id="_question34" class="_question-banner900 right10 col-lg-4 col-md-6 col-sm-6">
-  <div class="_banner-inner88">
-      <div class="_question-header677">What do you think about dating a stranger in a white long dress?</div>
-      <div>
-        <input id="radio-1" class="radio-custom" name="radio-group" type="radio" onclick="answerAlg('_question34','_question90','q1','c1')">
-        <label for="radio-1" class="radio-custom-label">Yes i would</label>
-      </div>
-      <div>
-        <input id="radio-2" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question34','_question90','q1','c2')">
-        <label for="radio-2" class="radio-custom-label">Maybe</label>
-      </div>
-      <div>
-        <input id="radio-3" class="radio-custom" name="radio-group" type="radio" onclick="answerAlg('_question34','_question90','q1','c3')">
-        <label for="radio-3" class="radio-custom-label">No chance</label>
-      </div>
-      <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question34')"></i>
-  </div>
-</div>
-<div id="_question90" class="_question-banner900 right10 col-lg-4 col-md-6 col-sm-6" style="display:none;">
-  <div class="_banner-inner88">
-    <div class="_question-header677">What do you think about traveling by plane?</div>
-    <div>
-      <input id="radio-4" class="radio-custom" name="radio-group" type="radio" onclick="answerAlg('_question90','_question91','q2','c1')">
-      <label for="radio-4" class="radio-custom-label">I'm scared</label>
-    </div>
-    <div>
-      <input id="radio-5" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question34','_question91','q2','c2')">
-      <label for="radio-5" class="radio-custom-label">I love it</label>
-    </div>
-    <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question90')"></i>
-  </div>
-</div>
-<div id="_question91" class="_question-banner900 right10 col-lg-4 col-md-6 col-sm-6" style="display:none;">
-  <div class="_banner-inner88">
-    <div class="_question-header677">Around which hour do you take dinner?</div>
-    <div>
-      <input id="radio-6" class="radio-custom" name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-6" class="radio-custom-label">19.00</label>
-    </div>
-    <div>
-      <input id="radio-7" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-7" class="radio-custom-label">20.00</label>
-    </div>
-    <div>
-      <input id="radio-8" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-8" class="radio-custom-label">21.00</label>
-    </div>
-    <div>
-      <input id="radio-9" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-9" class="radio-custom-label">22.00</label>
-    </div>
-    <div>
-      <input id="radio-11" class="radio-custom"name="radio-group" type="radio" onclick="answerAlg('_question91',null,'q2','c2')">
-      <label for="radio-11" class="radio-custom-label">None of the above</label>
-    </div>
-    <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question90')"></i>
-  </div>
-</div>-->
-<!--<div class="_question-banner901">
-  <div class="_banner-inner88">
-    <i class="fa fa-times pointer _x-close-btn100"></i>
-  </div>
-</div>-->
 <div class="_question-banner902"></div>
   <!-- Bootstrap core JavaScript
       ================================================== -->

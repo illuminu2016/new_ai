@@ -1,0 +1,80 @@
+/* line 1, ../sass/header_log.scss */
+.header {
+  height: 70px;
+  width: 100%;
+  background: black;
+  /*  background: #3F7691;*/
+  box-shadow: 0 1px 4px #ccc;
+  /*    .btn:hover {
+        color: white;
+      }*/
+}
+/* line 7, ../sass/header_log.scss */
+.header .header_uv420 {
+  margin: 0 auto;
+  height: 70px;
+  float: none;
+}
+/* line 11, ../sass/header_log.scss */
+.header .header_uv420 ._vw-logo {
+  color: white;
+  font-size: 20px;
+  margin: 20px 0 0 40px;
+  font-weight: bold;
+}
+/* line 18, ../sass/header_log.scss */
+.header .uv_427-logo {
+  margin-top: 20px;
+  font-size: 20px;
+}
+/* line 21, ../sass/header_log.scss */
+.header .uv_427-logo img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+}
+/* line 28, ../sass/header_log.scss */
+.header .uv_64 {
+  height: 30px;
+  margin: 18px 20px 0 0;
+  color: #fff;
+  background: #70a34b;
+  display: inline-block;
+  padding: 5px 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  border-radius: 4px;
+}
+/* line 41, ../sass/header_log.scss */
+.header .uv_30 {
+  height: 30px;
+  margin-top: 18px;
+  color: #000;
+  /*      background-color: #286090;
+        border-color: #2e6da4;*/
+  background: #ccc;
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  border-radius: 4px;
+}
+/* line 56, ../sass/header_log.scss */
+.header .btn-sign {
+  background: #2ca02c;
+  border: none;
+  color: white;
+  box-shadow: 0 1px 1px black;
+  padding: 4px 12px;
+}
+
+/* line 3, ../sass/noindetify.scss */
+.btn {
+  border-radius: 4px !important;
+  text-transform: capitalize;
+}

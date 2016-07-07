@@ -18,3 +18,77 @@
   color: #6ea9f8;
 }
 
+.btn {
+  @include btn-loc();
+}
+
+.container {
+  top: 15px;
+  position: relative;
+}
+
+.navbar {
+  height: 80px;
+}
+
+._contact-list67 {
+  top: 17px;
+  position: relative;
+  background: yellow;
+  padding: 5px;
+}
+
+//cool checkboxes
+.squaredTwo {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: #fcfff4;
+  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+    &:after {
+      content: '';
+      width: 13px;
+      height: 5px;
+      position: absolute;
+      top: 7px;
+      left: 4px;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }
+}
+
+.squaredChecked {
+  label {
+    &:after {
+      border: 3px solid #2182cc;
+      border-top: none;
+      border-right: none;
+    }
+  }
+}
+
+.margin10 {
+  margin: 10px 0;
+}
+

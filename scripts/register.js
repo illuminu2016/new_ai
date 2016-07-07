@@ -2,6 +2,8 @@ function applyChanges(step) {
     $('.step' + step).fadeOut(1000, 'linear');
     setTimeout(function(){
         $('.step' + (step + 1)).show();
+        $('.header-top90 div:eq(' + (step - 1) + ')').removeClass('wizard-active');
+        $('.header-top90 div:eq(' + step + ')').addClass('wizard-active');
     }, 1000);
 }
 
@@ -15,6 +17,8 @@ if($('#tokenfield').length) {
 
 $('#tokenfield').on('tokenfield:createtoken', function (event) {
     var existingTokens = $(this).tokenfield('getTokens');
+
+    $('#tokenfield-tokenfield').attr('placeholder', '');
     $.each(existingTokens, function(index, token) {
         if (token.value === event.attrs.value)
             event.preventDefault();

@@ -1,0 +1,81 @@
+/* line 2, ../sass/notifications.scss */
+html {
+  margin: 0px;
+  height: 100%;
+}
+
+/* line 7, ../sass/notifications.scss */
+body {
+  margin: 0px;
+  min-height: 100%;
+  height: 100%;
+}
+
+/* line 13, ../sass/notifications.scss */
+.container-dim97 {
+  height: 90%;
+}
+
+/* line 17, ../sass/notifications.scss */
+._header-849 {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px 15px 0px 5px;
+}
+
+/* line 22, ../sass/notifications.scss */
+._vfconf-45 {
+  background: white;
+  padding: 30px;
+  margin-top: 8%;
+  height: 487px;
+}
+/* line 27, ../sass/notifications.scss */
+._vfconf-45 .field-control-84 {
+  padding: 20px 0;
+}
+
+/* line 32, ../sass/notifications.scss */
+._ipdk-900 {
+  margin: 20px 5px;
+}
+/* line 35, ../sass/notifications.scss */
+._ipdk-900 ._notification-lpad84 h5 {
+  margin: 0 3px;
+  font-weight: 500;
+}
+/* line 39, ../sass/notifications.scss */
+._ipdk-900 ._notification-lpad84 div {
+  font-size: 12px;
+  margin-left: 4px;
+  color: #999;
+}
+
+/* line 47, ../sass/notifications.scss */
+._statement-820 {
+  height: 47px;
+}
+/* line 49, ../sass/notifications.scss */
+._statement-820 h5, ._statement-820 i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+/* line 55, ../sass/notifications.scss */
+.dd-select {
+  background: white !important;
+}
+/* line 57, ../sass/notifications.scss */
+.dd-select a {
+  color: #333;
+}
+/* line 60, ../sass/notifications.scss */
+.dd-select label {
+  font-weight: 500;
+}
+
+/* line 65, ../sass/notifications.scss */
+.dd-option-text {
+  font-weight: 500;
+}

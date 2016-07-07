@@ -1,0 +1,4 @@
+http://exploringjs.com/es6/ch_classes.html
+
+
+http://www.typescriptlang.org/docs/handbook/classes.html

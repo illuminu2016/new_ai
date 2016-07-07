@@ -1,10 +1,23 @@
 ._navbar409 {
   background-color: black;
-  z-index: 1000;
-  .navbar-nav > li > a {
-    color: #e7e7e7;
-    &:hover {
+  z-index: 1001;
+  .navbar-nav {
+    & > li > a {
       color: #e7e7e7;
+      padding: 10px 15px;
+      margin: 5px 0 0 0;
+      &:hover {
+        color: #e7e7e7;
+      }
+    }
+    .active > a {
+      &, &:hover {
+        color: #fff;
+/*        background-color: #449d44;
+        border-color: #398439;*/
+        background-color: #398439;
+        border-color: #255625;
+      }
     }
   }
 }

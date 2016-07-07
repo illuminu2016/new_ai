@@ -136,15 +136,17 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
+            <li><a href="#" onclick="goToRoute('notifications.html')">Notifications</a></li>
+            <li><a href="#" onclick="goToRoute('messages.html')">Message Settings</a></li>
             <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
+            <li><a href="#" onclick="goToRoute('language.html')">Change Language of App</a></li>
+            <li><a href="#" onclick="goToRoute('change_password.html')">Change Password</a></li>
             <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
+      <div class="pull-right _avatar-up">
+      </div>
 
       <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
@@ -330,97 +332,74 @@
   </div>
 </nav>
 
-<div class="container container-dim99">
-  <div class="bs-example bs-example-standalone" style="padding-top:100px;" data-example-id="dismissible-alert-js">
-    <div class="alert alert-danger alert-dismissible fade in" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">×</span>
-      </button>
-      <h4>Oh snap! You got an error!</h4>
-      <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-      <p>
-        <button type="button" class="btn btn-danger">Take this action</button>
-        <button type="button" class="btn btn-default">Or do this</button>
-      </p>
-    </div>
-  </div>
-  <div class="bs-example bs-example-standalone" data-example-id="dismissible-alert-js">
-    <div class="alert alert-info alert-dismissible fade in" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">×</span>
-      </button>
-      <h4>Oh snap! You got an error!</h4>
-      <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-      <p>
-        <button type="button" class="btn btn-danger">Take this action</button>
-        <button type="button" class="btn btn-default">Or do this</button>
-      </p>
-    </div>
-  </div>
-  <div class="clearfix vw-name-984">
-      <div class="pull-left">
-          <h3> Crismaru Constantin </h3>
+<div class="container container-dim97">
+  <div class="_vfconf-45">
+    <div class="bs-example bs-example-standalone alert-box34" data-example-id="dismissible-alert-js">
+      <div class="alert alert-info alert-dismissible fade in" role="alert">
+        <h4>Change your privacy settings!</h4>
+        <p>On this screen you can change who see your posts and private photos.</p>
       </div>
     </div>
-  <div>
-    <div class="clearfix margin30">
-      <div class="pull-left">
-        <h5> Invisible mode for your account </h5>
-      </div>
-      <div class="pull-right">
-        <input type="checkbox" checked data-toggle="toggle">
-      </div>
-    </div>
-    <div class="_header-849">
-      <div>
-        <h4> Account Information </h4>
-      </div>
-    </div>
-    <div class="clearfix _ipdk-900">
-        <div class="pull-left _statement-820">
-          <h5> Who can see my stuff? </h5>
+    <div>
+      <div class="clearfix _ipdk-900">
+        <div class="pull-left">
+          <h5> Invisible mode for your account </h5>
         </div>
         <div class="pull-right">
-          <div id="stuff"></div>
+          <input type="checkbox" checked data-toggle="toggle">
         </div>
       </div>
-    <div class="clearfix _ipdk-900">
+      <div class="_header-849">
+        <div>
+          <h4> Account Information </h4>
+        </div>
+      </div>
+      <div class="clearfix _ipdk-900">
+          <div class="pull-left _statement-820">
+            <h5> Who can see my stuff? </h5>
+          </div>
+          <div class="pull-right">
+            <div id="stuff"></div>
+          </div>
+        </div>
+      <div class="clearfix _ipdk-900">
+          <div class="pull-left _statement-820">
+            <h5> Who can search for me in Find Match? </h5>
+          </div>
+          <div class="pull-right">
+            <div id="findMatch"></div>
+          </div>
+        </div>
+      <div class="clearfix _ipdk-900">
         <div class="pull-left _statement-820">
-          <h5> Who can search for me in Find Match? </h5>
+          <h5> Have private photos </h5>
         </div>
         <div class="pull-right">
-          <div id="findMatch"></div>
+          <input type="checkbox" checked data-toggle="toggle">
         </div>
       </div>
-    <div class="clearfix _ipdk-900">
-      <div class="pull-left _statement-820">
-        <h5> Have private photos </h5>
+      <div class="_header-849">
+        <div>
+          <h4> Artificial Space </h4>
+        </div>
       </div>
-      <div class="pull-right">
-        <input type="checkbox" checked data-toggle="toggle">
+      <div class="clearfix _ipdk-900">
+        <div class="clearfix pull-left _statement-820">
+          <i class="fa fa-question-circle pull-left" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="AI Personality can crawl posts"></i>
+          <h5 class="pull-left marginleft5"> Posts </h5>
+        </div>
+        <div class="pull-right">
+          <div id="aiPosts"></div>
+        </div>
       </div>
-    </div>
-    <div class="_header-849">
-      <div>
-        <h4> Artificial Space </h4>
-      </div>
-    </div>
-    <div class="clearfix _ipdk-900">
-      <div class="clearfix pull-left _statement-820">
-        <i class="fa fa-question-circle pull-left" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="AI Personality can crawl posts"></i>
-        <h5 class="pull-left marginleft5"> Posts </h5>
-      </div>
-      <div class="pull-right">
-        <div id="aiPosts"></div>
-      </div>
-    </div>
-    <div class="clearfix _ipdk-900">
-      <div class="clearfix pull-left _statement-820">
-        <i class="fa fa-question-circle pull-left" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="AI Personality can talk on chat on your behalf"></i>
-        <h5 class="pull-left marginleft5"> Chat </h5>
-      </div>
-      <div class="pull-right">
-        <input type="checkbox" checked data-toggle="toggle">
+      <div class="clearfix _ipdk-900">
+        <div class="clearfix pull-left _statement-820">
+          <i class="fa fa-question-circle pull-left" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="AI Personality can talk on chat on your behalf"></i>
+          <h5 class="pull-left marginleft5"> Chat </h5>
+        </div>
+        <div class="pull-right">
+          <input type="checkbox" checked data-toggle="toggle">
+        </div>
       </div>
     </div>
   </div>
