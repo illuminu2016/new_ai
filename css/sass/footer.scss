@@ -1,5 +1,7 @@
 .uv_footer {
   height: 200px;
+  position: relative;
+  z-index: 1000;
   //#8B0000
   background: linear-gradient(#286090, black);
   .uv-footer-890 {
@@ -18,7 +20,7 @@
     }
     .uv_footer_social {
       margin-top: 30px;
-      width: 625px;
+      width: 450px;
       img {
         float: left;
       }
@@ -30,13 +32,14 @@
       }
     }
     .uv_footer_456 {
-      width: 625px;
+      width: 470px;
       ._ux_478 {
-        height: 25px;
-        padding: 0 12px;
+        height: 20px;
+        width: 400px;
+        padding: 15px 12px;
       }
       ._ux_479 {
-        height: 25px;
+        height: 32px;
         padding: 2px 12px;
       }
       .uv_footer_632 {
@@ -55,7 +58,7 @@
     .uv_sub_345 {
       margin: 0 auto;
       float: none;
-      width: 600px;
+      width: 560px;
     }
     .um_sub_345 {
       margin: 0 auto;
@@ -63,15 +66,15 @@
       width: 300px;
     }
     .uv_sub_copyright {
-      font-size: 12px;
+      font-size: 14px;
       color: #f2f2f2;
-      margin: 5px 20px 0 0;
+      margin: 2px 20px 0 0;
     }
     .list-inline {
       float: left;
       cursor: pointer;
       & > li {
-        font-size: 12px;
+        font-size: 14px;
         color: #f2f2f2;
         font-weight: normal;
       }

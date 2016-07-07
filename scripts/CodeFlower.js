@@ -115,6 +115,7 @@ CodeFlower.prototype.flatten = function(root) {
 };
 
 CodeFlower.prototype.click = function(d) {
+	console.log('aici');
 	if(($('._ai-questions-82').length > 0) && ($('._ai-questions-82').css('display') == 'block')) {
 		$('._ai-questions-82').fadeOut(1000);
 	}

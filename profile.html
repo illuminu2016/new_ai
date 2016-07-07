@@ -135,15 +135,17 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
+            <li><a href="#" onclick="goToRoute('notifications.html')">Notifications</a></li>
+            <li><a href="#" onclick="goToRoute('messages.html')">Message Settings</a></li>
             <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
+            <li><a href="#" onclick="goToRoute('language.html')">Change Language of App</a></li>
+            <li><a href="#" onclick="goToRoute('change_password.html')">Change Password</a></li>
             <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
+      <div class="pull-right _avatar-up">
+      </div>
 
       <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
@@ -331,7 +333,9 @@
 
 <div class="container container-dim99">
     <div class="clearfix vw-name-984" style="padding-top:100px;">
-      <div class="pull-left">
+      <div class="pull-left _avatar-890">
+      </div>
+      <div class="pull-left marginleft20" style="margin-top: 4px;">
           <h3> Crismaru Constantin </h3>
       </div>
       <div class="pull-right clearfix _menu-802">
@@ -507,26 +511,9 @@
             </div>
           </div>
         </div>
-<!--        <div class="pull-left">
-          <div class="vw-portrait-754">
-            <img src="css/images/pic1.jpg" width="200" height="200">
-          </div>
+        <div class="pointer _next-container100 next-container" style="display: none;" onclick="backAlbumScroll(8)">
+          <i class="fa fa-angle-left _next-btn80 _btn-next"></i>
         </div>
-        <div class="pull-left">
-          <div class="vw-portrait-754">
-            <img src="css/images/pic2.jpg" width="200" height="200">
-          </div>
-        </div>
-        <div class="pull-left">
-          <div class="vw-portrait-754">
-            <img src="css/images/pic3.jpg" width="200" height="200">
-          </div>
-        </div>
-        <div class="pull-left">
-          <div class="vw-portrait-754">
-            <img src="css/images/pic4.jpg" width="200" height="200">
-          </div>
-        </div>-->
       </div>
       <div class="pull-right vw-album-62 col-lg-2 col-md-3 hidden-sm" align="center">
         <div class="pointer vw-album-upload-903 vw-album998" onclick="uploadPhotos()">
@@ -540,8 +527,8 @@
           <div class="vw-album998" style="font-size: 16px;">Upload photo</div>
         </div>
       </div>
-      <div class="pointer _next-container899" onclick="nextAlbumScroll(8)">
-        <i class="fa fa-angle-right _next-btn90"></i>
+      <div class="pointer _next-container899 next-container" onclick="nextAlbumScroll(8)">
+        <i class="fa fa-angle-right _next-btn90 _btn-next"></i>
       </div>
     </div>
     <div class="clearfix vw-information-894">
@@ -703,9 +690,16 @@
 </div>
 <div class="_mds932">
   <div class="_ijd766" align="center">
-    <div class="_unk877">
-        <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-sm hidden-md" width="600" height="600">
-        <img src="css/images/pic1.jpg" class="_imgk984 hidden-xs hidden-lg" width="400" height="400">
+    <div class="clearfix _unk877">
+      <div class="pull-left _arrow-st89" align="right">
+        <i class="fa fa-angle-left _next-btn90"></i>
+      </div>
+      <div class="pull-left _img-748">
+        <img src="css/images/pic1.jpg" class="_imgk984">
+      </div>
+      <div class="pull-left _arrow-st89" align="left">
+        <i class="fa fa-angle-right _next-btn90"></i>
+      </div>
     </div>
   </div>
 </div>
@@ -864,7 +858,7 @@
 </div>
 <!-- Modal -->
 
-<div id="_question34" class="_question-banner900 right10 col-lg-4 col-md-6 col-sm-6">
+<div id="_question34" class="_question-banner900 right10">
   <div class="_banner-inner88">
       <div class="_question-header677">What do you think about dating a stranger in a white long dress?</div>
       <div>
@@ -882,7 +876,7 @@
       <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question34')"></i>
   </div>
 </div>
-<div id="_question90" class="_question-banner900 right10 col-lg-4 col-md-6 col-sm-6" style="display:none;">
+<div id="_question90" class="_question-banner900 right10" style="display:none;">
   <div class="_banner-inner88">
     <div class="_question-header677">What do you think about traveling by plane?</div>
     <div>
@@ -896,7 +890,7 @@
     <i class="fa fa-times pointer _x-close-btn100" onclick="closeQuestionTab('_question90')"></i>
   </div>
 </div>
-<div id="_question91" class="_question-banner900 right10 col-lg-4 col-md-6 col-sm-6" style="display:none;">
+<div id="_question91" class="_question-banner900 right10" style="display:none;">
   <div class="_banner-inner88">
     <div class="_question-header677">Around which hour do you take dinner?</div>
     <div>

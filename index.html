@@ -82,7 +82,7 @@
                         </div>
                     </div>   
                     <div class="uv_789-inner-container clearfix">
-                        <div class="pull-left _width280">
+                        <div class="pull-left _width280 forgot-pass23">
                             <div class="vw-637-info h4">
                                 Log In into your account
                             </div>
@@ -99,7 +99,27 @@
                                 </div>
                             </div>
                             <div class="vw-new-account">
-                                <span class="vw-account-text-894 pointer">Forgot your password?</span>
+                                <span class="vw-account-text-894 pointer" onclick="showForgotPasswordScreen()">Forgot your password?</span>
+                            </div>
+                        </div>
+                        <div class="pull-left _width280 forgot-pass56" style="display: none">
+                            <div class="vw-637-info margintop25">
+                                Enter your email address and we will send you a link to reset your password.
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter your email address">
+                            </div>
+                            <div class="alert alert-danger alert-dismissible fade in alert-box47" role="alert">
+                                Invalid email address.
+                            </div>
+                            <div class="vw-registration-container">
+                                <div class="vw-701-btn">
+                                    <button type="button" class="btn btn-primary"><a href="">Send email to reset password</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="vw-new-account">
+                                <span class="vw-account-text-894 pointer" onclick="showForgotPasswordScreen()">Forgot your password?</span>
                             </div>
                         </div>
                         <div class="pull-right fb-893">
@@ -186,16 +206,12 @@
             <!-- LG --->
             <div class="uv_footer_inner uv-footer-890 clearfix col-lg-8 col-md-10 col-xs-12 hidden-xs" align="center">
                 <div class="clearfix uv_footer_456">
-                    <div class="pull-left uv_footer_632 hidden-xs">Find a match </div>
-                    <form class="form-inline pull-left">
+                    <div class="form-inline pull-right">
                         <div class="form-group">
-                            <input type="text" class="form-control uv_30 _ux_478" placeholder="First Name">
+                            <input type="text" class="form-control uv_30 _ux_478" placeholder="Find a match online">
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control uv_30 _ux_478" placeholder="Last Name">
-                        </div>
-                        <button type="submit" class="btn uv_30 _ux_479 btn-sign">Search</button>
-                    </form>
+                        <button type="submit" class="btn uv_30 _ux_479 btn-sign" onclick="goToRoute('noidentity-profile.html')">Search</button>
+                    </div>
                 </div>
                 <div class="clearfix uv_footer_social">
                     <img src="css/images/img_f1.png" width="75" height="75">
@@ -204,8 +220,6 @@
                     <img src="css/images/img_f4.png" width="75" height="75">
                     <img src="css/images/img_f5.png" width="75" height="75">
                     <img src="css/images/img_f6.png" width="75" height="75">
-                    <img src="css/images/img_f1.png" width="75" height="75">
-                    <img src="css/images/img_f2.png" width="75" height="75">
                 </div>
             </div>
             <!-- LG --->
@@ -235,7 +249,7 @@
                         AI Personality &copy; 2015
                     </div>
                     <ul class="list-inline">
-                        <li>
+                        <li onclick="goToRoute('terms.html')">
                             Terms
                         </li>
                         <li>
@@ -245,16 +259,10 @@
                             Community Guidelines
                         </li>
                         <li>
-                            Send feedback
-                        </li>
-                        <li>
                             FAQ
                         </li>
                         <li>
-                            Links
-                        </li>
-                        <li>
-                            History
+                            Send feedback
                         </li>
                     </ul>
                 </div>

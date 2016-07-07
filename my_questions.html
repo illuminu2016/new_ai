@@ -126,15 +126,17 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
+            <li><a href="#" onclick="goToRoute('notifications.html')">Notifications</a></li>
+            <li><a href="#" onclick="goToRoute('messages.html')">Message Settings</a></li>
             <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
+            <li><a href="#" onclick="goToRoute('language.html')">Change Language of App</a></li>
+            <li><a href="#" onclick="goToRoute('change_password.html')">Change Password</a></li>
             <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
+      <div class="pull-right _avatar-up">
+      </div>
 
       <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
@@ -328,8 +330,8 @@
       <div class="pull-right clearfix _menu-802">
         <!--<i class="fa fa-battery-three-quarters vw-velocity-894"></i>-->
         <div class="pull-left btn btn-profile" onclick="goToRoute('profile.html')">User Information</div>
-        <div class="pull-left btn btn-profile" onclick="goToRoute('posts.html')">Posts</div>
-        <div class="pull-left btn btn-profile" onclick="goToRoute('my_contacts.html')">Contacts</div>
+        <div class="pull-left btn btn-profile" onclick="goToRoute('posts.html')">Posts <span class="badge">4</span></div>
+        <div class="pull-left btn btn-profile" onclick="goToRoute('my_contacts.html')">Contacts <span class="badge">604</span></div>
         <div class="pull-left btn btn-profile" onclick="goToRoute('ai_profile.html')">AI Profile</div>
       </div>
       <div class="_avatar-round99"></div>
@@ -395,25 +397,6 @@
       <img src="css\images\preloader.gif" class="_loader-692" style="display: none">
     </div>
   </div>
-  <nav class="paginate-nav-894" align="right">
-    <ul class="pagination">
-      <li>
-        <a href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li>
-        <a href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
   <div class="clearfix _ai-questionair-701">
     <div class="pull-left _ai-often-822">
       <div id="ai-question-body-1" class="ai-question-body-820">

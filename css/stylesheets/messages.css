@@ -1,0 +1,69 @@
+/* line 3, ../sass/messages.scss */
+._header-849 {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px 15px 0px 5px;
+}
+
+/* line 8, ../sass/messages.scss */
+._vfconf-45 {
+  background: white;
+  padding: 30px;
+  margin-top: 8%;
+  height: 480px;
+}
+
+/* line 15, ../sass/messages.scss */
+._ipdk-903 {
+  margin: 40px 5px 20px 5px;
+}
+/* line 18, ../sass/messages.scss */
+._ipdk-903 ._message-lpad84 h5 {
+  margin: 0 3px;
+  font-weight: 500;
+}
+/* line 22, ../sass/messages.scss */
+._ipdk-903 ._message-lpad84 div {
+  font-size: 12px;
+  margin-left: 3px;
+  color: #999;
+}
+
+/* line 30, ../sass/messages.scss */
+._statement-820 {
+  height: 47px;
+}
+/* line 32, ../sass/messages.scss */
+._statement-820 h5, ._statement-820 i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+/* line 38, ../sass/messages.scss */
+._ipdk-901 {
+  margin: 20px 30px 90px 30px;
+}
+
+/* line 42, ../sass/messages.scss */
+._ipdk-900 {
+  margin: 20px 5px;
+}
+
+/* line 46, ../sass/messages.scss */
+.dd-select {
+  background: white !important;
+}
+/* line 48, ../sass/messages.scss */
+.dd-select a {
+  color: #333;
+}
+/* line 51, ../sass/messages.scss */
+.dd-select label {
+  font-weight: 500;
+}
+
+/* line 56, ../sass/messages.scss */
+.dd-option-text {
+  font-weight: 500;
+}

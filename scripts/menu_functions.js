@@ -66,11 +66,14 @@ function targetGalleryEvt(event, target, btn, container, inDivider, imgPlacehold
 
 		event.stopPropagation();
 	} else {
-		if($(event.target).is(inDivider) || $(event.target).is(imgPlaceholder)) {
-		} else {
-			if(target) {
-				target = !target;
-				showScrollBar();
+		var parent = $(event.target).context.parentElement;
+		if($(parent).context !== undefined) {
+			if($(parent).is(inDivider) || ($($(parent).context.parentElement).is(inDivider)) || $(event.target).is(imgPlaceholder)) {
+			} else {
+				if(target) {
+					target = !target;
+					showScrollBar();
+				}
 			}
 		}
 	}
@@ -131,8 +134,37 @@ function nextAlbumScroll(items) {
 	selfAlbum.position = (screenW > 1006) ? (selfAlbum.position - 222) : (selfAlbum.position - 160);
 	selfAlbum.cards++;
 
+	displayNavigation(items);
+
 	if(items - selfAlbum.cards > 1) {
 		$('.abum901').css({"-webkit-transition":"0.7s", "webkit-transform": "translate(" + selfAlbum.position + "px,0)"});
+	}
+}
+
+function backAlbumScroll(items) {
+	var screenW = window.outerWidth;
+
+	selfAlbum.position = (screenW > 1006) ? (selfAlbum.position + 222) : (selfAlbum.position + 160);
+	selfAlbum.cards--;
+
+	displayNavigation(items);
+
+	if(selfAlbum.cards > -1) {
+		$('.abum901').css({"-webkit-transition":"0.7s", "webkit-transform": "translate(" + selfAlbum.position + "px,0)"});
+	}
+}
+
+function displayNavigation(items) {
+	if(selfAlbum.cards > 0) {
+		$('._next-container100').css('display', 'block');
+	} else {
+		$('._next-container100').css('display', 'none');
+	}
+
+	if(items - selfAlbum.cards < 3) {
+		$('._next-container899').css('display', 'none');
+	} else {
+		$('._next-container899').css('display', 'block');
 	}
 }
 
@@ -168,7 +200,7 @@ function hideScrollBar() {
 }
 
 function showScrollBar() {
-	$('html').css('overflow', 'scroll');
+	$('html').css('overflow', 'auto');
 	$('body').css("paddingRight", 0);
 	$('.navbar').css("paddingRight", 0);
 }
@@ -270,7 +302,7 @@ function openMapSelection() {
 	if(profileMap.openStatus) {
 		$('._map-overlay98').css('visibility', 'visible');
 		$('._map-overlay98').css('z-index', '9999');
-		$('html').css('overflow', 'hidden');
+		hideScrollBar();
 	}
 }
 
@@ -284,7 +316,7 @@ function saveGlobalPosition() {
 function hideMapOverlay() {
 	$('._map-overlay98').css('visibility', 'hidden');
 	$('._map-overlay98').css('z-index', '1');
-	$('html').css('overflow', 'scroll');
+	showScrollBar();
 }
 
 function zoomPulse(container, btn) {
@@ -299,7 +331,7 @@ function removeContact() {
 	setTimeout(function(){
 		$('._mds682').hide();
 		removeScreen = false;
-		$('html').css('overflow', 'scroll');
+		showScrollBar();
 	}, 1000);
 }
 
@@ -318,7 +350,12 @@ function goToRoute(url) {
 
 function uploadPhotos() {
 	$('._photo-form-942').modal('show');
+	hideScrollBar();
 }
+
+$('#photoForm').on('hidden.bs.modal', function () {
+	showScrollBar();
+});
 
 $('._retimb-manual').on('click', function () {
 	var $btn = $(this).button('loading');
@@ -353,7 +390,7 @@ $('.report-btn').on('click', function () {
 		$btn.button('reset');
 		$('._mds182').hide();
 		reportPost = false;
-		hideScrollBar();
+		showScrollBar();
 	}, 1000);
 	// business logic...
 	//$btn.button('reset')
@@ -492,7 +529,7 @@ $(document).ready(function () {
 	setTimeout(function(){
 		$('#_question34').fadeIn(1000,"linear");
 	}, 3000);
-})
+});
 
 if($('#uploadBtn1').length ) {
 	$('#uploadBtn1').onchange = function () {
@@ -527,6 +564,25 @@ if($('#uploadBtn5').length ) {
 if($('#tokenfield').length) {
 	$('#tokenfield').tokenfield();
 }
+
+$('#tokenfield').on('tokenfield:createtoken', function (event) {
+	var existingTokens = $(this).tokenfield('getTokens');
+
+	$('#tokenfield-tokenfield').attr('placeholder', '');
+	$.each(existingTokens, function(index, token) {
+		if (token.value === event.attrs.value)
+			event.preventDefault();
+	});
+});
+
+$('#tokenfield').on('tokenfield:removedtoken', function (e) {
+	var tokens = $('#tokenfield').tokenfield('getTokens'),
+		placeHolder = 'Add a interest and press enter';
+
+	if(tokens.length == 0) {
+		$('#tokenfield-tokenfield').attr('placeholder', placeHolder);
+	}
+});
 
 /*function retimb(value) {
  $('._retimb-btn-506').hide();

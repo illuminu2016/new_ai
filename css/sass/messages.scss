@@ -1,0 +1,58 @@
+@import "mixins";
+
+._header-849 {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px 15px 0px 5px;
+}
+
+._vfconf-45 {
+  background: white;
+  padding: 30px;
+  margin-top: 8%;
+  height: 480px;
+}
+
+._ipdk-903 {
+  margin: 40px 5px 20px 5px;
+  ._message-lpad84 {
+    h5 {
+      margin: 0 3px;
+      font-weight: 500;
+    }
+    div {
+      font-size: 12px;
+      margin-left: 3px;
+      color: #999;
+    }
+  }
+}
+
+._statement-820 {
+  height: 47px;
+  h5, i {
+    @include vertical-align();
+    margin: 0;
+  }
+}
+
+._ipdk-901 {
+  margin: 20px 30px 90px 30px;
+}
+
+._ipdk-900 {
+  margin: 20px 5px;
+}
+
+.dd-select {
+  background: white !important;
+  a {
+    color: #333;
+  }
+  label {
+    font-weight: 500;
+  }
+}
+
+.dd-option-text {
+  font-weight: 500;
+}

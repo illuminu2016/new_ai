@@ -125,15 +125,17 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
+            <li><a href="#" onclick="goToRoute('notifications.html')">Notifications</a></li>
+            <li><a href="#" onclick="goToRoute('messages.html')">Message Settings</a></li>
             <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
+            <li><a href="#" onclick="goToRoute('language.html')">Change Language of App</a></li>
+            <li><a href="#" onclick="goToRoute('change_password.html')">Change Password</a></li>
             <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
+      <div class="pull-right _avatar-up">
+      </div>
 
       <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
@@ -361,25 +363,50 @@
     <div class="pull-left _ai-questions-82" id="questionaire-900">
       <div>
         <div class="_ai-header-943">I sometimes make mistakes.</div>
-        <div>
-          <input id="radio-6" class="radio-custom" name="radio-group" type="radio" onclick="closeQuestionTab('questionaire-900')">
-          <label for="radio-6" class="radio-custom-label">Strongly Disagree</label>
+        <div class="clearfix margin10">
+          <div class="pull-left squaredTwo">
+            <input type="checkbox" value="None" id="questionA1" name="check" disabled/>
+            <label for="questionA1"></label>
+          </div>
+          <div class="pull-left question87">
+            Strongly Disagree
+          </div>
         </div>
-        <div>
-          <input id="radio-5" class="radio-custom" name="radio-group" type="radio" onclick="closeQuestionTab('questionaire-900')">
-          <label for="radio-5" class="radio-custom-label">Disagree</label>
+        <div class="clearfix margin10">
+          <div class="pull-left squaredTwo">
+            <input type="checkbox" value="None" id="questionA2" name="check" disabled/>
+            <label for="questionA2"></label>
+          </div>
+          <div class="pull-left question87">
+            Disagree
+          </div>
         </div>
-        <div>
-          <input id="radio-4" class="radio-custom" name="radio-group" type="radio" onclick="closeQuestionTab('questionaire-900')">
-          <label for="radio-4" class="radio-custom-label">Unsure</label>
+        <div class="clearfix margin10">
+          <div class="pull-left squaredTwo">
+            <input type="checkbox" value="None" id="questionA3" name="check" disabled/>
+            <label for="questionA3"></label>
+          </div>
+          <div class="pull-left question87">
+            Unsure
+          </div>
         </div>
-        <div>
-          <input id="radio-3" class="radio-custom" name="radio-group" type="radio" onclick="closeQuestionTab('questionaire-900')">
-          <label for="radio-3" class="radio-custom-label">Agree</label>
+        <div class="clearfix margin10">
+          <div class="pull-left squaredTwo">
+            <input type="checkbox" value="None" id="questionA4" name="check" disabled/>
+            <label for="questionA4"></label>
+          </div>
+          <div class="pull-left question87">
+            Agree
+          </div>
         </div>
-        <div>
-          <input id="radio-2" class="radio-custom" name="radio-group" type="radio" onclick="closeQuestionTab('questionaire-900')">
-          <label for="radio-2" class="radio-custom-label">Strongly Agree</label>
+        <div class="clearfix margin10">
+          <div class="pull-left squaredTwo squaredChecked">
+            <input type="checkbox" value="None" id="questionA5" name="check" checked disabled/>
+            <label for="questionA5"></label>
+          </div>
+          <div class="pull-left question87">
+            Strongly Agree
+          </div>
         </div>
       </div>
     </div>

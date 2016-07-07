@@ -1,13 +1,23 @@
 /* line 1, ../sass/general_navbar.scss */
 ._navbar409 {
   background-color: black;
-  z-index: 1000;
+  z-index: 1001;
 }
-/* line 4, ../sass/general_navbar.scss */
+/* line 5, ../sass/general_navbar.scss */
 ._navbar409 .navbar-nav > li > a {
   color: #e7e7e7;
+  padding: 10px 15px;
+  margin: 5px 0 0 0;
 }
-/* line 6, ../sass/general_navbar.scss */
+/* line 9, ../sass/general_navbar.scss */
 ._navbar409 .navbar-nav > li > a:hover {
   color: #e7e7e7;
+}
+/* line 14, ../sass/general_navbar.scss */
+._navbar409 .navbar-nav .active > a, ._navbar409 .navbar-nav .active > a:hover {
+  color: #fff;
+  /*        background-color: #449d44;
+          border-color: #398439;*/
+  background-color: #398439;
+  border-color: #255625;
 }

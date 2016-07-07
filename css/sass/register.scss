@@ -15,6 +15,16 @@ body {
   height: 100%;
 }
 
+.container-dim97 {
+  height: 100%;
+  ._vfconf-48 {
+    background: white;
+    padding: 30px;
+    margin-top: 10%;
+    height: 85%;
+  }
+}
+
 .navbar-right .dropdown-menu {
   right: -1px;
 }
@@ -37,8 +47,8 @@ body {
 }
 
 .wizard-container {
-  padding: 80px 0 0 0;
-  height: 100%;
+  padding: 50px 0 0 0;
+  height: 82%;
 }
 
 .nopadding {
@@ -53,6 +63,10 @@ body {
   margin-top: 30px;
 }
 
+.margintop80 {
+  margin-top: 80px;
+}
+
 .margintop200 {
   margin-top: 200px;
 }
@@ -61,12 +75,44 @@ body {
   margin-top: 100px;
 }
 
+.header-top90 {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  & > div {
+    padding: 10px 0;
+    color: #ccc;
+    background: #fafafa;
+    i {
+      margin-right: 5px;
+      font-size: 18px;
+    }
+  }
+}
+
+.upload-box {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.wizard-active {
+  color: #666 !important;
+  background: white !important;
+}
+
 .width100 {
   width: 100%;
 }
 
+.width33 {
+  width: 33%;
+}
+
+.width34 {
+  width: 34%;
+}
+
 .wizard-head {
-  height: 90%;
+  height: 100%;
   a:focus, a:hover {
     text-decoration: none !important;
   }
@@ -132,3 +178,10 @@ body {
   color: #333;
 }
 
+.btn-loc {
+  @include btn-loc();
+}
+
+.btn-upper {
+  text-transform: uppercase;
+}

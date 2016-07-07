@@ -26,203 +26,210 @@
             </div>
         </nav>
 
-        <div class="container width50perc container-dim90">
-            <div class="wizard-container step1">
-                <div class="wizard-head">
-                    <div class="alert alert-info clearfix" role="alert">
-                        <div class="pull-left">
-                            <p>Choose a username to unique indentify you on this platform.</p>
+        <div class="container width50perc container-dim97">
+            <div class="_vfconf-48">
+                <div class="clearfix header-top90">
+                    <div class="pull-left width33 text-center wizard-active"><i class="fa fa-user" aria-hidden="true"></i>Choose username</div>
+                    <div class="pull-left width34 text-center upload-box"><i class="fa fa-upload" aria-hidden="true"></i>Upload photos</div>
+                    <div class="pull-left width33 text-center"><i class="fa fa-plus-square" aria-hidden="true"></i>Add interests</div>
+                </div>
+                <div class="wizard-container step1">
+                    <div class="wizard-head">
+                        <div class="alert alert-info clearfix" role="alert">
+                            <div class="pull-left">
+                                <p>Choose a username to unique indentify you on this platform.</p>
 
-                            <p>Don’t worry, you can always change it later.</p>
-                        </div>
-                        <div class="pull-right" style="height: 45px;">
-<!--                            <span class="glyphicon glyphicon-globe global-856" aria-hidden="true"></span>-->
-                        </div>
-                    </div>
-                    <div class="clearfix margintop100">
-                        <div class="col-lg-8 nopadding">
-                            <div class="input-group input-group-lg width100">
-                                <input type="text" class="form-control" placeholder="Username">
+                                <p>Don’t worry, you can always change it later.</p>
                             </div>
-                            <!-- /input-group -->
+                            <div class="pull-right" style="height: 45px;">
+    <!--                            <span class="glyphicon glyphicon-globe global-856" aria-hidden="true"></span>-->
+                            </div>
                         </div>
-                        <!-- /.col-lg-6 -->
+                        <div class="clearfix margintop100">
+                            <div class="col-lg-8 nopadding">
+                                <div class="input-group input-group-lg width100">
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                                <!-- /input-group -->
+                            </div>
+                            <!-- /.col-lg-6 -->
+                        </div>
+                        <!--                    <div class="clearfix margintop30">
+                                              <div class="alert alert-danger col-lg-6 nopadding" role="alert">
+                                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                                <span class="sr-only">Error:</span>
+                                                This username already exists!
+                                              </div>
+                                            </div>-->
+                        <div class="clearfix margintop30">
+                            <div class="col-lg-12 nopadding">
+                                <strong>Suggestions:</strong> illuminu20201 illuminu20202 illuminu20203 illuminu20205
+                            </div>
+                        </div>
                     </div>
-                    <!--                    <div class="clearfix margintop30">
-                                          <div class="alert alert-danger col-lg-6 nopadding" role="alert">
-                                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                                            <span class="sr-only">Error:</span>
-                                            This username already exists!
-                                          </div>
-                                        </div>-->
-                    <div class="clearfix margintop30">
-                        <div class="col-lg-12 nopadding">
-                            <strong>Suggestions:</strong> illuminu20201 illuminu20202 illuminu20203 illuminu20205
+                    <div class="wizard-footer">
+                        <div class="clearfix">
+                            <ul class="nav nav-pills">
+                                <li role="presentation" class="active"><a href="#" class="btn-loc" onclick="applyChanges(1)">Apply</a></li>
+                                <li role="presentation" class="pull-right"><a href="#" class="btn-upper" onclick="applyChanges(1)">Skip</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="wizard-footer">
-                    <div class="clearfix">
-                        <ul class="nav nav-pills">
-                            <li role="presentation" class="active"><a href="#" onclick="applyChanges(1)">Apply</a></li>
-                            <li role="presentation" class="pull-right"><a href="#">Skip</a></li>
-                        </ul>
+                <div class="wizard-container step2" style="display: none;">
+                    <div class="wizard-head">
+                        <div class="alert alert-info clearfix" role="alert">
+                            <p>Add photos to your profile.</p>
+                        </div>
+                        <div class="margintop80">
+                            <form action="/file-upload"
+                                  class="dropzone _upload-204"
+                                  id="dropzone" align="center"></form>
+                        </div>
+                    </div>
+                    <div class="wizard-footer">
+                        <div class="clearfix">
+                            <ul class="nav nav-pills">
+                                <li role="presentation" class="active"><a href="#" class="btn-loc" onclick="applyChanges(2)">Apply</a></li>
+                                <li role="presentation" class="pull-right"><a href="#" class="btn-upper" onclick="applyChanges(2)">Skip</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="wizard-container step2" style="display: none;">
-                <div class="wizard-head">
-                    <div class="alert alert-info clearfix" role="alert">
-                        <p>Add photos to your profile.</p>
-                    </div>
-                    <div class="margintop100">
-                        <form action="/file-upload"
-                              class="dropzone _upload-204"
-                              id="dropzone" align="center"></form>
-                    </div>
-                </div>
-                <div class="wizard-footer">
-                    <div class="clearfix">
-                        <ul class="nav nav-pills">
-                            <li role="presentation" class="active"><a href="#" onclick="applyChanges(2)">Apply</a></li>
-                            <li role="presentation" class="pull-right"><a href="#">Skip</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="wizard-container step3" style="display: none;">
-                <div class="wizard-head">
-                    <div class="alert alert-info clearfix" role="alert">
-                        <p>Next, pick what you’re interested in.</p>
+                <div class="wizard-container step3" style="display: none;">
+                    <div class="wizard-head">
+                        <div class="alert alert-info clearfix" role="alert">
+                            <p>Next, pick what you’re interested in.</p>
 
-                        <p>Get top news and insights by following channels.</p>
-                    </div>
-                    <div class="margintop100">
-                        <div class="input-group input-group-lg col-lg-8 nopadding">
-                            <input type="text" class="form-control" placeholder="Add a interest and press enter" data-limit="13" data-create-tokens-on-blur="true" id="tokenfield">
+                            <p>Get top news and insights by following channels.</p>
                         </div>
-                    </div>
-                    <div class="clearfix margintop30">
-                        <div class="panel-group pull-left width45perc" id="accordion1" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
-                                <div class="panel-heading" role="tab" id="headingOne1">
-                                    <h4 class="panel-title">
-                                        Nature
-                                    </h4>
-                                </div>
-                            </a>
-                            <div id="collapseOne1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne1">
-                                <div class="panel-body">
-                                    <div class="clearfix selectable">
-                                        <div class="ui-widget-content" data-select="false" id="forest">Forest</div>
-                                        <div class="ui-widget-content" data-select="false" id="trips">Trips</div>
-                                        <div class="ui-widget-content" data-select="false" id="sea">Sea</div>
-                                    </div>
-                                </div>
+                        <div class="margintop80">
+                            <div class="input-group input-group-lg col-lg-8 nopadding">
+                                <input type="text" class="form-control" placeholder="Add a interest and press enter" data-limit="13" data-create-tokens-on-blur="true" id="tokenfield">
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
-                                <div class="panel-heading" role="tab" id="headingTwo1">
-                                    <h4 class="panel-title">
-                                        News
-                                    </h4>
-                                </div>
-                            </a>
-                            <div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo1">
-                                <div class="panel-body">
-                                    <div class="clearfix selectable">
-                                        <div class="ui-widget-content" data-select="false" id="politics">Politics</div>
-                                        <div class="ui-widget-content" data-select="false" id="cultural">Cultural</div>
-                                        <div class="ui-widget-content" data-select="false" id="weather">Weather</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
-                                <div class="panel-heading" role="tab" id="headingThree1">
-                                    <h4 class="panel-title">
-                                        Music
-                                    </h4>
-                                </div>
-                            </a>
-                            <div id="collapseThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree1">
-                                <div class="panel-body">
-                                    <div class="clearfix selectable">
-                                        <div class="ui-widget-content" data-select="false" id="rap">Rap</div>
-                                        <div class="ui-widget-content" data-select="false" id="pop">Pop</div>
-                                        <div class="ui-widget-content" data-select="false" id="dance">Dance</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="panel-group pull-right width45perc" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="clearfix margintop30">
+                            <div class="panel-group pull-left width45perc" id="accordion1" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <div class="panel-heading" role="tab" id="headingOne">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+                                    <div class="panel-heading" role="tab" id="headingOne1">
                                         <h4 class="panel-title">
-                                            Religion
+                                            Nature
                                         </h4>
                                     </div>
                                 </a>
-                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div id="collapseOne1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne1">
                                     <div class="panel-body">
                                         <div class="clearfix selectable">
-                                            <div class="ui-widget-content" data-select="false" id="budism">Budism</div>
-                                            <div class="ui-widget-content" data-select="false" id="islam">Islam</div>
-                                            <div class="ui-widget-content" data-select="false" id="crestinism">Crestinism</div>
+                                            <div class="ui-widget-content" data-select="false" id="forest">Forest</div>
+                                            <div class="ui-widget-content" data-select="false" id="trips">Trips</div>
+                                            <div class="ui-widget-content" data-select="false" id="sea">Sea</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                                    <div class="panel-heading" role="tab" id="headingTwo1">
                                         <h4 class="panel-title">
-                                            Science
+                                            News
                                         </h4>
                                     </div>
                                 </a>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo1">
                                     <div class="panel-body">
                                         <div class="clearfix selectable">
-                                            <div class="ui-widget-content" data-select="false" id="psysics">Psysics</div>
-                                            <div class="ui-widget-content" data-select="false" id="chemistry">Chemistry</div>
-                                            <div class="ui-widget-content" data-select="false" id="it">IT</div>
+                                            <div class="ui-widget-content" data-select="false" id="politics">Politics</div>
+                                            <div class="ui-widget-content" data-select="false" id="cultural">Cultural</div>
+                                            <div class="ui-widget-content" data-select="false" id="weather">Weather</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <div class="panel-heading" role="tab" id="headingThree">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+                                    <div class="panel-heading" role="tab" id="headingThree1">
                                         <h4 class="panel-title">
-                                            History
+                                            Music
                                         </h4>
                                     </div>
                                 </a>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div id="collapseThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree1">
                                     <div class="panel-body">
                                         <div class="clearfix selectable">
-                                            <div class="ui-widget-content" data-select="false" id="ww2">WW2</div>
-                                            <div class="ui-widget-content" data-select="false" id="rebirth">Rebirth</div>
-                                            <div class="ui-widget-content" data-select="false" id="antichity">Antichity</div>
+                                            <div class="ui-widget-content" data-select="false" id="rap">Rap</div>
+                                            <div class="ui-widget-content" data-select="false" id="pop">Pop</div>
+                                            <div class="ui-widget-content" data-select="false" id="dance">Dance</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="panel-group pull-right width45perc" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                Religion
+                                            </h4>
+                                        </div>
+                                    </a>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <div class="clearfix selectable">
+                                                <div class="ui-widget-content" data-select="false" id="budism">Budism</div>
+                                                <div class="ui-widget-content" data-select="false" id="islam">Islam</div>
+                                                <div class="ui-widget-content" data-select="false" id="crestinism">Crestinism</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                Science
+                                            </h4>
+                                        </div>
+                                    </a>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            <div class="clearfix selectable">
+                                                <div class="ui-widget-content" data-select="false" id="psysics">Psysics</div>
+                                                <div class="ui-widget-content" data-select="false" id="chemistry">Chemistry</div>
+                                                <div class="ui-widget-content" data-select="false" id="it">IT</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                History
+                                            </h4>
+                                        </div>
+                                    </a>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            <div class="clearfix selectable">
+                                                <div class="ui-widget-content" data-select="false" id="ww2">WW2</div>
+                                                <div class="ui-widget-content" data-select="false" id="rebirth">Rebirth</div>
+                                                <div class="ui-widget-content" data-select="false" id="antichity">Antichity</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="wizard-footer">
-                    <div class="clearfix">
-                        <ul class="nav nav-pills">
-                            <li role="presentation" class="active"><a href="#" onclick="loadAccount()">Apply</a></li>
-                            <li role="presentation" class="pull-right"><a href="#">Skip</a></li>
-                        </ul>
+                    <div class="wizard-footer">
+                        <div class="clearfix">
+                            <ul class="nav nav-pills">
+                                <li role="presentation" class="active"><a href="#" class="btn-loc" onclick="loadAccount()">Apply</a></li>
+                                <li role="presentation" class="pull-right"><a href="#" class="btn-upper">Skip</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

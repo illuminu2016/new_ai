@@ -127,15 +127,17 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
+            <li><a href="#" onclick="goToRoute('notifications.html')">Notifications</a></li>
+            <li><a href="#" onclick="goToRoute('messages.html')">Message Settings</a></li>
             <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
+            <li><a href="#" onclick="goToRoute('language.html')">Change Language of App</a></li>
+            <li><a href="#" onclick="goToRoute('change_password.html')">Change Password</a></li>
             <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
+      <div class="pull-right _avatar-up">
+      </div>
 
       <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
@@ -325,21 +327,35 @@
     <div class="_activity-space-887">
       <div class="clearfix">
         <div class="pull-left _space-hall-98">
-          <div style="margin: 10px 0;">
+          <div id="my-post56">
+            <label for="input-2">All Posts</label>
+            <input type="checkbox" id="input-2" checked>
+          </div>
+          <div id="my-posts90" class="clearfix" style="margin: 20px 0">
+            <div class="pull-left marginright20">
+              <label for="input-4">My Posts</label>
+              <input type="checkbox" id="input-4" checked>
+            </div>
+            <div class="pull-right">
+              <label for="input-3">AI Posts</label>
+              <input type="checkbox" id="input-3" checked>
+            </div>
+          </div>
+<!--          <div style="margin: 10px 0;">
             <input id="radio-432" class="radio-custom" name="radio-group" type="radio">
             <label for="radio-432" class="radio-custom-label">All Posts</label>
-          </div>
+          </div>-->
           <div>
-            <div style="margin: 10px 0 0 0;">
+<!--            <div style="margin: 10px 0 0 0;">
               <input id="radio-41" class="radio-custom" name="radio-group" type="radio">
               <label for="radio-41" class="radio-custom-label">My Posts</label>
-            </div>
+            </div>-->
             <div class="clearfix" style="margin: 5px 0 0 3px;">
               <div class="pull-left">
-                <input type="checkbox" name="vehicle" value="AI" class="_icheck999"> AI posts
+                <!--<input type="checkbox" name="vehicle" value="AI" class="_icheck999"> AI posts-->
               </div>
               <div class="pull-left" style="margin-left: 25px;">
-                <input type="checkbox" name="vehicle" value="AI" class="_icheck999"> My posts
+                <!--<input type="checkbox" name="vehicle" value="AI" class="_icheck999"> My posts-->
               </div>
             </div>
           </div>
@@ -759,7 +775,102 @@
     </div>
   </div>
 </div>
-
+<div class="_mds933" align="center">
+  <div class="_retimb-container933 ui-draggable">
+    <div class="clearfix _retimb-header-890">
+      <div class="pull-left _timb109">Retimb this post to more users</div>
+      <div class="pull-right pointer _timb110"><i class="fa fa-times" aria-hidden="true"></i></div>
+    </div>
+    <div class="_retimb-ycomment-674">
+      <div class="_retimb100" contenteditable="">
+        <div class="_add-comment89" onclick="retimbAddComment()">Add a comment...</div>
+      </div>
+    </div>
+    <div class="_retimb-body-1003">
+      <div class="clearfix">
+        <div class="pull-left _avatar-900"></div>
+        <div class="pull-left _header87">
+          <b>Lidia Buble</b>
+        </div>
+        <div class="pull-left _header88">
+          <span class="_post-date88">@19, August 2015</span>
+        </div>
+      </div>
+      <div class="_retimb-post-900">
+        Ce faceti voi?
+        Cum a fost ziua voastra?
+      </div>
+      <div class="_retimb-rich-900">
+        <img src="accounts/test1/post1.jpg" class="_retimb-rich84">
+      </div>
+    </div>
+    <div class="clearfix _retimb-footer-103">
+      <div class="pull-right btn btn-primary _retimb-btn-506 _retimb-manual" data-loading-text="Retimb...">Retimb</div>
+    </div>
+  </div>
+</div>
+<div class="_mds939" align="center">
+  <div class="_retimb-container933 ui-draggable">
+    <div class="clearfix _retimb-header-890">
+      <div class="pull-left _timb109">Retimb this post to more users</div>
+      <div class="pull-right pointer _timb110"><i class="fa fa-times" aria-hidden="true"></i></div>
+    </div>
+    <div class="_retimb-ycomment-674" align="left" style="padding-left: 10px;">
+      The comments will be added by your AI personality.
+    </div>
+    <div class="_retimb-body-1003">
+      <div class="clearfix">
+        <div class="pull-left _avatar-900"></div>
+        <div class="pull-left _header87">
+          <b>Lidia Buble</b>
+        </div>
+        <div class="pull-left _header88">
+          <span class="_post-date88">@19, August 2015</span>
+        </div>
+      </div>
+      <div class="_retimb-post-900">
+        Ce faceti voi?
+        Cum a fost ziua voastra?
+      </div>
+      <div class="_retimb-rich-900">
+        <img src="accounts/test1/post1.jpg" class="_retimb-rich84">
+      </div>
+    </div>
+    <div class="clearfix _retimb-footer-103">
+      <div class="pull-right btn btn-primary _retimb-btn-506 _retimb-auto" data-loading-text="Retimb...">Retimb</div>
+    </div>
+  </div>
+</div>
+<div class="_mds182" align="center">
+  <div class="_report-overlay ui-draggable">
+    <div class="clearfix _report-header-11">
+      <div class="pull-left _report-101">Report this post</div>
+      <div class="pull-right pointer _report-102"><i class="fa fa-times" aria-hidden="true"></i></div>
+    </div>
+    <div class="_report-body-334" align="left">
+      <div class="_report-msg-1004">Help us understand what the problem is with this post</div>
+      <div style="margin: 10px 30px;">
+        <input id="radio-431" class="report-custom" checked="" name="radio-group" type="radio">
+        <label for="radio-431" class="report-custom-label">I don't like this post</label>
+      </div>
+      <div style="margin: 10px 30px;">
+        <input id="radio-432" class="report-custom" name="radio-group" type="radio">
+        <label for="radio-432" class="report-custom-label">I think it's inappropriate</label>
+      </div>
+      <div style="margin: 10px 30px;">
+        <input id="radio-433" class="report-custom" name="radio-group" type="radio">
+        <label for="radio-433" class="report-custom-label">It's spam</label>
+      </div>
+      <div style="margin: 10px 30px;">
+        <input id="radio-434" class="report-custom" name="radio-group" type="radio">
+        <label for="radio-434" class="report-custom-label">It's an abuse</label>
+      </div>
+    </div>
+    <div class="clearfix _report-footer-10">
+      <div class="pull-right btn btn-primary _report-btn-193 report-btn" data-loading-text="Report...">Report</div>
+    </div>
+  </div>
+</div>
 <!--<div class="_question-banner901">
   <div class="_banner-inner88">
     <i class="fa fa-times pointer _x-close-btn100"></i>
@@ -767,13 +878,19 @@
 </div>-->
 <div class="_question-banner902"></div>
 <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="scripts/ie10-viewport-bug-workaround.js"></script>
-
-    <script src="scripts/menu_functions.js"></script>
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="scripts/ie10-viewport-bug-workaround.js"></script>
+<script src="scripts/checkboxes/dist/js/bootstrap-checkbox.min.js"></script>
+<script src="scripts/blockUI.js"></script>
+<script src="scripts/menu_functions.js"></script>
+<script src="scripts/ai.js"></script>
+<!--      //$('div.test').unblock();
+  //http://malsup.com/jquery/block/#element
+  //https://vsn4ik.github.io/bootstrap-checkbox/-->
 </body>
 </html>

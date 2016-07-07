@@ -134,15 +134,17 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#" onclick="goToRoute('privacy.html')">Privacy</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Message Settings</a></li>
+            <li><a href="#" onclick="goToRoute('notifications.html')">Notifications</a></li>
+            <li><a href="#" onclick="goToRoute('messages.html')">Message Settings</a></li>
             <li role="separator" class="divider"></li>
-            <li><a>Change Language of App</a></li>
-            <li><a>Change Password</a></li>
+            <li><a href="#" onclick="goToRoute('language.html')">Change Language of App</a></li>
+            <li><a href="#" onclick="goToRoute('change_password.html')">Change Password</a></li>
             <li><a href="#" onclick="goToRoute('index.html')">Logout</a></li>
           </ul>
         </li>
       </ul>
+      <div class="pull-right _avatar-up">
+      </div>
 
       <div class="_hm-user-typeahead-container89 col-md-6 hidden-sm hidden-xs" align="right">
 
@@ -336,8 +338,8 @@
       <div class="pull-right clearfix _menu-802">
         <!--<i class="fa fa-battery-three-quarters vw-velocity-894"></i>-->
         <div class="pull-left btn btn-profile" onclick="goToRoute('profile.html')">User Information</div>
-        <div class="pull-left btn btn-danger">Posts</div>
-        <div class="pull-left btn btn-profile" onclick="goToRoute('my_contacts.html')">Contacts</div>
+        <div class="pull-left btn btn-danger">Posts <span class="badge">4</span></div>
+        <div class="pull-left btn btn-profile" onclick="goToRoute('my_contacts.html')">Contacts <span class="badge">604</span></div>
         <div class="pull-left btn btn-profile" onclick="goToRoute('ai_profile.html')">AI Profile</div>
       </div>
       <div class="_avatar-round99"></div>
@@ -1048,7 +1050,7 @@
 
 </div>
   <div class="_mds933" align="center">
-    <div class="_retimb-container933">
+    <div class="_retimb-container933 ui-draggable">
       <div class="clearfix _retimb-header-890">
         <div class="pull-left _timb109">Retimb this post to more users</div>
         <div class="pull-right pointer _timb110"><i class="fa fa-times" aria-hidden="true"></i></div>
@@ -1082,7 +1084,7 @@
     </div>
   </div>
   <div class="_mds939" align="center">
-    <div class="_retimb-container933">
+    <div class="_retimb-container933 ui-draggable">
       <div class="clearfix _retimb-header-890">
         <div class="pull-left _timb109">Retimb this post to more users</div>
         <div class="pull-right pointer _timb110"><i class="fa fa-times" aria-hidden="true"></i></div>
@@ -1114,7 +1116,7 @@
     </div>
   </div>
   <div class="_mds182" align="center">
-    <div class="_report-overlay">
+    <div class="_report-overlay ui-draggable">
       <div class="clearfix _report-header-11">
         <div class="pull-left _report-101">Report this post</div>
         <div class="pull-right pointer _report-102"><i class="fa fa-times" aria-hidden="true"></i></div>
@@ -1122,7 +1124,7 @@
       <div class="_report-body-334" align="left">
         <div class="_report-msg-1004">Help us understand what the problem is with this post</div>
         <div style="margin: 10px 30px;">
-          <input id="radio-431" class="report-custom" checked name="radio-group" type="radio">
+          <input id="radio-431" class="report-custom" checked="" name="radio-group" type="radio">
           <label for="radio-431" class="report-custom-label">I don't like this post</label>
         </div>
         <div style="margin: 10px 30px;">
@@ -1139,92 +1141,92 @@
         </div>
       </div>
       <div class="clearfix _report-footer-10">
-        <div class="pull-right btn btn-primary _report-btn-193 report-btn"  data-loading-text="Report...">Report</div>
+        <div class="pull-right btn btn-primary _report-btn-193 report-btn" data-loading-text="Report...">Report</div>
       </div>
     </div>
   </div>
 <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
 
-  <script type="text/javascript" src="dist/bootstrap-tokenfield.min.js" charset="UTF-8"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="dist/bootstrap-tokenfield.min.js" charset="UTF-8"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="scripts/ie10-viewport-bug-workaround.js"></script>
 
-    <script src="scripts/menu_functions.js"></script>
-  <script>
-    //https://developers.google.com/maps/documentation/javascript/examples/places-searchbox
-    function initAutocomplete() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 47.15, lng: 27.59},
-        zoom: 13,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      });
+<script src="scripts/menu_functions.js"></script>
+<script>
+//https://developers.google.com/maps/documentation/javascript/examples/places-searchbox
+function initAutocomplete() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 47.15, lng: 27.59},
+    zoom: 13,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
 
-      initMap();
+  initMap();
 
-      // Create the search box and link it to the UI element.
-      var input = document.getElementById('pac-input');
-      var searchBox = new google.maps.places.SearchBox(input);
-      map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+  // Create the search box and link it to the UI element.
+  var input = document.getElementById('pac-input');
+  var searchBox = new google.maps.places.SearchBox(input);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-      // Bias the SearchBox results towards current map's viewport.
-      map.addListener('bounds_changed', function() {
-        searchBox.setBounds(map.getBounds());
-      });
+  // Bias the SearchBox results towards current map's viewport.
+  map.addListener('bounds_changed', function() {
+    searchBox.setBounds(map.getBounds());
+  });
 
-      var markers = [];
-      // Listen for the event fired when the user selects a prediction and retrieve
-      // more details for that place.
-      searchBox.addListener('places_changed', function() {
-        var places = searchBox.getPlaces();
+  var markers = [];
+  // Listen for the event fired when the user selects a prediction and retrieve
+  // more details for that place.
+  searchBox.addListener('places_changed', function() {
+    var places = searchBox.getPlaces();
 
-        profileMap.name = places[0].name;
+    profileMap.name = places[0].name;
 
-        if (places.length == 0) {
-          return;
-        }
-
-        // Clear out the old markers.
-        markers.forEach(function(marker) {
-          marker.setMap(null);
-        });
-        markers = [];
-
-        // For each place, get the icon, name and location.
-        var bounds = new google.maps.LatLngBounds();
-        places.forEach(function(place) {
-          var icon = {
-            url: place.icon,
-            size: new google.maps.Size(71, 71),
-            origin: new google.maps.Point(0, 0),
-            anchor: new google.maps.Point(17, 34),
-            scaledSize: new google.maps.Size(25, 25)
-          };
-
-          // Create a marker for each place.
-          markers.push(new google.maps.Marker({
-            map: map,
-            icon: icon,
-            title: place.name,
-            position: place.geometry.location
-          }));
-
-          if (place.geometry.viewport) {
-            // Only geocodes have viewport.
-            bounds.union(place.geometry.viewport);
-          } else {
-            bounds.extend(place.geometry.location);
-          }
-        });
-        map.fitBounds(bounds);
-      });
+    if (places.length == 0) {
+      return;
     }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0PYZPU66T9zHFmvmJmU5b18RP1QcJnzY&libraries=places&callback=initAutocomplete"
-          async defer></script>
+
+    // Clear out the old markers.
+    markers.forEach(function(marker) {
+      marker.setMap(null);
+    });
+    markers = [];
+
+    // For each place, get the icon, name and location.
+    var bounds = new google.maps.LatLngBounds();
+    places.forEach(function(place) {
+      var icon = {
+        url: place.icon,
+        size: new google.maps.Size(71, 71),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(17, 34),
+        scaledSize: new google.maps.Size(25, 25)
+      };
+
+      // Create a marker for each place.
+      markers.push(new google.maps.Marker({
+        map: map,
+        icon: icon,
+        title: place.name,
+        position: place.geometry.location
+      }));
+
+      if (place.geometry.viewport) {
+        // Only geocodes have viewport.
+        bounds.union(place.geometry.viewport);
+      } else {
+        bounds.extend(place.geometry.location);
+      }
+    });
+    map.fitBounds(bounds);
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0PYZPU66T9zHFmvmJmU5b18RP1QcJnzY&libraries=places&callback=initAutocomplete"
+      async defer></script>
 </body>
 </html>
