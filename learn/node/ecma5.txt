@@ -1,0 +1,10 @@
+javascript -- map, reduce, forEach
+
+https://leanpub.com/javascript-allonge/read#references  -- 0  V
+http://chimera.labs.oreilly.com/books/1234000000262/index.html --- 1
+https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+http://javascript.info/tutorial/oop-concepts
+
+https://docs.angularjs.org/guide/scope
+
+
